@@ -1,5 +1,5 @@
 {
-	"name": "berlin-skeleton-app",
+	"name": "@whotargetsme/project-berlin-lab",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
