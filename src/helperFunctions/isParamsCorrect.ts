@@ -9,5 +9,5 @@ function isParamsCorrect() {
 	if (prolific_id === null || study_id === null || session_id === null) {
 		return false;
 	}
-	return true;
 }
+
