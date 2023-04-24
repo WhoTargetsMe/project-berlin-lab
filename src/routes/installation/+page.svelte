@@ -1,9 +1,4 @@
 <script>
-	// import { env } from '$env/static/public';
-
-	function handleClick() {
-		console.log(import.meta.env.VITE_INSTALLATION_LINK);
-	}
 </script>
 
 <main class="container h-full mx-auto flex justify-center items-center">
