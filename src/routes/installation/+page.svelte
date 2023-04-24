@@ -11,3 +11,9 @@
 		>
 	</section>
 </main>
+
+<style>
+	a {
+		cursor: pointer;
+	}
+</style>
