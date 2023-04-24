@@ -8,17 +8,6 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
-		"preserveValueImports": false,
-		"declaration": true,
-		"outDir": "dist",
-		"module": "commonjs",
-		"moduleResolution": "node"
+		"strict": true
 	},
-	"exclude": 
-		[
-			"node_modules", 
-			"cdk.out", 
-			"dist"
-		]
 }
