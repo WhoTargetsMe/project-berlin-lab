@@ -2,6 +2,7 @@
 	export let data;
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
 
 	const keys = Object.values(data);
 	const hasProlificParams = !keys.includes(null);
@@ -9,14 +10,16 @@
 	onMount(() => {
 		if (!hasProlificParams) {
 			setTimeout(() => {
-				window.location.href = 'https://www.prolific.co';
+				window.location.href = PUBLIC_PROLIFIC_LINK;
 			}, 5000);
 			return;
 		}
-
 		localStorage.clear();
 		window.localStorage.setItem('prolific params', JSON.stringify(data));
 
+		//checks if user has extension
+		// no - redirects to install extension
+		// otherwise
 	});
 </script>
 
