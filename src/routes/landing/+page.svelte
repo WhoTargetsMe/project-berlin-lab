@@ -4,10 +4,10 @@
 	import { goto } from '$app/navigation';
 
 	const keys = Object.values(data);
-	const hasParams = !keys.includes(null);
+	const hasProlificParams = !keys.includes(null);
 
 	onMount(() => {
-		if (hasParams) {
+		if (hasProlificParams) {
 			goto('/installation');
 		} else {
 			setTimeout(() => {
@@ -17,7 +17,7 @@
 	});
 </script>
 
-{#if !hasParams}
+{#if !hasProlificParams}
 	<div class="container h-full mx-auto flex justify-center items-center">
 		<div class="space-y-5">
 			Complete the onboarding process in prolific to continue. Redirecting in few seconds
