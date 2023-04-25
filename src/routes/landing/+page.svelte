@@ -7,13 +7,16 @@
 	const hasProlificParams = !keys.includes(null);
 
 	onMount(() => {
-		if (hasProlificParams) {
-			goto('/installation');
-		} else {
+		if (!hasProlificParams) {
 			setTimeout(() => {
 				window.location.href = 'https://www.prolific.co';
 			}, 5000);
+			return;
 		}
+
+		localStorage.clear();
+		window.localStorage.setItem('prolific params', JSON.stringify(data));
+
 	});
 </script>
 
