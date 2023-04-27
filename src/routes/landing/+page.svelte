@@ -10,7 +10,7 @@
 		if (hasProlificParams) {
 			localStorage.clear();
 			window.localStorage.setItem('prolific_params', JSON.stringify(data));
-			//checks if user has extension
+			//check if user has extension
 		}
 	});
 </script>
