@@ -44,5 +44,9 @@
 {:else if !hasExtension}
 	<InstallationPage />
 {:else}
-	<Card h3Value="To be continued..." />
+	<Card
+		h3Value="Click below to continue the study"
+		aHref="https://www.facebook.com/"
+		btnValue="Go to Facebook"
+	/>
 {/if}
