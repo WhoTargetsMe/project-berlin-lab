@@ -1,31 +1,26 @@
 <script>
 	export let data;
 	import { onMount } from 'svelte';
-	import { browser } from '$app/environment';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
-	import InstallationPage from '../installation/+page.svelte';
-	import Card from '../../components/card/+page.svelte';
+	import { goto } from '$app/navigation';
+	import CardWithButton from '../../components/card/CardWithButton.svelte';
 
 	const keys = Object.values(data);
 	const hasProlificParams = !keys.includes(null);
 	let hasExtension = false;
 
 	onMount(() => {
-		if (browser) {
-			if (hasProlificParams) {
-				localStorage.clear();
-				window.localStorage.setItem('prolific_params', JSON.stringify(data));
-			}
+		if (hasProlificParams) {
+			localStorage.clear();
+			window.localStorage.setItem('prolific_params', JSON.stringify(data));
 
 			const isInstalled = document.querySelectorAll('[src*="test.js"]');
-			console.log(isInstalled);
-
 			if (isInstalled.length >= 1) {
 				hasExtension = true;
 			} else {
 				hasExtension = false;
+				goto('../installation');
 			}
-			console.log(hasExtension);
 		}
 	});
 </script>
@@ -41,12 +36,10 @@
 			</a>
 		</section>
 	</main>
-{:else if !hasExtension}
-	<InstallationPage />
 {:else}
-	<Card
-		h3Value="Click below to continue the study"
-		aHref="https://www.facebook.com/"
-		btnValue="Go to Facebook"
+	<CardWithButton
+		title="Click below to continue the study"
+		url="https://www.facebook.com/"
+		buttonText="Go to Facebook"
 	/>
 {/if}
