@@ -1,8 +1,10 @@
-import type { BaseTranslation } from '../i18n-types'
+import type { BaseTranslation } from '../i18n-types';
 
 const en = {
-	// TODO: your translations go here
-	HI: 'Hi {name:string}! Please leave a star if you like this project: https://github.com/ivanhofer/typesafe-i18n',
-} satisfies BaseTranslation
+	installation: 'Please click below to install the extension...',
+	install_button: 'Install Extension',
+	prolific: 'Please click on the button below to complete the onboarding process in prolific.',
+	prolific_button: 'Go to Prolific'
+} satisfies BaseTranslation;
 
-export default en
+export default en;

@@ -4,6 +4,7 @@
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
 	import { goto } from '$app/navigation';
 	import CardWithButton from '../../components/card/CardWithButton.svelte';
+	import LL from '$lib/i18n/i18n-svelte';
 
 	const keys = Object.values(data);
 	const hasProlificParams = !keys.includes(null);
@@ -29,10 +30,10 @@
 	<main class="container h-full mx-auto flex justify-center items-center">
 		<section class="card p-6 bg-white shadow-lg">
 			<h3 class="m-4">
-				Please click on the button below to complete the onboarding process in prolific.
+				{$LL.prolific()}
 			</h3>
 			<a type="button" class="btn variant-filled mt-4 float-right" href={PUBLIC_PROLIFIC_LINK}>
-				Go to Prolific
+				{$LL.prolific_button()}
 			</a>
 		</section>
 	</main>
