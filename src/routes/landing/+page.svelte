@@ -2,15 +2,25 @@
 	export let data;
 	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
+	import { goto } from '$app/navigation';
+	import CardWithButton from '../../components/card/CardWithButton.svelte';
 
 	const keys = Object.values(data);
 	const hasProlificParams = !keys.includes(null);
+	let hasExtension = false;
 
 	onMount(() => {
 		if (hasProlificParams) {
 			localStorage.clear();
 			window.localStorage.setItem('prolific_params', JSON.stringify(data));
-			//check if user has extension
+
+			const isInstalled = document.querySelectorAll('[src*="test.js"]');
+			if (isInstalled.length >= 1) {
+				hasExtension = true;
+			} else {
+				hasExtension = false;
+				goto('../installation');
+			}
 		}
 	});
 </script>
@@ -26,4 +36,10 @@
 			</a>
 		</section>
 	</main>
+{:else}
+	<CardWithButton
+		title="Click below to continue the study"
+		url="https://www.facebook.com/"
+		buttonText="Go to Facebook"
+	/>
 {/if}
