@@ -1,0 +1,1190 @@
+{
+    "content": {
+        "__typename": "CometFeedStoryDefaultContentStrategy",
+        "__isICometStorySection": "CometFeedStoryDefaultContentStrategy",
+        "is_prod_eligible": true,
+        "story": {
+            "feedback": {
+                "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0"
+            },
+            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+            "comet_sections": {
+                "context_layout": {
+                    "__typename": "CometFeedStoryDefaultContextLayoutStrategy",
+                    "__isICometStorySection": "CometFeedStoryDefaultContextLayoutStrategy",
+                    "is_prod_eligible": true,
+                    "story": {
+                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+                        "debug_info": null,
+                        "serialized_frtp_identifiers": null,
+                        "can_viewer_see_menu": true,
+                        "comet_sections": {
+                            "actor_photo": {
+                                "__typename": "CometFeedStoryActorPhotoStrategy",
+                                "__isICometStorySection": "CometFeedStoryActorPhotoStrategy",
+                                "is_prod_eligible": true,
+                                "story": {
+                                    "actors": [
+                                        {
+                                            "__typename": "User",
+                                            "__isActor": "User",
+                                            "id": "100064171773506",
+                                            "__isEntity": "User",
+                                            "url": "https://www.facebook.com/theb2wgroup",
+                                            "work_foreign_entity_info": null,
+                                            "work_info": null,
+                                            "story_bucket": {
+                                                "nodes": [
+                                                    {
+                                                        "should_show_close_friend_badge": false,
+                                                        "id": "101022772046782",
+                                                        "first_story_to_show": null
+                                                    }
+                                                ]
+                                            },
+                                            "profile_url": "https://www.facebook.com/theb2wgroup",
+                                            "name": "The B2W Group",
+                                            "profile_picture": {
+                                                "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/340495393_569996734930920_3155662793202849768_n.png?stp=cp0_dst-png_p80x80&_nc_cat=111&ccb=1-7&_nc_sid=c6021c&_nc_ohc=Z1k0vOhhXq4AX8gX0km&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfD_44FTCBnk57zk9rRQIuUGSGzZhO8oPOIN06B3ekiDQQ&oe=646215F2",
+                                                "width": 80,
+                                                "height": 80,
+                                                "scale": 2
+                                            },
+                                            "is_additional_profile_plus": true,
+                                            "delegate_page": {
+                                                "is_business_page_active": false,
+                                                "id": "146958172152093"
+                                            }
+                                        }
+                                    ],
+                                    "comet_sections": {
+                                        "action_link": null
+                                    },
+                                    "attachments": [
+                                        {
+                                            "action_links": [
+                                                {
+                                                    "__typename": "LeadGenActionLink"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sponsored_data": {
+                                        "whatsapp_presence": false
+                                    },
+                                    "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                                },
+                                "__module_operation_CometFeedStoryActorPhotoSection_story": {
+                                    "__dr": "CometFeedStoryActorPhotoStrategy_actorPhoto$normalization.graphql"
+                                },
+                                "__module_component_CometFeedStoryActorPhotoSection_story": {
+                                    "__dr": "CometFeedStoryActorPhotoStrategy.react"
+                                }
+                            },
+                            "metadata": [
+                                {
+                                    "__typename": "CometStorySponsoredLabelStrategy",
+                                    "__isICometStorySection": "CometStorySponsoredLabelStrategy",
+                                    "is_prod_eligible": true,
+                                    "story": {
+                                        "sponsored_data": {
+                                            "is_demo_ad": false
+                                        },
+                                        "ghl_label": null,
+                                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                                    },
+                                    "__module_operation_CometFeedStoryMetadataSection_story": {
+                                        "__dr": "CometFeedStorySponsoredLabelStrategy_sponsoredLabel$normalization.graphql"
+                                    },
+                                    "__module_component_CometFeedStoryMetadataSection_story": {
+                                        "__dr": "CometFeedStorySponsoredLabelStrategy.react"
+                                    }
+                                },
+                                {
+                                    "__typename": "CometFeedStoryAudienceStrategy",
+                                    "__isICometStorySection": "CometFeedStoryAudienceStrategy",
+                                    "is_prod_eligible": true,
+                                    "story": {
+                                        "privacy_scope": {
+                                            "icon_image": {
+                                                "name": "everyone"
+                                            },
+                                            "description": "Public"
+                                        },
+                                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                                    },
+                                    "__module_operation_CometFeedStoryMetadataSection_story": {
+                                        "__dr": "CometFeedStoryAudienceStrategy_audience$normalization.graphql"
+                                    },
+                                    "__module_component_CometFeedStoryMetadataSection_story": {
+                                        "__dr": "CometFeedStoryAudienceStrategy.react"
+                                    }
+                                }
+                            ],
+                            "title": {
+                                "__typename": "CometFeedStoryTitleWithActorStrategy",
+                                "__isICometStorySection": "CometFeedStoryTitleWithActorStrategy",
+                                "is_prod_eligible": true,
+                                "story": {
+                                    "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+                                    "actors": [
+                                        {
+                                            "__typename": "User",
+                                            "name": "The B2W Group",
+                                            "id": "100064171773506",
+                                            "__isActor": "User",
+                                            "__isEntity": "User",
+                                            "url": "https://www.facebook.com/theb2wgroup",
+                                            "work_foreign_entity_info": null,
+                                            "work_info": null
+                                        }
+                                    ],
+                                    "title": null,
+                                    "comet_sections": {
+                                        "action_link": null,
+                                        "badge": null,
+                                        "follow_button": null
+                                    },
+                                    "encrypted_tracking": "AZVEb6WOLudPS3njwI1wso2rKMynDb2fqm4NW46IRuo-taovw7pO3UIZhMJVXv0HBAmjxJRbQxaHv-xLAyZMCbZ3MkwYingHaY09wLkbBR_xBAIWyMya9BN0GnotPHoc63bD9Z5U5d1EuZ2N9wwRJharBz9vVvshfltbZ-lkOFVLB6qShqO0JRalPbHzPBcnwo1CuvKOhppG_JgiRnv0sbGbP6Gh-fXXb-9Dh0CJPwKV5--bq23nuQ4M--8NN6inPEAGZiK8H_76VtIECP-M_HiKeNBDfR5ynfdqEF-Jiw-uzNz_TVTB1qRYrPqr6pgS2ZvfGFygLM1r7zs6twKBKU9C4xVmzJxIYlXiFaeYCFzXbnKJgyTmDJjpecPgxQHf-eH16tHstQFnJXbanlCL8aA3hQiDxEioxtjcRdY77rcVBQOVfyTMftJNElJmmcNOOQhKL2eZhwGOVv1GT1NkIWJgJF85e6RzDKnHQ0eFMWDd2zU4MtkKrxudeb5MSNLjDmq_PI_NwhTOsFHW9JfrOKMCqqprRJR5ZtNBFx6NGXDK7woi18LvWAfIedT4hh96X2Yw-gBTjX5WVjRK7k9pG1Bxyc0zplcnHzQVSqRrWQCcSPjJXV4iURdHV2N4_xGo9VmnZA8HuM09IxB5cT3EyD6wSjZa3AoYU_yuhYdqnkSEKZ98x5zJLeskDnyDcdNiNpmru5vG4gcXghe_6HhzqhEgtUEbLo8SoKnv4VxmHLO3VGnvtlhKA5qihJuMx0CS13LKgyBR9y8A03gbXBqpexK4FV4yauJw5DCCp8AfmCGCxIB4mH0G_GOD_RkI7tIyO_eiGWoGMTcsJHw4WjPwoHcZNc327U_AtvyLStuUeWR2S8L3PMMDi4hNLkSmM_VrfMS2xyB2Gdzn9pMayi4o4_GermEIR-eipwoDy6lwgsLjw-MmXZLd1jPf-0rCvCfMeR7fGd_Kb2abDXF19EyRDtMKe1v8xf5F1qxSlvat1aj4q4wiyk7j2uCp_Xf9PC4hjQ6ZTUOSmTXvychaIagGnBe76Zo23Jt1ngqmqQzAKB39QzgWFOfq4lYyv61V2zWDabrxD4QQxspYmIfhNRi_ZnyDlDDSSNGJJJsk7mKekXLsa8ZOzLSJv37rlai33lOojaA1sjwfATQMXXPIvhv2BZQtej-v0onDUs-3Gc7V1gw9cx56a822KWSCWrxP-eRcNchZpi2U6SnacDUyGGopkZGyA5lm9iCfLv-8gR2EJZqP--ztUlKCVufpND9rE6J7xcW5c59QMhdID2nJKLw6NWtCloPEq-csZk3rhDkFnLAncvaeBlV9duAqZst1bPGrF_2rbl5Uhv5LplQOmGDA_HmO4sC8AMHS-4FyMvYVOIWpLCWloQGP_WAWgbDknO7qlNCvclGbYsfAjg0IXbJMiZl3N8Q4pTQlWuoZtIuUeGjEEafjf9vLSr1cCRDW7ZLg4B9evpWLSiBRDgda7VvWqzgsAwp6OXRIvTECd6lcssb8_6DoVX4ro6JvtQ9TSAbWpqc"
+                                },
+                                "__module_operation_CometFeedStoryTitleSection_story": {
+                                    "__dr": "CometFeedStoryTitleWithActorStrategy_contextTitle$normalization.graphql"
+                                },
+                                "__module_component_CometFeedStoryTitleSection_story": {
+                                    "__dr": "CometFeedStoryTitleWithActorStrategy.react"
+                                }
+                            }
+                        },
+                        "encrypted_tracking": "AZUghdvp12tew6qbMgr_ZKyCXYc3ok0kM4gg9tHygj1zjy6DFcuhvo6m-Pv26RbhyoIg-GBJnJ5QNXKAdOsUXH7QxPUKygngV2ErE2xRJwluwmKEPDvs16OWdILx0S7dXpV0knfvcz_3o-u-46c4gNF5-g-IdK_MDP1TUaL2-ef2SfM-6J6Etxl9DG_FJNUG2pFNa2KgQazHtxo5S8zSXDJxBSyZVCa9lFOH-TzU25gyWAU9CGAQeOeypusnGuhB3Cw9OnsfK_cyrlrwEPiCWdwFIdUH5-YNUxH0s1icAtXBDvbHTTyjMv-29KXp1mwVy0jlzmyPeZx2KiNfTEupw4EtIjz0LVa1wjYm2XoWcfrKUzexdd_z3KuNih55-GFhPrRKc6Er54rEvb6jBwXQ6JG9pPz6hFJlw_4H5ENRL7WIlq8DPQASx2FWsoWgPlGDUKWsqp8AY3z2o2HWRKgKB9NTgxTVQN1hveVgxgsFo6XYmBb7It60bdrrywEkJimwKW3N8xF5UY7i_LLeTx1r8cyJPwWi3hP-10M39w4XpTx3qQOEg6xfHUTs4rZVLNXfTecH7eD5gC9cDIZLXOoMrluUcuV2kPyM8fx_anbjiyriQFykDLBrmxuVkup29Ga8njEG1s85eyS0IE51Gb0ftkXP4R2nu3itnf7Yc8kZA524wBL3-TSwBC0RhHrcxkGsjsyPrZjdyuiwMUZers1T8AgjKk0JpQ8zl3V1J5NWIUuzJb_q57u1HSx-h1MfbC404kgHGuaKX74y88tepHswta7Iq21x8hs0V_ZYKjaaFCDmToc5IxIkfkrVPM8h8m5iFmZLB2mrpIv8WPl3mszvARPTdBd0zirzm9bPizkUqitxi3mn39FJhtiQ_EPPJCDXJf9XXyVINxk1eM7wIpX5kpLiWPlA_1MUykylQRdykhsnWmKsSBbKyCe8SaLUpA9vy4BWXIV-s97lMbIISv1ijNvnw37WhXOagXmr_oYIKCfdOVtUPDbc2No3Iia4w6fkLLQBpVw004L-dB9RoI8F3QjWj_dI7otsCt3P7eEXDrXrVb-m2_Phwu_MFJ48WqpJ2HMufZvsDMY85A2r2h57GYyrNZxNTc6-bFbSwbvq70U14cX8VLTDEyXrDR0asXc3vx8udmmQXgIp6BKm70cqxGPKN8ohv3phBvOQ8wq82HtOF0briXJlCUneOAuaql3-qeCv3XvBHzovjBguXW3Uxz6_2pHniO7pNOBo3KlTHqeqB1l5P03tfrlo0pp52ijifyGj2cB9v4SmMVzHZ9eqb8lDjUMzrL_YIFqBOt_4livJzcMLo7geaniPl6XbHU3-De00o_dQ3wHFC_hxhZWf6bq6aPNxqsBN1yTeZtWrda_AlVApcuN0T_HpAEcMWUOMwnIbM9gpqtpbmQmZbZii2kAkPZ0AFJ_QjQD0EC89t8xl3zSxIrPqzphxZlf5uwgql_Xag-dq0H4BQlrCwTswFDhUbP0MSldLk1oUeTZ2p_vavUG9NVn_3bqOyUi_pa6e0JE",
+                        "easy_hide_button_story": null
+                    },
+                    "is_regulation_enforced": false,
+                    "__module_operation_CometFeedStoryContextSection_story": {
+                        "__dr": "CometFeedStoryDefaultContextLayoutStrategy_contextLayout$normalization.graphql"
+                    },
+                    "__module_component_CometFeedStoryContextSection_story": {
+                        "__dr": "CometFeedStoryDefaultContextLayoutStrategy.react"
+                    }
+                },
+                "above_message": null,
+                "info_icon": null,
+                "attachment_overlay": null,
+                "attached_story": null,
+                "message": {
+                    "__typename": "CometFeedStoryDefaultMessageRenderingStrategy",
+                    "__isICometStorySection": "CometFeedStoryDefaultMessageRenderingStrategy",
+                    "is_prod_eligible": true,
+                    "story": {
+                        "is_text_only_story": false,
+                        "message": {
+                            "delight_ranges": [],
+                            "image_ranges": [],
+                            "inline_style_ranges": [],
+                            "aggregated_ranges": [],
+                            "ranges": [],
+                            "color_ranges": [],
+                            "text": "Our short online course will provide you with a Level 3 Certificate in Principles of Management\n\nThis course will be delivered online, over 5 days and cover the main areas of management, including:\n\nResponsibilities as a Manager\nObjective Setting and Communicating to Support Teams \nManaging Self Development\n\n\nThese courses are available to unemployed residents of the West Midlands and are fully funded by the West Midlands Combined Authority.\n\n\n👇APPLY BELOW TO GET STARTED👇"
+                        },
+                        "message_truncation_line_limit": null,
+                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                    },
+                    "__module_operation_CometFeedStoryMessageSection_story": {
+                        "__dr": "CometFeedStoryDefaultMessageRenderingStrategy_message$normalization.graphql"
+                    },
+                    "__module_component_CometFeedStoryMessageSection_story": {
+                        "__dr": "CometFeedStoryDefaultMessageRenderingStrategy.react"
+                    }
+                },
+                "message_suffix": null,
+                "message_container": {
+                    "__typename": "CometFeedStoryMessageContainerRenderingStrategy",
+                    "__isICometStorySection": "CometFeedStoryMessageContainerRenderingStrategy",
+                    "is_prod_eligible": true,
+                    "story": {
+                        "message": {
+                            "text": "Our short online course will provide you with a Level 3 Certificate in Principles of Management\n\nThis course will be delivered online, over 5 days and cover the main areas of management, including:\n\nResponsibilities as a Manager\nObjective Setting and Communicating to Support Teams \nManaging Self Development\n\n\nThese courses are available to unemployed residents of the West Midlands and are fully funded by the West Midlands Combined Authority.\n\n\n👇APPLY BELOW TO GET STARTED👇"
+                        },
+                        "referenced_sticker": null,
+                        "attachments": [
+                            {
+                                "style_list": [
+                                    "lead_gen",
+                                    "share",
+                                    "story_ads_survey",
+                                    "fallback"
+                                ]
+                            }
+                        ],
+                        "text_format_metadata": null,
+                        "comet_sections": {
+                            "message": null
+                        },
+                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                    },
+                    "__module_operation_CometFeedStoryMessageContainerSection_story": {
+                        "__dr": "CometFeedStoryMessageContainerRenderingStrategy_messageContainer$normalization.graphql"
+                    },
+                    "__module_component_CometFeedStoryMessageContainerSection_story": {
+                        "__dr": "CometFeedStoryMessageContainerRenderingStrategy.react"
+                    }
+                },
+                "message_sticker": null,
+                "aggregated_stories": null
+            },
+            "encrypted_tracking": "AZUA_11dca9oH5unclTAFDMUswW4iN-qVasNQQWQ54BmBZULedoxxRTfw0LU-B4IbwGBF5_1lQpy67aXn99PKj4emZZs54Q2VcC8uYwg9w6olTNb6GkJLrtUXCBqHn7K94Vqgg3Vcohlq7hc6DXcQci9mR__e5GaEAth-fjTwe2mFRewfFwyH3doWw9ePBR-mGW1XxfsA8g4TTCs3rbFiwNPqsQCK1ZJ_8Wzah3IRpJYZKDUGgSWpazKiG45zMFPij8MSK8lJoVhKJoWQinQ3pvpK786l2eZCubGASbKQkOq1JHIe-wR1LJzeXwVdmpLuAqIT-6kLwFSqsRV0IQeuZjScGWVRP39vcJ8s6dKOHinlGAucy4YUBo2X7JjuxuKsUbYUvSPJy7yCMRBhHaT5G8sH0iK1fPExC8BZ7xNxBu7LIgXL-DcYEzvp4LWXlN6MwQ9vWnS1betogc6psple4gpFMejR3D9PG-SdbbB5GAGPX80oPOw6nWoYgvIovx_r1ywr8Ix0C7-iaV7iSdsnSBDHkMPVhLiINBEVIscchKjVes6DfaiJY9ewXjzWcZV00-lEdhR-xp0eGPLzXFimevjxWuGRxQ4YOW-CGTpScGJ4gPs8dDlV6kg4K4oz3NE3uzBpPtziXzdRQkkLySZb4JhgT68nKRJqsQygH7jbdSQ1FiYAkZvfn4hBMx5Vim9mykdrpptbAJDbJNqZG7MocAcKGD3_T3kz00wcUsU76QZrWawHdtHTAk41O64AZ4rNu7PW_qSFj-gytHksdpph6EvPP5IuTNz8GFFFqAE4Fk1PtKKo96nFff25sUIy4e89ZB31tSkviBeeEpDmeggSU1rVA9TagZ-lfl-B4W48KW92hk8FzClZLwiOIjUX1WRPiVr29H7ZBIw7nG_rrAU4f19z1ORRKDO__COxYEAb9MwK_CndQ2intKyJkZU-tBFs-ZUDZMzy5I9OXt4wHB5vnmKQ8Z0wwTNOCA9gnhyi139cnB2D7FzrLh-DozGxfnoVq3BHstsjVI8x53O-o-KYyvFBAJ4-MBZrpPcLhmGl05qL1-Yi9u9mCmNaxNWgTXRTsBi7jPH3mmtl-yPlGRwiYBblFGMNqWvmO_iZ-5IF2GSgyNjxDJ1huhQRtNqSd78EDm9XNcHApA-aEBE5JuityUcKwkh-k8QfEDploF8X9Y8U-why1IWY1v5Qo3vtbbW7AAidBhUidnH9K6NLMGzfHvvR9IqQY-d_qrA-OvLRZSV-rwuwD0XpwzvioYLV4vspLMqaLEhFE4U-6y2N5YhAXSF-QAcRJfEZdrKwI4Hna3lw2hgHijlC-rMo8Ivj9h_tpUdUmo8MFykaD-cB170X9I9O2PIfz8Pipk19srFQStTFfU1u_hP6ovgD9ClJo6y2-pHROCXAYivL7UMPUfESITwZoYpg-VwNgg8NaQ4TfLsg-tocGFo8I_EJOC7zBCJCvZdJrvQMzze3-xbLjMCxu4UYt6QVxV8ZwirEXgJQirTr2ndc4ssEw4b5LTyQVoxxxU",
+            "should_host_actor_link_in_watch": false,
+            "message": {
+                "text": "Our short online course will provide you with a Level 3 Certificate in Principles of Management\n\nThis course will be delivered online, over 5 days and cover the main areas of management, including:\n\nResponsibilities as a Manager\nObjective Setting and Communicating to Support Teams \nManaging Self Development\n\n\nThese courses are available to unemployed residents of the West Midlands and are fully funded by the West Midlands Combined Authority.\n\n\n👇APPLY BELOW TO GET STARTED👇",
+                "__typename": "TextWithEntities"
+            },
+            "attachments": [
+                {
+                    "deduplication_key": "d162a68d181875f5d4a8eb772f82959b",
+                    "__typename": "StoryAttachment",
+                    "style_list": [
+                        "lead_gen",
+                        "share",
+                        "story_ads_survey",
+                        "fallback"
+                    ],
+                    "styles": {
+                        "__typename": "StoryAttachmentShareAdStyleRender",
+                        "__isStoryAttachmentStyleRendererUnion": "StoryAttachmentShareAdStyleRender",
+                        "is_prod_eligible": true,
+                        "attachment": {
+                            "media": {
+                                "__typename": "GenericAttachmentMedia",
+                                "__isMedia": "GenericAttachmentMedia",
+                                "flexible_height_share_image": {
+                                    "height": 1080,
+                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t45.1600-4/343759722_23854327448820696_5501825071938623460_n.jpg?stp=cp0_dst-jpg_fr_q75_spS444&_nc_cat=108&ccb=1-7&_nc_sid=e84a38&_nc_ohc=P1qqQlCg0DEAX9fH1a0&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfBQAArQMbZ9VySkeCzxABct9wzEAVrq5kMFgIkahWk_5A&oe=64619D53",
+                                    "width": 1080
+                                },
+                                "large_share_image": {
+                                    "height": 564,
+                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t45.1600-4/343759722_23854327448820696_5501825071938623460_n.jpg?stp=c0.258.1080.564a_cp0_dst-jpg_q75_spS444&_nc_cat=108&ccb=1-7&_nc_sid=e84a38&_nc_ohc=P1qqQlCg0DEAX9fH1a0&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfC2l0ceirfga5iUv_JlNYwwiHl9C-TZLOSEWMpRBlDh7A&oe=64619D53",
+                                    "width": 1080
+                                },
+                                "id": "YWRpbWFnZToxMTM1MTQzNTk0NzIyMjg6NmNlMjlkZGU2MDQwMTZiODI0NTU1YTBhYTM0ODRiNTE="
+                            },
+                            "title_with_entities": {
+                                "text": "FREE 5 DAY ONLINE COURSE"
+                            },
+                            "story_attachment_link_renderer": {
+                                "__typename": "StoryAttachmentLeadGenLinkRenderer",
+                                "attachment": {
+                                    "action_links": [
+                                        {
+                                            "__typename": "LeadGenActionLink",
+                                            "__isStoryActionLink": "LeadGenActionLink",
+                                            "dynamic_item_id": null,
+                                            "lead_gen_data_id": "949073032946376",
+                                            "media": {
+                                                "__typename": "GenericAttachmentMedia",
+                                                "lead_gen_brand_image": {
+                                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t45.1600-4/343759722_23854327448820696_5501825071938623460_n.jpg?stp=cp0_dst-jpg_q75_s851x315_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=P1qqQlCg0DEAX9fH1a0&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfBtxjkAet2yMc11rR1TL5dUEmAv6M8Ojoo5pd4s7uy3xQ&oe=64619D53",
+                                                    "height": 315,
+                                                    "width": 315
+                                                },
+                                                "id": null
+                                            },
+                                            "send_description": "FREE training for employed people - please complete the information below",
+                                            "followUpActionUri": "https://l.facebook.com/l.php?u=https%3A%2F%2Fb2wgroup.com%2Flevel-3-cmi-coaching-and-mentoring%2F&h=AT2rdQ0Ecdwu04cc9n4ydacCkddSRi8h-TrDwO8ipEORhwJhNq3Rs0g8rzKZZoGVzqgnGt-_ELsAfXC9azh4b34N-UnBadUdOdqlHFdQoFwkADEgok1I1-JmoOuZV8SkpwVBMNUdwPY"
+                                        }
+                                    ]
+                                },
+                                "__module_operation_CometFeedStoryLink_attachment": {
+                                    "__dr": "CometFeedStoryLeadGenLink_story$normalization.graphql"
+                                },
+                                "__module_component_CometFeedStoryLink_attachment": {
+                                    "__dr": "CometFeedStoryLeadGenLink.react"
+                                }
+                            }
+                        },
+                        "__module_operation_CometFeedStoryAttachmentRendererInner_attachment": {
+                            "__dr": "CometFeedStoryShareAdAttachmentStyle_styleTypeRenderer$normalization.graphql"
+                        },
+                        "__module_component_CometFeedStoryAttachmentRendererInner_attachment": {
+                            "__dr": "CometFeedStoryShareAdAttachmentStyle.react"
+                        }
+                    },
+                    "throwbackStyles": null,
+                    "comet_footer_renderer": {
+                        "__typename": "CometStoryAttachmentFooterGenericShareStrategy",
+                        "attachment": {
+                            "action_links": [
+                                {
+                                    "__typename": "LeadGenActionLink"
+                                }
+                            ],
+                            "description": {
+                                "text": ""
+                            },
+                            "headline_line_limit": 2,
+                            "source": {
+                                "text": "FORM ON FACEBOOK"
+                            },
+                            "title_with_entities": {
+                                "text": "FREE 5 DAY ONLINE COURSE"
+                            },
+                            "target": {
+                                "__typename": "ExternalUrl",
+                                "article_author": null,
+                                "external_url": "http://fb.me/",
+                                "id": "226547524203272:616834797132241"
+                            },
+                            "style_infos": [
+                                {
+                                    "__typename": "FeedStandardAttachmentStyleInfo"
+                                },
+                                {
+                                    "__typename": "ExternalShareAttachmentStyleInfo"
+                                },
+                                {
+                                    "__typename": "FutureOfFeedAttachmentStyleInfo"
+                                }
+                            ],
+                            "call_to_action_renderer": {
+                                "__typename": "StoryAttachmentLeadGenCallToActionRenderer",
+                                "action_link": {
+                                    "__typename": "LeadGenActionLink",
+                                    "title": "Apply now",
+                                    "lead_gen_deep_link_user_status": {
+                                        "has_shared_info": false,
+                                        "id": "bGVhZGdlbl9kZWVwX2xpbmtfdXNlcl9zdGF0dXNfTGVhZEdlbkRlZXBMaW5rVXNlclN0YXR1czoxMDAwMDg3MzA1NDg5NTg6OTQ5MDczMDMyOTQ2Mzc2Og=="
+                                    },
+                                    "__isStoryActionLink": "LeadGenActionLink",
+                                    "dynamic_item_id": null,
+                                    "lead_gen_data_id": "949073032946376",
+                                    "media": {
+                                        "__typename": "GenericAttachmentMedia",
+                                        "lead_gen_brand_image": {
+                                            "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t45.1600-4/343759722_23854327448820696_5501825071938623460_n.jpg?stp=cp0_dst-jpg_q75_s851x315_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=P1qqQlCg0DEAX9fH1a0&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfBtxjkAet2yMc11rR1TL5dUEmAv6M8Ojoo5pd4s7uy3xQ&oe=64619D53",
+                                            "height": 315,
+                                            "width": 315
+                                        },
+                                        "id": null
+                                    },
+                                    "send_description": "FREE training for employed people - please complete the information below",
+                                    "followUpActionUri": "https://l.facebook.com/l.php?u=https%3A%2F%2Fb2wgroup.com%2Flevel-3-cmi-coaching-and-mentoring%2F&h=AT2rdQ0Ecdwu04cc9n4ydacCkddSRi8h-TrDwO8ipEORhwJhNq3Rs0g8rzKZZoGVzqgnGt-_ELsAfXC9azh4b34N-UnBadUdOdqlHFdQoFwkADEgok1I1-JmoOuZV8SkpwVBMNUdwPY"
+                                },
+                                "__module_operation_CometFeedStoryCallToAction_attachment": {
+                                    "__dr": "CometFeedAttachmentLeadGenCallToAction_actionLink$normalization.graphql"
+                                },
+                                "__module_component_CometFeedStoryCallToAction_attachment": {
+                                    "__dr": "CometFeedAttachmentLeadGenCallToAction.react"
+                                }
+                            },
+                            "story_attachment_link_renderer": {
+                                "__typename": "StoryAttachmentLeadGenLinkRenderer",
+                                "attachment": {
+                                    "action_links": [
+                                        {
+                                            "__typename": "LeadGenActionLink",
+                                            "__isStoryActionLink": "LeadGenActionLink",
+                                            "dynamic_item_id": null,
+                                            "lead_gen_data_id": "949073032946376",
+                                            "media": {
+                                                "__typename": "GenericAttachmentMedia",
+                                                "lead_gen_brand_image": {
+                                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t45.1600-4/343759722_23854327448820696_5501825071938623460_n.jpg?stp=cp0_dst-jpg_q75_s851x315_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=P1qqQlCg0DEAX9fH1a0&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfBtxjkAet2yMc11rR1TL5dUEmAv6M8Ojoo5pd4s7uy3xQ&oe=64619D53",
+                                                    "height": 315,
+                                                    "width": 315
+                                                },
+                                                "id": null
+                                            },
+                                            "send_description": "FREE training for employed people - please complete the information below",
+                                            "followUpActionUri": "https://l.facebook.com/l.php?u=https%3A%2F%2Fb2wgroup.com%2Flevel-3-cmi-coaching-and-mentoring%2F&h=AT2rdQ0Ecdwu04cc9n4ydacCkddSRi8h-TrDwO8ipEORhwJhNq3Rs0g8rzKZZoGVzqgnGt-_ELsAfXC9azh4b34N-UnBadUdOdqlHFdQoFwkADEgok1I1-JmoOuZV8SkpwVBMNUdwPY"
+                                        }
+                                    ]
+                                },
+                                "__module_operation_CometFeedStoryLink_attachment": {
+                                    "__dr": "CometFeedStoryLeadGenLink_story$normalization.graphql"
+                                },
+                                "__module_component_CometFeedStoryLink_attachment": {
+                                    "__dr": "CometFeedStoryLeadGenLink.react"
+                                }
+                            }
+                        },
+                        "__module_operation_CometFeedStoryAttachmentFooterSection_attachment": {
+                            "__dr": "CometStoryAttachmentFooterGenericShareStrategy_attachmentFooter$normalization.graphql"
+                        },
+                        "__module_component_CometFeedStoryAttachmentFooterSection_attachment": {
+                            "__dr": "CometStoryAttachmentFooterGenericShareStrategy.react"
+                        }
+                    },
+                    "comet_footer_disclaimer_renderer": null
+                }
+            ],
+            "sponsored_data": {
+                "ad_id": "23854351980220696",
+                "client_token": "AI@AQI5GNIBHrSOD55tUCzsU1o84q7Q7Fy96Kh1cUmkwOZ5gNninW9GHj1CPZ6xYnADeL-UF1JTJi8YaEL9h4qjE4qw"
+            },
+            "text_format_metadata": null,
+            "actors": [
+                {
+                    "__typename": "User",
+                    "id": "100064171773506",
+                    "name": "The B2W Group",
+                    "__isEntity": "User",
+                    "url": "https://www.facebook.com/theb2wgroup"
+                }
+            ],
+            "ghl_mocked_encrypted_link": null,
+            "ghl_label_mocked_cta_button": null,
+            "wwwURL": "https://www.facebook.com/theb2wgroup/posts/pfbid0387XPWBZD39rptp4NpdcEe4in6WnBv3f6NSmpwDBUDZE3TMWayDQdCno6owMYeJutl",
+            "target_group": null,
+            "attached_story": null
+        },
+        "__module_operation_CometFeedStory_story": {
+            "__dr": "CometFeedStoryDefaultContentStrategy_content$normalization.graphql"
+        },
+        "__module_component_CometFeedStory_story": {
+            "__dr": "CometFeedStoryDefaultContentStrategy.react"
+        }
+    },
+    "layout": {
+        "__typename": "CometStoryDefaultLayoutStrategy",
+        "__isICometStorySection": "CometStoryDefaultLayoutStrategy",
+        "is_prod_eligible": true,
+        "__module_operation_CometFeedStory_story__layout": {
+            "__dr": "CometFeedStoryDefaultLayoutStrategy_layout$normalization.graphql"
+        },
+        "__module_component_CometFeedStory_story__layout": {
+            "__dr": "CometFeedStoryDefaultLayoutStrategy.react"
+        }
+    },
+    "copyright_violation_header": null,
+    "header": null,
+    "context_layout": {
+        "__typename": "CometFeedStoryDefaultContextLayoutStrategy",
+        "__isICometStorySection": "CometFeedStoryDefaultContextLayoutStrategy",
+        "is_prod_eligible": true,
+        "story": {
+            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+            "debug_info": null,
+            "serialized_frtp_identifiers": null,
+            "can_viewer_see_menu": true,
+            "comet_sections": {
+                "actor_photo": {
+                    "__typename": "CometFeedStoryActorPhotoStrategy",
+                    "__isICometStorySection": "CometFeedStoryActorPhotoStrategy",
+                    "is_prod_eligible": true,
+                    "story": {
+                        "actors": [
+                            {
+                                "__typename": "User",
+                                "__isActor": "User",
+                                "id": "100064171773506",
+                                "__isEntity": "User",
+                                "url": "https://www.facebook.com/theb2wgroup",
+                                "work_foreign_entity_info": null,
+                                "work_info": null,
+                                "story_bucket": {
+                                    "nodes": [
+                                        {
+                                            "should_show_close_friend_badge": false,
+                                            "id": "101022772046782",
+                                            "first_story_to_show": null
+                                        }
+                                    ]
+                                },
+                                "profile_url": "https://www.facebook.com/theb2wgroup",
+                                "name": "The B2W Group",
+                                "profile_picture": {
+                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/340495393_569996734930920_3155662793202849768_n.png?stp=cp0_dst-png_p80x80&_nc_cat=111&ccb=1-7&_nc_sid=c6021c&_nc_ohc=Z1k0vOhhXq4AX8gX0km&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfD_44FTCBnk57zk9rRQIuUGSGzZhO8oPOIN06B3ekiDQQ&oe=646215F2",
+                                    "width": 80,
+                                    "height": 80,
+                                    "scale": 2
+                                },
+                                "is_additional_profile_plus": true,
+                                "delegate_page": {
+                                    "is_business_page_active": false,
+                                    "id": "146958172152093"
+                                }
+                            }
+                        ],
+                        "comet_sections": {
+                            "action_link": null
+                        },
+                        "attachments": [
+                            {
+                                "action_links": [
+                                    {
+                                        "__typename": "LeadGenActionLink"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sponsored_data": {
+                            "whatsapp_presence": false
+                        },
+                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                    },
+                    "__module_operation_CometFeedStoryActorPhotoSection_story": {
+                        "__dr": "CometFeedStoryActorPhotoStrategy_actorPhoto$normalization.graphql"
+                    },
+                    "__module_component_CometFeedStoryActorPhotoSection_story": {
+                        "__dr": "CometFeedStoryActorPhotoStrategy.react"
+                    }
+                },
+                "metadata": [
+                    {
+                        "__typename": "CometStorySponsoredLabelStrategy",
+                        "__isICometStorySection": "CometStorySponsoredLabelStrategy",
+                        "is_prod_eligible": true,
+                        "story": {
+                            "sponsored_data": {
+                                "is_demo_ad": false
+                            },
+                            "ghl_label": null,
+                            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                        },
+                        "__module_operation_CometFeedStoryMetadataSection_story": {
+                            "__dr": "CometFeedStorySponsoredLabelStrategy_sponsoredLabel$normalization.graphql"
+                        },
+                        "__module_component_CometFeedStoryMetadataSection_story": {
+                            "__dr": "CometFeedStorySponsoredLabelStrategy.react"
+                        }
+                    },
+                    {
+                        "__typename": "CometFeedStoryAudienceStrategy",
+                        "__isICometStorySection": "CometFeedStoryAudienceStrategy",
+                        "is_prod_eligible": true,
+                        "story": {
+                            "privacy_scope": {
+                                "icon_image": {
+                                    "name": "everyone"
+                                },
+                                "description": "Public"
+                            },
+                            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+                        },
+                        "__module_operation_CometFeedStoryMetadataSection_story": {
+                            "__dr": "CometFeedStoryAudienceStrategy_audience$normalization.graphql"
+                        },
+                        "__module_component_CometFeedStoryMetadataSection_story": {
+                            "__dr": "CometFeedStoryAudienceStrategy.react"
+                        }
+                    }
+                ],
+                "title": {
+                    "__typename": "CometFeedStoryTitleWithActorStrategy",
+                    "__isICometStorySection": "CometFeedStoryTitleWithActorStrategy",
+                    "is_prod_eligible": true,
+                    "story": {
+                        "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+                        "actors": [
+                            {
+                                "__typename": "User",
+                                "name": "The B2W Group",
+                                "id": "100064171773506",
+                                "__isActor": "User",
+                                "__isEntity": "User",
+                                "url": "https://www.facebook.com/theb2wgroup",
+                                "work_foreign_entity_info": null,
+                                "work_info": null
+                            }
+                        ],
+                        "title": null,
+                        "comet_sections": {
+                            "action_link": null,
+                            "badge": null,
+                            "follow_button": null
+                        },
+                        "encrypted_tracking": "AZXYr7beNXfT2E9nU7N7oYM5bddb3TACE4i3ez7nQQlNtJdcZAuNy0m-JgkD6TFeA3MW8j42DYjZh-dWu-5ren93yALxO2Fuut2WcPE5DcBO-4tkY6cWGNqBn4MSPG5adQDY0kZLz9tqGlVK72gnmuMCIvRFY5mH52qltcArou7FYxRqk4snarZHGbDMp433MtT-ZkV0hGW-mKRiitA4eZIOPudT_OHeup-F_cBHrIkAVYCEd98qRSZ_P5nvuD1HkZ1kpvxjuW3kY-XTgRX_cHvoU6_MFcvgzlZA3TRl21IKgGe8U_uFbbuDoISAr_sim1fAa66PRC8IHo-RJmb9mPnUFfz8Qy6pQOrnPEk1XhMXJiICWOmfuXaEYkiqr-LsFF3IYfSA5L_VCyWPyypvzZTFyK_jSQn6hMMtv1dWThNzS5hTPHNnXxX9MqU00AnhOcianOCGx5_ET8R4YF_GnFBUaBd1We1k6QKzRxG96DtkksHpFTie940L5KRkDdNdGgvQRkDG0SPkSM84d-kYzWefNUZZfT6G4vlxggAFYnoaW8vSCvGGQuqbMr6OlnuoACytjeuUex8--KVLIc8Zy3otfkaXs09cRShCOqKvebe3PCoQ1wSsqAPdt8Cs1E6DEBkNgPgzCgVr9SeRA_dMxRQPzYILuSXzOE_iRgI9sVj-vjtu0wOeF4yCtHbtowNCtZvceiLfnQoaLOmDH7JDhkJ5AsIemzfpOgsykMAVBBuSiAjq6ycQfYvaZ5E2Vx9To-4h-q4lg0dE3sYhYKwqvbLw6df2oeZKjor4jwj3XwhEiSALfKPwwiUBa0zDha5naXgQP4urzHjeMX73QkPqHo0qzjww7I-OIVO6pQRtT9HhJA3S3FvXh3yjZJOGG36LZosSR9SLhOrHklyL1EJV5qLVMql6T4c8FqFtORotnbDeOB3DkFk60rk5YnenXeZ9Cf8-bfx3xlMSV8Oph3KMFt2WoO1EN9MxyxRFzBtdWBqjO38Qd3tEmareZSkZHxurPdHPCJa20HX26rs-bPnjCNJz2vblIkjS3bTS2oh_yEFmKUYBAarmjvZaUONzyhj1b4PEWeYNBouFW1YFZANNLejP0XYxjLYQFYbhEhroCgGlPkCojEQ2FM3_9oWfc2oxs20KVUIg4flBxeY32oQnd9N34TQff_3l24hSV7Gc7MHbk-H__6xVzfwxxuwCxJgApCWhiGW6yqaTloNYwmV2uMUAPlkp7uz5PNmeFW1ui2yOkEHVj1MEcHVdXMMqZjOfd22pbTiSTo68ge9PdkGxCKynOL0__lfwt1coDTw_lAaOD6GuyhVhXJJO1-8pnf_l6z-InVbJOYYLtDFXYNCklIYmESpAkB_PZwTooTkouFDITrCHX_tvN88fqgh9dnv_QdRbfuDvdaHWZPUK6otj5Jf0he7didItYMcPtYdnFajP3OfzeXRcwhExS0a4A62VhEdgqhPAhfazDbEdDnp7BcdFtljVoGJ1XUiSbitQ61U4ke_wuRb9UeAn-4bxoI9mISE"
+                    },
+                    "__module_operation_CometFeedStoryTitleSection_story": {
+                        "__dr": "CometFeedStoryTitleWithActorStrategy_contextTitle$normalization.graphql"
+                    },
+                    "__module_component_CometFeedStoryTitleSection_story": {
+                        "__dr": "CometFeedStoryTitleWithActorStrategy.react"
+                    }
+                }
+            },
+            "encrypted_tracking": "AZW-s_AHlE4C1rRWBQhPVpyduCfKnkfPM2OJtMVx27P5qlbiqPgpN4AcpvA10fSuZRXJcqTolsjDOck-GkFO-AKAyma9ACgvvI5N43h_U61VJl-pwTy2wtJqH7ehw2djvoleRPUTsBkPjAxKhH8xeAFS4AkyU73P-qBFCNd0p1_OapArYdcmg-oJ8o-T4Fs9sGupA75a0OpQHZIkfgoEntZddzZznVbwxcy1QiP-0Eg64kXmwBZB8wDwmnytWPSSJga40mNFcvGwlgJ3049_m9v6yTsoIuSyAwzUqKOpYIuFS64j-gDrj3r2LEZ0do1HItVBe9YivODqT-OGetN0t111vObqSM5p3kUPw68msnXPo9PrDYTh5UuDfsMHR-8ZuL3vJKJol02dmnxSqQzqEall865a-2qNAi_u0d6jLnseANWBi1XAFQ5YtDv2Hgfrot1UEvBXZkI_on5jM6C8j4Asu5UFgkKrr1mzvHYAo-lqlT8EMwVMF0eixXjwL2XBkOHR5qmmINwgjHm9iPVH4SwIh1fsHm0ndDnwfUIdfOzFAZIENpc_WOe1iRdOCQ1VH9eEFtBUEubpT5_96jMCGb3WMhEpI-yKe9VfntJ8U6BHEZISbKQpHpE7awNUZEWOUVWFfCcBe8hVVDL9V0g_Ezq61VvHynYOOkQvcp4aQf2YXk9c5ISMeIDwqMNlk2kPQDUtWrq9-g5qIeOWYhCFEYpkxfD7xEIaJAfKMQA6q1JzlAHVfyDIHu73bCGKgZmqHt2srF2LAgPbToRC-_tg99YY6aREsZwdtxjJpkvoHWF8UFcbgGqSji8d5GBdQwMKH3H1qSxqkUteXS0tENEt3A-FmkzCpu_ACAyTSeQa5t4GMUoZLbg3dVkiaJNjwH844UbdhVVy7JCJFVK5kaobWpkeHgwbmsy9kzeFyOzqmBu4D2t_B5wXxXoXDuPoFpEbDBao4CvSHnWB07kivktj2Gx4qK6QMWtlulC4DjwS7iYXVt3MQ4GJnhsCD89Wmboe2JnGa6GTfZv-vEU7WOxchmsHrGttvhjBW76iDKvG6zvZb8AEsWMVkP8MWfYMjT8efTHsyGS9pdKcQxs923GJaYc6aVvj_5_y3At03Isa9lncpBitCZpABP9BaRN0BWoBSSsjcK31gfW0qhYB3dc56-eDYeW2by4D1qsA0uOrKauH1BuUw501UtgObanyJz0Uw8VOb_sUdzZpoWydRoypiHInLyIiwlrqHScawsOXxvSm17EoOp1Vpen_vg1--zP8TaVHo7uPk6HbQ0v0caAGvl0kFpv6xESn03DlbicbQnaSU4iRAgdKSUJJDTCLjCnSdXBJ5WtOYxUQUzmRX8GjfZLZG18AHn_YaZ6w2NQSYAvMuJsRHHn_geteluvwdjg4ivwd4z4OCp-ln7Rcx3ri6TV3q3HNzWVMSGepmtP1gc8tQS2UCY-nZQD-huXdEHI-dRrBs2k00HlRhqpqVSVfQjyjeOPHNxS0GuJHjHv6-5y8Cy4vVQHpk1Fex3wQC9LSSkQ",
+            "easy_hide_button_story": null
+        },
+        "is_regulation_enforced": false,
+        "__module_operation_CometFeedStoryContextSection_story": {
+            "__dr": "CometFeedStoryDefaultContextLayoutStrategy_contextLayout$normalization.graphql"
+        },
+        "__module_component_CometFeedStoryContextSection_story": {
+            "__dr": "CometFeedStoryDefaultContextLayoutStrategy.react"
+        }
+    },
+    "aymt_footer": null,
+    "footer": null,
+    "feedback": {
+        "__typename": "CometStoryFeedbackUFIStrategy",
+        "__isICometStorySection": "CometStoryFeedbackUFIStrategy",
+        "is_prod_eligible": true,
+        "story": {
+            "is_text_only_story": false,
+            "feedback_context": {
+                "feedback_target_with_context": {
+                    "viewer_actor": {
+                        "__typename": "User",
+                        "id": "100008730548958"
+                    },
+                    "ufi_renderer": {
+                        "__typename": "SimplifiedUFIRenderer",
+                        "feedback": {
+                            "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                            "total_comment_count": 12,
+                            "owning_profile": {
+                                "__typename": "User",
+                                "name": "The B2W Group",
+                                "short_name": "The B2W Group",
+                                "id": "100064171773506"
+                            },
+                            "comet_ufi_summary_and_actions_renderer": {
+                                "__typename": "DefaultCometUFISummaryAndActionsRenderer",
+                                "feedback": {
+                                    "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                    "subscription_target_id": "616834800465574",
+                                    "disable_reaction_subscriptions": false,
+                                    "i18n_reaction_count": "44",
+                                    "important_reactors": {
+                                        "nodes": []
+                                    },
+                                    "reaction_count": {
+                                        "count": 44,
+                                        "is_empty": false
+                                    },
+                                    "top_reactions": {
+                                        "count": 2
+                                    },
+                                    "reaction_display_config": {
+                                        "reaction_display_strategy": "NONE",
+                                        "reaction_string_with_viewer": null,
+                                        "reaction_string_without_viewer": null,
+                                        "__module_operation_CometUFIReactionsCount_feedback": {
+                                            "__dr": "CometUFIReactionSentence_reactionDisplayConfig$normalization.graphql"
+                                        },
+                                        "__module_component_CometUFIReactionsCount_feedback": {
+                                            "__dr": "CometUFIReactionSentence.react"
+                                        }
+                                    },
+                                    "viewer_actor": {
+                                        "__typename": "User",
+                                        "id": "100008730548958",
+                                        "name": "Michelle Janay"
+                                    },
+                                    "viewer_feedback_reaction_info": null,
+                                    "award_count": null,
+                                    "can_show_seen_by": false,
+                                    "if_viewer_can_see_seen_by_member_list": null,
+                                    "if_viewer_cannot_see_seen_by_member_list": {
+                                        "i18n_reaction_count": "44",
+                                        "reaction_count": {
+                                            "count": 44
+                                        },
+                                        "reaction_display_config": {
+                                            "reaction_display_strategy": "NONE"
+                                        },
+                                        "seen_by": {
+                                            "count": null,
+                                            "i18n_seen_by_count": null,
+                                            "seen_by_everyone": false
+                                        },
+                                        "__module_operation_CometUFISeenByCount_feedback__if_viewer_cannot_see_seen_by_member_list": {
+                                            "__dr": "CometUFISeenByCountText_feedback$normalization.graphql"
+                                        },
+                                        "__module_component_CometUFISeenByCount_feedback__if_viewer_cannot_see_seen_by_member_list": {
+                                            "__dr": "CometUFISeenByCountText.react"
+                                        },
+                                        "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0"
+                                    },
+                                    "i18n_share_count": "0",
+                                    "share_count": {
+                                        "count": 0,
+                                        "is_empty": true
+                                    },
+                                    "can_see_top_custom_reactions": null,
+                                    "cannot_see_top_custom_reactions": {
+                                        "reactors": {
+                                            "count": 44
+                                        },
+                                        "viewer_feedback_reaction_info": null,
+                                        "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                        "top_reactions": {
+                                            "edges": [
+                                                {
+                                                    "reaction_count": 43,
+                                                    "node": {
+                                                        "id": "1635855486666999",
+                                                        "localized_name": "Like"
+                                                    },
+                                                    "i18n_reaction_count": "43"
+                                                },
+                                                {
+                                                    "reaction_count": 1,
+                                                    "node": {
+                                                        "id": "1678524932434102",
+                                                        "localized_name": "Love"
+                                                    },
+                                                    "i18n_reaction_count": "1"
+                                                }
+                                            ]
+                                        },
+                                        "__module_operation_CometUFITopReactions_feedback__cannot_use_group_custom_reactions": {
+                                            "__dr": "CometUFIClassicTopReactions_feedback$normalization.graphql"
+                                        },
+                                        "__module_component_CometUFITopReactions_feedback__cannot_use_group_custom_reactions": {
+                                            "__dr": "CometUFIClassicTopReactions.react"
+                                        }
+                                    },
+                                    "comments_count_summary_renderer": {
+                                        "__typename": "TotalCommentsCountSummaryRenderer",
+                                        "feedback": {
+                                            "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                            "total_comment_count": 12,
+                                            "i18n_comment_count": "12"
+                                        },
+                                        "__module_operation_CometUFISummaryBase_feedback": {
+                                            "__dr": "CometUFICommentsCountRenderer_data$normalization.graphql"
+                                        },
+                                        "__module_component_CometUFISummaryBase_feedback": {
+                                            "__dr": "CometUFICommentsCountRenderer.react"
+                                        }
+                                    },
+                                    "associated_video": null,
+                                    "total_comment_count": 12,
+                                    "page_private_reply": null,
+                                    "story_for_community_awards": null,
+                                    "video_view_count": null,
+                                    "video_view_count_renderer": null,
+                                    "story_community_awards_count_interface_renderer": null,
+                                    "is_similar_cqa_question": false,
+                                    "message_action": null,
+                                    "ufi_action_renderers": [
+                                        {
+                                            "__typename": "UFIStoryReactActionRenderer",
+                                            "feedback": {
+                                                "viewer_custom_reaction": null,
+                                                "viewer_feedback_reaction_info": null,
+                                                "associated_video": null,
+                                                "top_reactions": {
+                                                    "edges": [
+                                                        {
+                                                            "reaction_count": 43,
+                                                            "node": {
+                                                                "key": 1,
+                                                                "id": "1635855486666999"
+                                                            }
+                                                        },
+                                                        {
+                                                            "reaction_count": 1,
+                                                            "node": {
+                                                                "key": 2,
+                                                                "id": "1678524932434102"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "reactors": {
+                                                    "count": 44,
+                                                    "is_empty": false
+                                                },
+                                                "if_viewer_can_use_group_custom_reactions_beta": null,
+                                                "if_viewer_cannot_use_group_custom_reactions_beta": {
+                                                    "if_viewer_can_use_group_custom_reactions": null,
+                                                    "associated_group": null,
+                                                    "supported_reaction_infos": [
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An_KOWvmE8xXhWbKcEDamiAQ14ZKS7T_w5aOTf-M8Krv4ls-f63eecRjpMEIRfwoMQw0XjeM4Q2PKoqtUSQc0_q66s2ahAGa0OTb.kf?ccb=10-5&oh=00_AfC640235sgTJu0LklVknZ9dgtP4AhNjrNlVhk-IvHFr0Q&oe=64846700&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "1635855486666999"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An-V1eo7VQ3O9lqK2f9nfo3p019W0b_BTfQk8m_WliRJfm8Ss0I6dO39oKJmajreEZ2Oy5vSrTbDg0GpAgj0NSk-Eu5PWtSAd1gv.kf?ccb=10-5&oh=00_AfD1vb1_3t4Ab9QZ5WjV_W2JE093Q7MMSmqmMcttDGqN6w&oe=64846371&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "1678524932434102"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An-epsBkaSJ4n9oYH6L6fSPKlfyvVNR_J7OfeV9-jqOZVx9-Fg73T8WyLTa1e_4iyoSboul40f-XChEvL3RtR-jyPuVfx7Umn4RlQyMS.kf?ccb=10-5&oh=00_AfDV38FDYd8gn2wruvcqGhSv_FdiBzS4Brub7bm9juKqtQ&oe=648460C7&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "613557422527858"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An8CYKC8XqtM-fkmXlVHrp9oVgPgDVVlGZu_Cy7Q_5xW9yYY3lOzMNVDCq9D1ThbbsbnpjfFmGnfIPhKX6oePvUMOYOvShQauKw.kf?ccb=10-5&oh=00_AfAhPl2gqAMK7VS_yPTyIBkaP1MyfUQmN4HrbAoM4ErHaw&oe=64846B4B&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "115940658764963"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An_iJw3Cc3y5RtzEpR0M4CCznWN_ywjtFHZENvSbcomn6tH9EuRIjlfe7xaIpEOIEZAGHfQMVNlOPpkGNsG7fM8CslunKANTZ6ED.kf?ccb=10-5&oh=00_AfBOGiZd_dretsptA4DGKA3-30jdvrL4tMu0PokolmjuXA&oe=64847798&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "478547315650144"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An-4eutqFWFfYhZPQR8tM2oP5E05jWW-J7tvfsD5wE23SUHSA2nXlg1n6fI_KpO3JoITC05bkD6cfuSRG3Fji57z_i1jO4Bw_K_ZEg.kf?ccb=10-5&oh=00_AfDszv2YZwaZDWvXCDIaBPPhgZTOI9WxTPMZyv6gma3e_Q&oe=64846730&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "908563459236466"
+                                                        },
+                                                        {
+                                                            "animation": {
+                                                                "uri_keyframes2": "https://scontent.fbhx5-1.fna.fbcdn.net/m1/v/t6/An-ltDiBj6BlExJAIyJiOGWs0CtdQwF9K9SyRSRhTIMgJd0MMzaw7ju3gnTsliPfba99uYjQem5sn3JzgpEnBVKOKfyfbcp-sMBJ.kf?ccb=10-5&oh=00_AfAu3XGBfxAFyeNV0E9zWu-OnLgdDjep-hdxrFfh6lTnpg&oe=64848417&_nc_sid=5ab7d2"
+                                                            },
+                                                            "id": "444813342392137"
+                                                        }
+                                                    ],
+                                                    "__module_operation_CometUFIReactionsMenu_feedback__cannot_use_group_custom_reactions_beta": {
+                                                        "__dr": "CometUFIReactionsMenuClassic_feedback$normalization.graphql"
+                                                    },
+                                                    "__module_component_CometUFIReactionsMenu_feedback__cannot_use_group_custom_reactions_beta": {
+                                                        "__dr": "CometUFIReactionsMenuClassic.react"
+                                                    },
+                                                    "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0"
+                                                },
+                                                "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                                "viewer_actor": {
+                                                    "__typename": "User",
+                                                    "id": "100008730548958"
+                                                },
+                                                "if_viewer_can_render_group_custom_reactions": null
+                                            },
+                                            "hideLabelForAMA": false,
+                                            "__module_operation_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFIStoryReactActionRenderer_renderer$normalization.graphql"
+                                            },
+                                            "__module_component_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFIStoryReactActionRenderer.react"
+                                            }
+                                        },
+                                        {
+                                            "__typename": "UFICommentActionRenderer",
+                                            "__module_operation_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFICommentActionRenderer_renderer$normalization.graphql"
+                                            },
+                                            "__module_component_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFICommentActionRenderer.react"
+                                            }
+                                        },
+                                        {
+                                            "__typename": "UFIVoiceSwitcherActionRenderer",
+                                            "feedback": {
+                                                "share_fbid": "616834800465574",
+                                                "viewer_actor": {
+                                                    "__typename": "User",
+                                                    "id": "100008730548958",
+                                                    "profile_picture": {
+                                                        "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/338003939_747900130246679_5075398245490543593_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=NxnwsiqlFqMAX9qoLub&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfDAFrTK7gdQg1_ZKpBkB6xcP2OBRU45z8QBwNGhjnZOeg&oe=6461AE96"
+                                                    }
+                                                },
+                                                "voice_switcher_actors": {
+                                                    "nodes": [
+                                                        {
+                                                            "__typename": "User",
+                                                            "id": "100008730548958",
+                                                            "name": "Michelle Janay",
+                                                            "profile_picture": {
+                                                                "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/338003939_747900130246679_5075398245490543593_n.jpg?stp=c0.0.74.74a_cp0_dst-jpg_p74x74&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=NxnwsiqlFqMAX9qoLub&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfC8tDChCpN7ewgGwfPO9MyizP035Oy7pnFfMgElG2jbkw&oe=6461AE96"
+                                                            },
+                                                            "can_manage_classic_page_in_pages_tab": true,
+                                                            "profile_type_name_for_content": "PROFILE",
+                                                            "viewer_admin_access_for_biz_tool_user_v2": null,
+                                                            "profile_insights_id": null,
+                                                            "profile_plus_primary_platform_tool": "BUSINESS_SUITE",
+                                                            "requires_actor_swap_for_ufi": false
+                                                        },
+                                                        {
+                                                            "__typename": "User",
+                                                            "id": "100082915223356",
+                                                            "name": "Mind Yours Clothing",
+                                                            "profile_picture": {
+                                                                "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/288096418_110811694994659_5944436404232282559_n.png?stp=cp0_dst-png_p74x74&_nc_cat=101&ccb=1-7&_nc_sid=c6021c&_nc_ohc=H4LZLiM2gEMAX_Wj2Es&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfBDJbn-IJG2LHFWStF_EGia4GevU3G4HI8GO-76047tvQ&oe=64628C13"
+                                                            },
+                                                            "can_manage_classic_page_in_pages_tab": false,
+                                                            "profile_type_name_for_content": "PAGE",
+                                                            "viewer_admin_access_for_biz_tool_user_v2": "FULL_ACCESS",
+                                                            "profile_insights_id": "110807741661721",
+                                                            "profile_plus_primary_platform_tool": "BUSINESS_SUITE",
+                                                            "requires_actor_swap_for_ufi": true
+                                                        }
+                                                    ]
+                                                },
+                                                "feed_object_identifier": null,
+                                                "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0"
+                                            },
+                                            "__module_operation_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFIVoiceSwitcherActionRenderer_renderer$normalization.graphql"
+                                            },
+                                            "__module_component_useCometUFIPostActionBar_feedback__ufi_action_renderers": {
+                                                "__dr": "CometUFIVoiceSwitcherActionRenderer.react"
+                                            }
+                                        }
+                                    ],
+                                    "should_show_reshare_warning": false
+                                },
+                                "__module_operation_CometUFISummaryAndActions_feedback": {
+                                    "__dr": "CometUFIDefaultSummaryAndActionsRenderer_feedback$normalization.graphql"
+                                },
+                                "__module_component_CometUFISummaryAndActions_feedback": {
+                                    "__dr": "CometUFIDefaultSummaryAndActionsRenderer.react"
+                                }
+                            },
+                            "is_community_qa_or_qaish_post": false,
+                            "default_comment_ordering_mode": "RANKED_THREADED",
+                            "threading_config": {
+                                "__typename": "FullThreadingFeedbackConfig"
+                            },
+                            "viewer_actor": {
+                                "__typename": "User",
+                                "id": "100008730548958",
+                                "__isActor": "User",
+                                "name": "Michelle Janay",
+                                "profile_picture_depth_0": {
+                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/338003939_747900130246679_5075398245490543593_n.jpg?stp=c0.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=NxnwsiqlFqMAX9qoLub&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfC_I6LDtU8IB7Z8o7cmtAunV3u9tkcdcPgbE3Htc-iHMA&oe=6461AE96"
+                                },
+                                "profile_picture_depth_1": {
+                                    "uri": "https://scontent.fbhx5-1.fna.fbcdn.net/v/t39.30808-1/338003939_747900130246679_5075398245490543593_n.jpg?stp=c0.0.48.48a_cp0_dst-jpg_p48x48&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=NxnwsiqlFqMAX9qoLub&_nc_ht=scontent.fbhx5-1.fna&oh=00_AfCd9Uotbawtsymj7EKyPQzy0D5j8rbY7-UT7hffrko7Vw&oe=6461AE96"
+                                },
+                                "gender": "FEMALE"
+                            },
+                            "comment_composer_placeholder": "Write a comment…",
+                            "plugins": [
+                                {
+                                    "__typename": "CommentComposerMentionsPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerMentionsPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerMentionsPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerAvatarPlugin",
+                                    "has_avatar": false,
+                                    "feedback_id": "616834800465574",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerAvatarPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerAvatarPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerHashtagPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerHashtagPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerHashtagPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerEmojiPlugin",
+                                    "emoji_size": 16,
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerEmojiPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerEmojiPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerMediaUploadPlugin",
+                                    "viewer_actor": {
+                                        "__typename": "User",
+                                        "id": "100008730548958"
+                                    },
+                                    "should_condense_video_preview": false,
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerMediaUploadPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerMediaUploadPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerGIFPlugin",
+                                    "feedback_id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerGIFPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerGIFPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CometComposerCometizedStickersPlugin",
+                                    "feedback_id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                    "owning_profile_id": "100064171773506",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerStickersPlugin_next_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerStickersPlugin.next"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerEmoticonPlugin",
+                                    "emoji_size": 16,
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerEmoticonPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerEmoticonPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerPrefillMentionPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerPrefillMentionPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerPrefillMentionPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerAssociateReplyWithParentPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerAssociateReplyWithParentPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerAssociateReplyWithParentPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerSetReplyClickedPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerSetReplyClickedPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerSetReplyClickedPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerStateSnapshotPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerStateSnapshotPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerStateSnapshotPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerLiveTypingBroadcastPlugin",
+                                    "feedback_id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0",
+                                    "viewer_actor": {
+                                        "__typename": "User",
+                                        "id": "100008730548958"
+                                    },
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerLiveTypingBroadcastPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerLiveTypingBroadcastPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerCommentCharacterLimitPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerCommentCharacterLimitPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerCommentCharacterLimitPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerDelightsPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerDelightsPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerDelightsPlugin"
+                                    }
+                                },
+                                {
+                                    "__typename": "CommentComposerWriteToComposerPlugin",
+                                    "__module_operation_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerWriteToComposerPlugin_plugin$normalization.graphql"
+                                    },
+                                    "__module_component_useCometUFIComposerPlugins_feedback": {
+                                        "__dr": "cometUFIComposerWriteToComposerPlugin"
+                                    }
+                                }
+                            ],
+                            "url": "https://www.facebook.com/theb2wgroup/posts/pfbid0387XPWBZD39rptp4NpdcEe4in6WnBv3f6NSmpwDBUDZE3TMWayDQdCno6owMYeJutl",
+                            "can_viewer_comment": true,
+                            "have_comments_been_disabled": false,
+                            "inline_composer_visible_by_default": false,
+                            "are_live_video_comments_disabled": false,
+                            "is_viewer_muted": false,
+                            "display_comments_count": {
+                                "count": 12
+                            },
+                            "comments_disabled_notice_renderer": {
+                                "__typename": "GeneralCommentDisableNotice",
+                                "notice_message": {
+                                    "delight_ranges": [],
+                                    "image_ranges": [],
+                                    "inline_style_ranges": [],
+                                    "aggregated_ranges": [],
+                                    "ranges": [],
+                                    "color_ranges": [],
+                                    "text": "Commenting has been turned off for this post."
+                                },
+                                "__module_operation_CometUFICommentDisabledNotice_feedback": {
+                                    "__dr": "CometGenericCommentDisableNotice_commentDisableNotice$normalization.graphql"
+                                },
+                                "__module_component_CometUFICommentDisabledNotice_feedback": {
+                                    "__dr": "CometGenericCommentDisableNotice.react"
+                                }
+                            },
+                            "have_awards_been_disabled": false,
+                            "group_post_disabled_notice": null,
+                            "comment_moderation_filter_restriction_notice": null
+                        },
+                        "__module_operation_CometFeedUFI_feedback": {
+                            "__dr": "CometSimplifiedUFIRenderer_renderer$normalization.graphql"
+                        },
+                        "__module_component_CometFeedUFI_feedback": {
+                            "__dr": "CometSimplifiedUFIRenderer.react"
+                        }
+                    },
+                    "id": "ZmVlZGJhY2s6NjE2ODM0ODAwNDY1NTc0"
+                },
+                "interesting_top_level_comments": []
+            },
+            "shareable_from_perspective_of_feed_ufi": null,
+            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9",
+            "url": "https://www.facebook.com/theb2wgroup/posts/pfbid0387XPWBZD39rptp4NpdcEe4in6WnBv3f6NSmpwDBUDZE3TMWayDQdCno6owMYeJutl",
+            "shareable": null,
+            "sponsored_data": {
+                "__typename": "SponsoredData"
+            },
+            "vote_attachments": []
+        },
+        "__module_operation_CometFeedStoryFeedbackSection_story": {
+            "__dr": "CometFeedStoryFeedbackUFIStrategy_feedback$normalization.graphql"
+        },
+        "__module_component_CometFeedStoryFeedbackSection_story": {
+            "__dr": "CometFeedStoryFeedbackUFIStrategy.react"
+        }
+    },
+    "outer_footer": null,
+    "call_to_action": {
+        "__typename": "CometStoryDefaultCallToActionStrategy",
+        "__isICometStorySection": "CometStoryDefaultCallToActionStrategy",
+        "is_prod_eligible": true,
+        "story": {
+            "bumpers": null,
+            "id": "UzpfSTM5MTMxMzg2NzY3MzE2NDpTY2FfSUZTY2ExY2E8RU1QVFk+Y2FlSnlGVlExTVUxY2NVdnVkU1FDdEJuZGc1eTJ0dVNxY2N6TXRQU1VpeWF6QitLTGtGd3d1Yk1zcEJIMzYyODVmRmUwNzdDY2NIK29EQWtTaGc0TlEwUkVSaEFSSFNLaUlsUjBwR09zSVVTWkVxZk9HV2NjWU1ZUTRKV2JCNWRYaXNtVEo3azN1ZWJubmZOODkzNWY3Y2NqVkRRdy8ySEJtNStkTVZXQmFyR1J5OTNuN1pWNDBYSW8weXdSWWJVNkZhZ2hJRGJZZStqN0pPSEczOXNmaVFWVlAzODlEVHB4TzkzNEt6K0h6Z29NLzM1b256a0tvS2ZVY2MwLzFIeDYyOXpadmxCUGNjTVdIWVJqOUJpL3lMVVpYOFFwamFGcUZTcW56MHQzbER1ZmwrNm9vUGorVWNjQTNQa1kzT0h3d0YwL2dodDk3VGlrTWs5Z1BqOEptK0pyalVFdGNjUjJTekVYZG9jY0hzTTZndGJVekxmRHdPQVd6VWRrU1ZoL1dYSEp3TUxua1JjY2c0blV4L2NjT2ZQZkRnWDNoVjNYSXIwUDlPalNrUThNNmRFMkhSblNvS0dxWHloZWo3dmdVVHpzbks2RHlCUGloNGdTb1dzNkFIOXJPZ0Nwd0NoWjFhbENYNWlDMGEzQVZzNmlHcVk2c1o4WnJjY0JNenFHcGxCbkU3b3lvbDZYM2FXK0YrN2J5RGpLR1d1ZjlhQTFOV0U5Yk1qTC9TeGt4RmREQVJaZVFHWE5YV3p4M1F4bll6cW1vbXBZN3BXdGZJOVA4UzFzTFVtRTR6ZGZPN21IbmxwQ0c4WDF1L2RGQ2I0bU9pQmhrY2NZSENYRmhmSDRrbmRyQjU5ZEo4K2Vtd1o5cTB1VXRYYjlIY2NKYnJIaFJ4dHhmL2FGNGxPamU4ZlczY2Nxc3RqMVl2djhybUZ3K1ZsZDViT0RCcFlqR05iaDlEUzVmVmRWNXZlblFoVHU0VFZVVjE2QnJoa1pkUTlIT1JUVzY2WnZsNGRXNmszdTFWYXA2YVA1OHh0MUFNYUN1THdFTmxnRUtsQUVhS2dNMFhBYm9XU1dncVVwQVR5b0JQZW9BMUg4V1VPczVRQTkyQXhyYkI2ajJMS0NtVGtBdG5ZQ3FPZ0ZOWDRTR1U4ZlB6TDNiRFkxS0xPOEJWSGNjWVVQMWhRT01uQUpXZUJIUzZGVzYvTlFxdDcwL2FUODk3Ykg4WVdPRGZlUHVTdGRPQSt3M0VaOEIrd3h0REJqeHNXRDFpQ0VDYkRhck4rQWFQL2RHVEZmQms3dGpjYzdnWHFucGhuOC90amNjT2NjN3ZzajkzOEIrZUxKMHhPRUxDOTNGOFRob2xORCtKVEMxRkpjY2NjQTNTckY5Q1lEMUR0WlVEM1dIelZFVEx2V1MvZ0tXZFJULzJWcUlGODR3VnYxRU8rTzJvNkh4Y2NWNEtxQ1c2UERYWDlHLy9WRnFQYisxOUNBUjg3QjVoWXRycDdUQ24zR1poaVBHRkp1ZUV6b0I2bU14clZwb1JicTBvcUlkdGJHa2lKY2Nxa3JkWXJlVFJKS3lkaHZKU0U5N085MU8xbWU4dXlYVFRvaWtERElUTTd4dTRzbVYzREtSUklFWEtYRklYcmVIa2dKZUVJakxMZVh6SENXRmtwY2NVOEhJdVlVa2F6YWNjQ01aUDExQzN6VHQ3QnlwVHdJdG5zNWtVSDd4S29oMGhPc29rVjJlMDBqNHF5V3AyVnkzditSWnBEQ1VjY0ZQcCs2S1JjYzZOSjVJK2RSTkVnbkhGbm9JSzNMRUVkeVFjY3luSlkzbVJzRzdLQnBuelhqTEhFMTUwQ0Y2T0Y3Y2NucTlWYnFNY2NsaVI0K2h4ZDRtYWNjZXdub0lHK3JEcmNjN0krWWc2WkQ2Zmtrd3F5N3k0UFhqR2Vpa3Z6eXNxRXBRZFdTS1pYcGRMY2NTS0xzbmtlb2c2aWxWUW1GWndrUlJFdXVXWkVVY2MrTVZSNmxPOExtczd6QTVnaFVJZktLTk04bFNJV1VJMjdxNFRrcXlzSHVGVDFicVVjY21tM2hPWUVYdWhWWUY3dlFLUWlGeGVrV09jY2lTbjhEOHExMHQ1T2J4SU9iTFdLK2RLYmw0dVhLRldUeHpadDJmdDVzMXAyOGc2ZTFyR1ZwS1ZRVGJZczBobTF0b3RXZllVSlZ1eUc4OE9WbVNuWjJ4dEtzWGhHWEl1ZFRmdHhPZmdFNzFMOHNnck9FbXhXSjlzTmljY1pqVlp6a3NsaU04Vy9TRWxCMy82L1FwLzhRWUl4d1d4TnNsbHNpUW1XZUlzeHdXWTByalJia3l6bUQrUDFyTXNsQkcyV1JIMnl5V1JMTUptU0VsYWFMSlpFb3lYRVU4QUtnajdaWkRRYXJSWlRraWtweVp4b3RNYnJXWWNjQ1dpRVh1cWcrT1ZpcC82eXhGT01ONjhxTE1hWmlWWkd5OXBYZ3hTNTJPODJXcFd5VzQzZ0Z3d3JaTHJmazVBWDY4cUhSSW9SZVJhSHh1a0VibHJwNDlLdUxqYjIrYXR3KysvVFZrbDNGbzNleWVtWmo2ei9QRkVVTDFmaTlSSVQrQnNlcW5EUT06YWNhMWNhe2ljYTYxNjgzNDgwMDQ2NTU3NDtzY2E5MWNhIkFJQEFRSTVHTklCSHJTT0Q1NXRVQ3pzVTFvODRxN1E3Rnk5NktoMWNjVW1rd09aNWdObmluVzlHSGoxQ1BaNnhZbkFEZUwtVUYxSlRKaThZYUVMOWg0cWpFNHF3Ijt9"
+        },
+        "__module_operation_CometFeedStoryCallToActionSection_story": {
+            "__dr": "CometFeedStoryDefaultCallToActionStrategy_cta$normalization.graphql"
+        },
+        "__module_component_CometFeedStoryCallToActionSection_story": {
+            "__dr": "CometFeedStoryDefaultCallToActionStrategy.react"
+        }
+    },
+    "post_inform_treatment": null
+}
