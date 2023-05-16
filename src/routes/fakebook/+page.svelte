@@ -1,8 +1,6 @@
 <script>
-	import data from '../../$lib/data/posts.json';
-	import sponsoredData from '../../$lib/data/sponsored.json';
+	import { onMount } from 'svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	// chrome.storage.local.get(function(result){console.log(result)})
 
 	const epochConverstion = (timestamp) => {
 		//should return how many minutes if less than 1 hour
@@ -24,29 +22,30 @@
 	};
 </script>
 
+<!-- {#each data as data} -->
 <main class="card">
-	<header class="card-header flex">
-		<!-- below does not work for sponsored posts -->
-		<Avatar
-			src={data.content.story.comet_sections.context_layout.story.comet_sections.actor_photo.story
-				.actors[0].profile_picture.uri}
-			alt=""
-		/>
-		<section>
-			<p>
-				{data.content.story.actors[0].name}
-			</p>
-			<p>
-				{!data.context_layout.story.comet_sections.metadata[1].story.creation_time
-					? ''
-					: epochConverstion(
-							data.context_layout.story.comet_sections.metadata[1].story.creation_time
-					  )}
-			</p>
-		</section>
-		<p>...</p>
-	</header>
-	<section class="p-4">
+	<!-- <header class="card-header flex">
+			<Avatar
+				src={data.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
+					.actor_photo.story.actors[0].profile_picture.uri}
+				alt=""
+			/> -->
+	<!-- <section>
+				<p>
+					{data.comet_sections.content.story.actors[0].name}
+				</p>
+				<p>
+					{!data.comet_sections.context_layout.story.comet_sections.metadata[1].story.creation_time
+						? ''
+						: epochConverstion(
+								data.comet_sections.context_layout.story.comet_sections.metadata[1].story
+									.creation_time
+						  )}
+				</p>
+			</section> -->
+	<p>...</p>
+	<!-- </header> -->
+	<!-- <section class="p-4">
 		<p>
 			{!data.content.story.message.text ? '' : data.content.story.message.text}
 		</p>
@@ -81,5 +80,6 @@
 			</p>
 		{:else}{/if}
 	</section>
-	<footer class="card-footer">Like Comment Share</footer>
+	<footer class="card-footer">Like Comment Share</footer> -->
 </main>
+<!-- {/each} -->
