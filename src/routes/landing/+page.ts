@@ -3,9 +3,9 @@ export function load(loadEvent) {
 
 	const params: URLSearchParams = url.searchParams;
 
-	const prolific_id: string | null = params.get('PROLIFIC_PID');
-	const study_id: string | null = params.get('STUDY_ID');
-	const session_id: string | null = params.get('SESSION_ID');
+	const prolific_id: string | null = params.get('prolific_pid');
+	const study_id: string | null = params.get('study_id');
+	const session_id: string | null = params.get('session_id');
 
 	return {
 		prolific_id,
