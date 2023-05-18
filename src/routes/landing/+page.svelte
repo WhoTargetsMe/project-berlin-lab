@@ -15,7 +15,7 @@
 			localStorage.clear();
 			window.localStorage.setItem('prolific_params', JSON.stringify(data));
 
-			const isInstalled = document.querySelectorAll('[src*="overRide.js"]');
+			const isInstalled = document.querySelectorAll('[src*="over-load.js"]');
 			if (isInstalled.length >= 1) {
 				hasExtension = true;
 			} else {
