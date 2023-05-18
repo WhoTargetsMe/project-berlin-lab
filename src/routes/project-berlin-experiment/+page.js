@@ -1,10 +1,10 @@
 export const ssr = false;
-const extensionId = 'pmncknofpdngpdahdmoibmeocdlaoneb';
+import { PUBLIC_EXTENSION_ID } from '$env/static/public';
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
 	let postsRequest = new Promise((resolve, reject) => {
-		chrome.runtime.sendMessage(extensionId, { type: 'get_posts' }, (data) => {
+		chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, { type: 'get_posts' }, (data) => {
 			if (data) {
 				return resolve(data);
 			} else {
@@ -12,7 +12,6 @@ export async function load() {
 			}
 		});
 	});
-	console.log(await postsRequest);
 
 	return {
 		posts: await postsRequest

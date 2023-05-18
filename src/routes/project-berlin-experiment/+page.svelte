@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import OrganicImagePost from '../../components/card/OrganicImagePost.svelte';
 	import OrganicPostNoImage from '../../components/card/OrganicPostNoImage.svelte';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 
@@ -23,11 +24,24 @@
 </script>
 
 <main>
+	<div class="p-4 m-4">
+		<h1 class="h1">
+			<span
+				class="bg-gradient-to-br from-pink-500 to-violet-500 bg-clip-text text-transparent box-decoration-clone"
+				>Experiment page</span
+			>
+		</h1>
+	</div>
+
 	{#each data.posts.posts as item}
 		{#if getPostType(item) === 'ENGAGEMENT'}
-			<h1>Engagement type of Posts</h1>
+			<div class="card p-4 m-4 bg-white">
+				<p>Engagement post</p>
+			</div>
 		{:else if getPostType(item) === 'SPONSORED'}
-			<h1>Sponsored type of Posts</h1>
+			<div class="card p-4 m-4 bg-white">
+				<p>Sponsored post</p>
+			</div>
 		{:else if getPostType(item) === 'ORGANIC' && isOrganicRepost(item)}
 			<OrganicImagePost
 				avatarSrc={item.node.comet_sections?.content.story.comet_sections.context_layout?.story
@@ -101,7 +115,9 @@
 					.feedback.i18n_share_count}
 			/>
 		{:else}
-			<h1>Facebook Shorts</h1>
+			<div class="card p-4 m-4 bg-white">
+				<p>Facebook Shorts</p>
+			</div>
 		{/if}
 	{/each}
 </main>

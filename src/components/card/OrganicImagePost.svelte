@@ -13,7 +13,7 @@
 	export let totalShares;
 </script>
 
-<main class="card">
+<main class="card p-4 m-4 bg-white">
 	<header class="card-header flex">
 		<Avatar src={avatarSrc} alt={avatarAlt} />
 		<section>
