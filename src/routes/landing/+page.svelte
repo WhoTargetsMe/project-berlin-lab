@@ -10,20 +10,20 @@
 	const hasProlificParams = !keys.includes(null);
 	let hasExtension = false;
 
-	onMount(() => {
-		if (hasProlificParams) {
-			localStorage.clear();
-			window.localStorage.setItem('prolific_params', JSON.stringify(data));
+	// onMount(() => {
+	// 	if (hasProlificParams) {
+	// 		localStorage.clear();
+	// 		window.localStorage.setItem('prolific_params', JSON.stringify(data));
 
-			const isInstalled = document.querySelectorAll('[src*="overload.js"]');
-			if (isInstalled.length >= 1) {
-				hasExtension = true;
-			} else {
-				hasExtension = false;
-				goto('../installation');
-			}
-		}
-	});
+	// 		const isInstalled = document.querySelectorAll('[src*="overload.js"]');
+	// 		if (isInstalled.length >= 1) {
+	// 			hasExtension = true;
+	// 		} else {
+	// 			hasExtension = false;
+	// 			goto('../installation');
+	// 		}
+	// 	}
+	// });
 </script>
 
 {#if !hasProlificParams}
