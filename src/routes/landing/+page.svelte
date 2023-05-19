@@ -10,7 +10,6 @@
 	const hasProlificParams = !keys.includes(null);
 	let hasExtension = false;
 
-	// onMount(() => {
 	// 	if (hasProlificParams) {
 	// 		localStorage.clear();
 	// 		window.localStorage.setItem('prolific_params', JSON.stringify(data));
