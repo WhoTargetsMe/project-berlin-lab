@@ -31,8 +31,8 @@
 	</main>
 {:else}
 	<CardWithButton
-		title="Click below to continue the study"
+		title={$LL.study()}
 		url="https://www.facebook.com/"
-		buttonText="Go to Facebook"
+		buttonText={$LL.study_button()}
 	/>
 {/if}
