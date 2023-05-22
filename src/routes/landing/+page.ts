@@ -11,7 +11,9 @@ export function load(loadEvent) {
 	const study_id: string | null = params.get('study_id');
 	const session_id: string | null = params.get('session_id');
 
-	!chrome.runtime && goto('../installation');
+	if (!chrome.runtime) {
+		goto('../installation');
+	}
 
 	const isInstalled: string | null = chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, {
 		type: 'is_installed'
