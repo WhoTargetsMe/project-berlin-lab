@@ -3,27 +3,19 @@
 	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
 	import { goto } from '$app/navigation';
-	import CardWithButton from '../../components/card/CardWithButton.svelte';
+	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
 
 	const keys = Object.values(data);
 	const hasProlificParams = !keys.includes(null);
 	let hasExtension = false;
 
-	// onMount(() => {
-	// 	if (hasProlificParams) {
-	// 		localStorage.clear();
-	// 		window.localStorage.setItem('prolific_params', JSON.stringify(data));
-
-	// 		const isInstalled = document.querySelectorAll('[src*="overload.js"]');
-	// 		if (isInstalled.length >= 1) {
-	// 			hasExtension = true;
-	// 		} else {
-	// 			hasExtension = false;
-	// 			goto('../installation');
-	// 		}
-	// 	}
-	// });
+	onMount(() => {
+		if (hasProlificParams) {
+			localStorage.clear();
+			window.localStorage.setItem('prolific_params', JSON.stringify(data));
+		}
+	});
 </script>
 
 {#if !hasProlificParams}
@@ -39,8 +31,8 @@
 	</main>
 {:else}
 	<CardWithButton
-		title="Click below to continue the study"
+		title={$LL.study()}
 		url="https://www.facebook.com/"
-		buttonText="Go to Facebook"
+		buttonText={$LL.study_button()}
 	/>
 {/if}

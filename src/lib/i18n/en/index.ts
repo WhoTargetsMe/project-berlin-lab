@@ -4,7 +4,9 @@ const en = {
 	installation: 'Please click below to install the extension...',
 	install_button: 'Install Extension',
 	prolific: 'Please click on the button below to complete the onboarding process in prolific.',
-	prolific_button: 'Go to Prolific'
+	prolific_button: 'Go to Prolific',
+	study: 'Click below to continue the study',
+	study_button: 'Go to Facebook'
 } satisfies BaseTranslation;
 
 export default en;

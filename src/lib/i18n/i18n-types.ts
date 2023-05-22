@@ -29,6 +29,14 @@ type RootTranslation = {
 	 * G​o​ ​t​o​ ​P​r​o​l​i​f​i​c
 	 */
 	prolific_button: string
+	/**
+	 * C​l​i​c​k​ ​b​e​l​o​w​ ​t​o​ ​c​o​n​t​i​n​u​e​ ​t​h​e​ ​s​t​u​d​y
+	 */
+	study: string
+	/**
+	 * G​o​ ​t​o​ ​F​a​c​e​b​o​o​k
+	 */
+	study_button: string
 }
 
 export type TranslationFunctions = {
@@ -48,6 +56,14 @@ export type TranslationFunctions = {
 	 * Go to Prolific
 	 */
 	prolific_button: () => LocalizedString
+	/**
+	 * Click below to continue the study
+	 */
+	study: () => LocalizedString
+	/**
+	 * Go to Facebook
+	 */
+	study_button: () => LocalizedString
 }
 
 export type Formatters = {}
