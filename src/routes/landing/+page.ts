@@ -11,25 +11,29 @@ export function load(loadEvent) {
 	const study_id: string | null = params.get('study_id');
 	const session_id: string | null = params.get('session_id');
 
-	if (prolific_pid !== null && study_id !== null && session_id !== null) {
+	let hasProlificParams = prolific_pid && study_id && session_id;
+
+	if (hasProlificParams) {
 		window.localStorage.clear();
 		window.localStorage.setItem(
 			'prolific_params',
 			JSON.stringify({ prolific_pid, study_id, session_id })
 		);
+	}
 
-		if (!window.chrome || !window.chrome.runtime) {
-			goto('../installation');
-		} else {
-			chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, {
-				type: 'is_installed'
-			});
-		}
+	// This only works in Chrome
+	if (!window.chrome || !window.chrome.runtime) {
+		goto('../installation');
+	} else {
+		window.chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, {
+			type: 'is_installed'
+		});
 	}
 
 	return {
 		prolific_pid,
 		study_id,
-		session_id
+		session_id,
+		hasProlificParams
 	};
 }

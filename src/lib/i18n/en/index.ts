@@ -6,7 +6,8 @@ const en = {
 	prolific: 'Please click on the button below to complete the onboarding process in prolific.',
 	prolific_button: 'Go to Prolific',
 	study: 'Click below to continue the study',
-	study_button: 'Go to Facebook'
+	study_button: 'Go to Facebook',
+	only_in_chrome: 'This only works in Chrome'
 } satisfies BaseTranslation;
 
 export default en;

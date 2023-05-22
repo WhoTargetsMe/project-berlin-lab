@@ -1,15 +1,12 @@
 <script>
-	export let data;
-	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
-	import { goto } from '$app/navigation';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
 
-	const hasProlificParams = data.prolific_pid && data.session_id && data.study_id;
+	export let data;
 </script>
 
-{#if !hasProlificParams}
+{#if !data.hasProlificParams}
 	<main class="container h-full mx-auto flex justify-center items-center">
 		<section class="card p-6 bg-white shadow-lg">
 			<h3 class="m-4">

@@ -37,6 +37,10 @@ type RootTranslation = {
 	 * G​o​ ​t​o​ ​F​a​c​e​b​o​o​k
 	 */
 	study_button: string
+	/**
+	 * T​h​i​s​ ​o​n​l​y​ ​w​o​r​k​s​ ​i​n​ ​C​h​r​o​m​e
+	 */
+	only_in_chrome: string
 }
 
 export type TranslationFunctions = {
@@ -64,6 +68,10 @@ export type TranslationFunctions = {
 	 * Go to Facebook
 	 */
 	study_button: () => LocalizedString
+	/**
+	 * This only works in Chrome
+	 */
+	only_in_chrome: () => LocalizedString
 }
 
 export type Formatters = {}
