@@ -1,7 +1,17 @@
 <script lang="ts">
 	export let post = {};
+	import Avatar from './Avatar.svelte';
+	import PosterName from './PosterName.svelte';
+	import PostMessage from './PostMessage.svelte';
 </script>
 
-<div class="card p-4 m-4 bg-white">
+<main class="card p-4 m-4 bg-white">
 	<p>Engagement post</p>
-</div>
+	<header class="card-header flex">
+		<Avatar {post} />
+		<PosterName {post} />
+	</header>
+	<section class="p-4">
+		<PostMessage {post} />
+	</section>
+</main>

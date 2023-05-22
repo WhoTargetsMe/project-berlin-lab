@@ -4,7 +4,9 @@
 	let postSrc;
 	let postMultipleImage;
 	let postAlt;
-    let imageRepost = post.node.comet_sections.content.story.attached_story?.attachments[0].styles.attachment.media.photo_image?.uri;
+	let imageRepost =
+		post.node.comet_sections.content.story.attached_story?.attachments[0]?.styles.attachment.media
+			.photo_image?.uri;
 
 	let imageRepostAlt =
 		post.node.comet_sections.content.story.attached_story?.attachments?.styles?.attachment.media
@@ -43,7 +45,6 @@
 	{#each postMultipleImage as image}
 		<img src={image} alt={image} />
 	{/each}
-{:else}
-	<p>reposted story</p>
+{:else if imageRepost}
 	<img src={imageRepost} alt={imageRepostAlt} />
-{/if}
+{:else}{/if}
