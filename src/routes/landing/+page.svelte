@@ -1,21 +1,11 @@
 <script>
-	export let data;
-	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
-	import { goto } from '$app/navigation';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
 
-	const keys = Object.values(data);
-	const hasProlificParams = !keys.includes(null);
-	let hasExtension = false;
+	export let data;
 
-	onMount(() => {
-		if (hasProlificParams) {
-			localStorage.clear();
-			window.localStorage.setItem('prolific_params', JSON.stringify(data));
-		}
-	});
+	const hasProlificParams = data.prolific_pid && data.session_id && data.study_id;
 </script>
 
 {#if !hasProlificParams}
