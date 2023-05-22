@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { Avatar } from '@skeletonlabs/skeleton';
+	import Avatar from './Avatar.svelte';
+	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
 
-	export let post;
+	export let post = {};
 
 	// example display switch
 	export let shouldDisplayReactions = true;
@@ -16,12 +17,7 @@
 	};
 
 	// TODO move to avatar components
-	let avatarSrc =
-		post.node.comet_sections?.content.story.comet_sections.context_layout?.story.comet_sections
-			.actor_photo?.story.actors[0].profile_picture.uri;
-	let avatarAlt =
-		post.node.comet_sections.content.story.comet_sections.context_layout?.story.comet_sections
-			.actor_photo.story.actors[0].profile_uri;
+
 
 	// expect this will be generic
 	let posterName =
@@ -35,20 +31,20 @@
 	let postMessage = post.node.comet_sections.content?.story.message?.text;
 
 	// TODO move to PostImage component
-	let postImage =
-		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media?.photo_image
-			?.uri;
-	let postSrc =
-		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media?.photo_image
-			?.uri;
-	let postAlt =
-		post.node.comet_sections.content.story?.attachments[0]?.styles.attachment.media
-			?.accessibility_caption;
+	// let postImage =
+	// 	post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media?.photo_image
+	// 		?.uri;
+	// let postSrc =
+	// 	post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media?.photo_image
+	// 		?.uri;
+	// let postAlt =
+	// 	post.node.comet_sections.content.story?.attachments[0]?.styles.attachment.media
+	// 		?.accessibility_caption;
 </script>
 
 <main class="card p-4 m-4 bg-white">
 	<header class="card-header flex">
-		<Avatar src={avatarSrc} alt={avatarAlt} />
+		<Avatar post={post}/>
 		<section>
 			<p>
 				{posterName}
@@ -63,7 +59,7 @@
 		<p>
 			{!postMessage ? '' : postMessage}
 		</p>
-		<img src={postSrc} alt={postAlt} />
+		<PostImage post={post} />
 	</section>
 
 	{#if shouldDisplayReactions}
