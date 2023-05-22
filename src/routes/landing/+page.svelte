@@ -1,9 +1,10 @@
 <script>
+	export let data;
+	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
+	import { goto } from '$app/navigation';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
-
-	export let data;
 
 	const hasProlificParams = data.prolific_pid && data.session_id && data.study_id;
 </script>
