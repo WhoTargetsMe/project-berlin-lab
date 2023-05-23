@@ -6,7 +6,13 @@
 	export let data;
 </script>
 
-{#if !data.hasProlificParams}
+{#if data.hasProlificParams}
+	<CardWithButton
+		title={$LL.study()}
+		url="https://www.facebook.com/"
+		buttonText={$LL.study_button()}
+	/>
+{:else}
 	<main class="container h-full mx-auto flex justify-center items-center">
 		<section class="card p-6 bg-white shadow-lg">
 			<h3 class="m-4">
@@ -17,10 +23,4 @@
 			</a>
 		</section>
 	</main>
-{:else}
-	<CardWithButton
-		title={$LL.study()}
-		url="https://www.facebook.com/"
-		buttonText={$LL.study_button()}
-	/>
 {/if}
