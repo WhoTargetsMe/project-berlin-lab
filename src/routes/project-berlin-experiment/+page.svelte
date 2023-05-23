@@ -15,9 +15,9 @@
 			return post.category;
 		}
 	};
-	const { prolificId, studyId, sessionId, formId } = data.prolificParams;
+	const { prolificPid, studyId, sessionId, formId } = data.prolificParams;
 
-	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${formId}#prolific_pid=${prolificId}&study_id=${studyId}&session_id=${sessionId}&offboarding=${true}`;
+	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${formId}#prolific_pid=${prolificPid}&study_id=${studyId}&session_id=${sessionId}&offboarding=${true}`;
 </script>
 
 <main>
@@ -32,7 +32,6 @@
 	</div>
 
 	{#if data.posts.posts}
-		{console.log(data.posts.posts)}
 		{#each data.posts.posts as post}
 			{#if getPostType(post) === 'ENGAGEMENT'}
 				<EngagementPost {post} />
