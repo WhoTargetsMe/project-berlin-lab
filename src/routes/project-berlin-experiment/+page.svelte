@@ -27,6 +27,7 @@
 	</div>
 
 	{#if data.posts.posts}
+	{console.log(data.posts.posts)}
 		{#each data.posts.posts as post}
 			{#if getPostType(post) === 'ENGAGEMENT'}
 				<EngagementPost {post} />
