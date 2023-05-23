@@ -1,35 +1,18 @@
 import { writable } from 'svelte/store';
 import posthog from 'posthog-js';
-
 export const flags = writable({});
 
-posthog.onFeatureFlags((phFlags) => {
-	const flagsObj = phFlags.reduce((result, item) => {
-		const enabled = !posthog.getFeatureFlagPayload(item) ? false : true;
-		const payload = enabled && posthog.getFeatureFlagPayload(item);
-
+const posthogFlags: [string] = posthog.feature_flags.getFlags();
+const flagsWithPayload: { [key: string]: { enabled: boolean; payload: any } } = posthogFlags.reduce(
+	(result, item) => {
 		return {
 			...result,
 			[item]: {
-				enabled,
-				payload
+				enabled: posthog.getFeatureFlag(item),
+				payload: posthog.getFeatureFlagPayload(item)
 			}
 		};
-	}, {});
-	console.log(flagsObj);
-	// flags.set(flagsObj);
-});
-
-
-let flagsObj = {};
-let postHogFlags = posthog.feature_flags.getFlags();
-
-for (let flagz of postHogFlags) {
-	console.log(flagz);
-	flagsObj[flagz] = !posthog.getFeatureFlag(flagz)
-		? { enabled: false }
-		: { enabled: true, payload: posthog.getFeatureFlagPayload(flagz) };
-}
-
-console.log(flagsObj);
-
+	},
+	{}
+);
+flags.set(flagsWithPayload);
