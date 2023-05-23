@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let feedback;
+	export let shouldDisplayReactionTypes = false;
 
 	let totalReactions =
 		feedback.story.feedback_context.feedback_target_with_context.ufi_renderer.feedback
@@ -17,7 +18,6 @@
 				return `${reaction.i18n_reaction_count}:  ${reaction.node.localized_name}`;
 			}
 		);
-	console.log(reactionTypes);
 </script>
 
 <section class="flex justify-between">
@@ -30,7 +30,9 @@
 	<p>
 		Total shares: {totalShares}
 	</p>
-	{#each reactionTypes as reaction}
-		<p>{reaction}</p>
-	{/each}
+	{#if shouldDisplayReactionTypes}
+		{#each reactionTypes as reaction}
+			<li>{reaction}</li>
+		{/each}
+	{/if}
 </section>

@@ -12,8 +12,6 @@
 	export let shouldDisplayReactions = true;
 	export let shouldDisplayTimePosted = false;
 	export let shouldDisplayPostImages = true;
-
-	let postMessage = post.node.comet_sections.content?.story.message?.text;
 </script>
 
 <main class="card p-4 m-4 bg-white">
