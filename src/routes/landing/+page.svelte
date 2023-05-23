@@ -1,24 +1,18 @@
 <script>
-	export let data;
-	import { onMount } from 'svelte';
 	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
-	import { goto } from '$app/navigation';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
 
-	const keys = Object.values(data);
-	const hasProlificParams = !keys.includes(null);
-	let hasExtension = false;
-
-	onMount(() => {
-		if (hasProlificParams) {
-			localStorage.clear();
-			window.localStorage.setItem('prolific_params', JSON.stringify(data));
-		}
-	});
+	export let data;
 </script>
 
-{#if !hasProlificParams}
+{#if data.hasProlificParams}
+	<CardWithButton
+		title={$LL.study()}
+		url="https://www.facebook.com/"
+		buttonText={$LL.study_button()}
+	/>
+{:else}
 	<main class="container h-full mx-auto flex justify-center items-center">
 		<section class="card p-6 bg-white shadow-lg">
 			<h3 class="m-4">
@@ -29,10 +23,4 @@
 			</a>
 		</section>
 	</main>
-{:else}
-	<CardWithButton
-		title={$LL.study()}
-		url="https://www.facebook.com/"
-		buttonText={$LL.study_button()}
-	/>
 {/if}
