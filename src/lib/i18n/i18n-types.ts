@@ -32,11 +32,11 @@ type RootTranslation = {
 	/**
 	 * I​f​ ​y​o​u​ ​a​r​e​ ​n​o​t​ ​r​e​d​i​r​e​c​t​e​d​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​,​ ​p​l​e​a​s​e​ ​c​l​i​c​k​ ​h​e​r​e​ ​t​o​ ​g​o​ ​t​o​ ​F​a​c​e​b​o​o​k
 	 */
-	study: string
+	facebook_redirect_fallback_info: string
 	/**
 	 * G​o​ ​t​o​ ​F​a​c​e​b​o​o​k
 	 */
-	study_button: string
+	facebook_redirect_button: string
 	/**
 	 * T​h​i​s​ ​o​n​l​y​ ​w​o​r​k​s​ ​i​n​ ​C​h​r​o​m​e
 	 */
@@ -63,11 +63,11 @@ export type TranslationFunctions = {
 	/**
 	 * If you are not redirected automatically, please click here to go to Facebook
 	 */
-	study: () => LocalizedString
+	facebook_redirect_fallback_info: () => LocalizedString
 	/**
 	 * Go to Facebook
 	 */
-	study_button: () => LocalizedString
+	facebook_redirect_button: () => LocalizedString
 	/**
 	 * This only works in Chrome
 	 */

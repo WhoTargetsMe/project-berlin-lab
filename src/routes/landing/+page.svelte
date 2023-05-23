@@ -10,9 +10,9 @@
 {#if data.hasProlificParams}
 {goto(PUBLIC_FACEBOOK_LINK)}
 	<CardWithButton
-		title={$LL.study()}
+		title={$LL.facebook_redirect_fallback_info()}
 		url="https://www.facebook.com/"
-		buttonText={$LL.study_button()}
+		buttonText={$LL.facebook_redirect_button()}
 	/>
 {:else}
 	<main class="container h-full mx-auto flex justify-center items-center">
