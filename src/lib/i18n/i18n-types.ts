@@ -30,7 +30,7 @@ type RootTranslation = {
 	 */
 	prolific_button: string
 	/**
-	 * C​l​i​c​k​ ​b​e​l​o​w​ ​t​o​ ​c​o​n​t​i​n​u​e​ ​t​h​e​ ​s​t​u​d​y
+	 * I​f​ ​y​o​u​ ​a​r​e​ ​n​o​t​ ​r​e​d​i​r​e​c​t​e​d​ ​a​u​t​o​m​a​t​i​c​a​l​l​y​,​ ​p​l​e​a​s​e​ ​c​l​i​c​k​ ​h​e​r​e​ ​t​o​ ​g​o​ ​t​o​ ​F​a​c​e​b​o​o​k
 	 */
 	study: string
 	/**
@@ -61,7 +61,7 @@ export type TranslationFunctions = {
 	 */
 	prolific_button: () => LocalizedString
 	/**
-	 * Click below to continue the study
+	 * If you are not redirected automatically, please click here to go to Facebook
 	 */
 	study: () => LocalizedString
 	/**

@@ -1,12 +1,14 @@
 <script>
-	import { PUBLIC_PROLIFIC_LINK } from '$env/static/public';
+	import { PUBLIC_PROLIFIC_LINK, PUBLIC_FACEBOOK_LINK} from '$env/static/public';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
+	import { goto } from '$app/navigation';
 
 	export let data;
 </script>
 
 {#if data.hasProlificParams}
+{goto(PUBLIC_FACEBOOK_LINK)}
 	<CardWithButton
 		title={$LL.study()}
 		url="https://www.facebook.com/"
@@ -22,5 +24,5 @@
 				{$LL.prolific_button()}
 			</a>
 		</section>
-	</main>
+	</main>	
 {/if}
