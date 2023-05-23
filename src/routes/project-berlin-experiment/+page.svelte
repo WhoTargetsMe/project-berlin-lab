@@ -14,6 +14,10 @@
 			return post.category;
 		}
 	};
+	const { prolific_pid, study_id, session_id } = data.prolificParams;
+
+	const offBoardLink = `https://ir96l7a6vsf.typeform.com/to/uWaaoIg0#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+		
 </script>
 
 <main>
@@ -24,6 +28,9 @@
 				>Experiment page</span
 			>
 		</h1>
+		<a href = {offBoardLink}>
+			Back to Typeform
+		</a>
 	</div>
 
 	{#if data.posts.posts}
