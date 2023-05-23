@@ -12,19 +12,18 @@ export const load = (async (event) => {
 
 	if (browser) {
 		posthog.init(PUBLIC_POSTHOG_KEY, { api_host: PUBLIC_POSTHOG_API_HOST });
+		/**
+		 * Posthog user identification:
+		 * - Retrieve the participant details from local storage.
+		 * - Use their Prolific session_id as unique identifier.
+		 * - Pass all Prolific params for cohort separation.
+		 */
+		const prolificParams = JSON.parse(window.localStorage.getItem('prolific_params')) || {};
+
+		posthog.identify(prolificParams.session_id, {
+			...prolificParams
+		});
 	}
-
-	/**
-	 * Posthog user identification:
-	 * - Retrieve the participant details from local storage.
-	 * - Use their Prolific session_id as unique identifier.
-	 * - Pass all Prolific params for cohort separation.
-	 */
-	const prolificParams = JSON.parse(window.localStorage.getItem('prolific_params')) || {};
-
-	posthog.identify(prolificParams.session_id, {
-		...prolificParams
-	});
 
 	return;
 
