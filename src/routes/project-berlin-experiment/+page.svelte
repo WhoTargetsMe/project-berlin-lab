@@ -3,6 +3,7 @@
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
+	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -14,6 +15,9 @@
 			return post.category;
 		}
 	};
+	const { prolificPid, studyId, sessionId, formId } = data.prolificParams;
+
+	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${formId}#prolific_pid=${prolificPid}&study_id=${studyId}&session_id=${sessionId}&offboarding=${true}`;
 </script>
 
 <main>
@@ -24,10 +28,10 @@
 				>Experiment page</span
 			>
 		</h1>
+		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
 	{#if data.posts.posts}
-	{console.log(data.posts.posts)}
 		{#each data.posts.posts as post}
 			{#if getPostType(post) === 'ENGAGEMENT'}
 				<EngagementPost {post} />
