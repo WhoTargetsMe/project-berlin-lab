@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { flags } from '$lib/flags-store';
 	export let feedback;
 	export let shouldDisplayReactionTypes = false;
 
@@ -20,19 +21,21 @@
 		);
 </script>
 
-<section class="flex justify-between">
-	<p>
-		Total reactions: {totalReactions}
-	</p>
-	<p>
-		Total Comments: {totalComments}
-	</p>
-	<p>
-		Total shares: {totalShares}
-	</p>
-	{#if shouldDisplayReactionTypes}
-		{#each reactionTypes as reaction}
-			<li>{reaction}</li>
-		{/each}
-	{/if}
-</section>
+{#if $flags.should_show_reactions}
+	<section class="flex justify-between">
+		<p>
+			Total reactions: {totalReactions}
+		</p>
+		<p>
+			Total Comments: {totalComments}
+		</p>
+		<p>
+			Total shares: {totalShares}
+		</p>
+		{#if shouldDisplayReactionTypes}
+			{#each reactionTypes as reaction}
+				<li>{reaction}</li>
+			{/each}
+		{/if}
+	</section>
+{/if}
