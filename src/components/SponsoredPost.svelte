@@ -5,7 +5,6 @@
 	import PostMessage from './PostMessage.svelte';
 	import Reactions from './Reactions.svelte';
 	export let post = {};
-	export let shouldDisplayReactions = true;
 
 	let postMessage = post.node.comet_sections.content?.story.message?.text;
 </script>
@@ -20,7 +19,5 @@
 		<PostMessage {post} />
 		<!-- <PostImage {post} /> -->
 	</section>
-	{#if shouldDisplayReactions}
-		<Reactions feedback={post.node.comet_sections.feedback} />
-	{/if}
+	<Reactions feedback={post.node.comet_sections.feedback} />
 </main>
