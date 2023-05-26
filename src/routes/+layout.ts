@@ -20,7 +20,7 @@ export const load = (async (event) => {
 		 */
 		const prolificParams = JSON.parse(window.localStorage.getItem('prolific_params')) || {};
 
-		posthog.identify(prolificParams.session_id, {
+		posthog.identify(prolificParams.sessionId, {
 			...prolificParams
 		});
 		return {
