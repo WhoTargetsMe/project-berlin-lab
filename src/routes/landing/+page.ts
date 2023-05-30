@@ -7,18 +7,18 @@ export function load(loadEvent) {
 
 	const params: URLSearchParams = url.searchParams;
 
-	const prolificPid: string | null = params.get('prolific_pid');
-	const studyId: string | null = params.get('study_id');
-	const sessionId: string | null = params.get('session_id');
-	const formId: string | null = params.get('form_id');
+	const prolific_pid: string | null = params.get('prolific_pid');
+	const study_id: string | null = params.get('study_id');
+	const session_id: string | null = params.get('session_id');
+	const form_id: string | null = params.get('form_id');
 
-	let hasProlificParams = prolificPid && studyId && sessionId;
+	let hasProlificParams = prolific_pid && study_id && session_id;
 
 	if (hasProlificParams) {
 		window.localStorage.clear();
 		window.localStorage.setItem(
 			'prolific_params',
-			JSON.stringify({ prolificPid, studyId, sessionId, formId})
+			JSON.stringify({ prolific_pid, study_id, session_id, form_id})
 		);
 	}
 
@@ -32,9 +32,9 @@ export function load(loadEvent) {
 	}
 
 	return {
-		prolificPid,
-		studyId,
-		sessionId,
+		prolific_pid,
+		study_id,
+		session_id,
 		hasProlificParams
 	};
 }
