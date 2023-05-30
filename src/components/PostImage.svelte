@@ -18,7 +18,7 @@
 		post.node?.comet_sections.content.story.attached_story?.comet_sections.attached_story?.story
 			.attached_story.comet_sections.attached_story_layout.story.attachments[0].styles.attachment
 			.media.photo_image.uri ||
-		post.node.comet_sections.content.story.attached_story?.attachments[0].styles.attachment.media
+		post.node.comet_sections.content.story.attached_story?.attachments[0]?.styles.attachment.media
 			?.photo_image?.uri;
 
 	// let imageRepostAlt =
