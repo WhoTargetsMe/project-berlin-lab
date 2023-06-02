@@ -2,6 +2,7 @@
 	export let post = {};
 
 	let postMessage = post.node.comet_sections.content?.story.message?.text;
+	let attachedMessage = post.node.comet_sections.content?.story.attached_story?.message.text
 </script>
 
-<p>{postMessage || ''}</p>
+<p>{postMessage || attachedMessage || ''}</p>
