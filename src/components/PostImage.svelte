@@ -33,9 +33,21 @@
 {/if}
 
 {#if postMultipleImage}
-	{#each postMultipleImage as image}
-		<img src={image} alt={image} />
-	{/each}
+	<div class="container mx-auto px- py-2 lg:px-12 lg:pt-12">
+		<div class="-m-1 flex flex-wrap md:-m-2">
+			{#each postMultipleImage as image}
+				<div class="flex w-1/3 flex-wrap">
+					<div class="w-full p-1 md:p-2">
+						<img
+							class="block h-full w-full rounded-lg object-cover object-center"
+							src={image}
+							alt={image}
+						/>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
 {/if}
 
 {#if imageRepost}
