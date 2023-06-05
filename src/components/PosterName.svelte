@@ -5,4 +5,4 @@
 			.actor_photo.story.actors[0].name;
 </script>
 
-<p class="font-medium">{posterName}</p>
+<p class="font-medium mt-1">{posterName}</p>

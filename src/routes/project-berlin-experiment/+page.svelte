@@ -31,21 +31,25 @@
 		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
-	{#if data.posts.posts}
-		{#each data.posts.posts as post}
-			{#if getPostType(post) === 'ENGAGEMENT'}
-				<EngagementPost {post} />
-			{:else if getPostType(post) === 'SPONSORED'}
-				<SponsoredPost {post} />
-			{:else if getPostType(post) === 'ORGANIC'}
-				<OrganicPost {post} />
+	<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-2xl">
+			{#if data.posts.posts}
+				{#each data.posts.posts as post}
+					{#if getPostType(post) === 'ENGAGEMENT'}
+						<EngagementPost {post} />
+					{:else if getPostType(post) === 'SPONSORED'}
+						<SponsoredPost {post} />
+					{:else if getPostType(post) === 'ORGANIC'}
+						<OrganicPost {post} />
+					{:else}
+						<Shorts {post} />
+					{/if}
+				{/each}
 			{:else}
-				<Shorts {post} />
+				<div class="card p-4 m-4">
+					<p>Please collect some facebook posts</p>
+				</div>
 			{/if}
-		{/each}
-	{:else}
-		<div class="card p-4 m-4">
-			<p>Please collect some facebook posts</p>
 		</div>
-	{/if}
+	</div>
 </main>

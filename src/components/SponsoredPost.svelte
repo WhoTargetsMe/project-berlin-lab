@@ -30,7 +30,7 @@
 <main class="card my-4 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
-		<section class="mt-1">
+		<section>
 			<PosterName {post} />
 			<p class="p-0 m-0">Sponsored</p>
 		</section>
