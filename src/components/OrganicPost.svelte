@@ -13,12 +13,12 @@
 	export let shouldDisplayTimePosted = false;
 	export let shouldDisplayPostImages = true;
 
-	const isRepost = (post:[]) => {
-		 post.node.comet_sections.content.story.attached_story !== null
-	}
+	const isRepost = (post: []) => {
+		post.node.comet_sections.content.story.attached_story !== null;
+	};
 </script>
 
-<main class="card p-4 m-4 bg-white">
+<main class="card m-4 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>
@@ -29,7 +29,7 @@
 		</section>
 		<p>...</p>
 	</header>
-	<section class="p-4">
+	<section>
 		<PostMessage {post} />
 		{#if shouldDisplayPostImages}
 			<PostImage {post} />
@@ -39,6 +39,4 @@
 	{#if shouldDisplayReactions}
 		<Reactions feedback={post.node.comet_sections.feedback} />
 	{/if}
-
-	<!-- <footer class="card-footer">Like Comment Share</footer> -->
 </main>

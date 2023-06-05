@@ -32,8 +32,8 @@
 	<img src={postSrc} alt={postAlt} />
 {/if}
 
-{#if postMultipleImage }
-	<div class="container mx-auto px- py-2 lg:px-12 lg:pt-12">
+{#if postMultipleImage}
+	<div class="container mx-auto py-2 lg:px-12 lg:pt-12">
 		<div class="-m-1 flex flex-wrap md:-m-2">
 			{#each postMultipleImage as image}
 				<div class="flex w-1/3 flex-wrap">
@@ -53,3 +53,11 @@
 {#if imageRepost}
 	<img src={imageRepost} alt={imageRepost} />
 {/if}
+
+<style>
+	img {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+</style>

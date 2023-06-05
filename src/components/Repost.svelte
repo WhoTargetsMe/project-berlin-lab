@@ -33,7 +33,7 @@
 			{/if}
 		</section>
 	</header>
-	<section class="p-4">
+	<section class="border rounded-md mt-4">
 		{#if shouldDisplayPostImages}
 			<RepostImage {post} />
 		{/if}

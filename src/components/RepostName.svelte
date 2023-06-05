@@ -9,4 +9,4 @@
 			?.text;
 </script>
 
-<p>{nameWithDetails || posterName}</p>
+<p class="font-medium mt-1">{nameWithDetails || posterName}</p>

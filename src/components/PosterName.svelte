@@ -4,7 +4,8 @@
 		post.node.comet_sections.content.story.comet_sections.context_layout?.story.comet_sections
 			.actor_photo.story.actors[0].name;
 
-	let nameWithDetails = post.node.comet_sections.context_layout.story.comet_sections.title.story.title?.text
+	let nameWithDetails =
+		post.node.comet_sections.context_layout.story.comet_sections.title.story.title?.text;
 </script>
 
-<p>{nameWithDetails || posterName}</p>
+<p class="font-medium mt-1">{nameWithDetails || posterName}</p>
