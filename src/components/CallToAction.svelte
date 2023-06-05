@@ -23,7 +23,7 @@
 
 	const sponsorURL =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment.source
-			.text;
+			?.text;
 
 	const sponsorTitle =
 		post.node.comet_sections.content.story.attachments[0].styles?.attachment.title_with_entities
@@ -31,7 +31,7 @@
 
 	const sponsorDescription =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.description.text;
+			.description?.text;
 	// let buttonText = post.node?.comet_sections.content.story.attachements?[0].comet_footer_renderer?.attachment.call_to_action_renderer.action_link.stateful_title;
 
 	const cTAText =
@@ -58,8 +58,8 @@
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
 	{#if formOnFacebookImage || otherSponsoredImage}
 		<img class="p-0 m-0" src={formOnFacebookImage || otherSponsoredImage} alt="sponsored" />
-		<div>
-			<section class="px-4 pt-2">
+		<div class="flex justify-between">
+			<section class="px-4 py-2">
 				<p class="font-light text-slate-700">{sponsorURL.toUpperCase()}</p>
 				<p><strong>{sponsorTitle}</strong></p>
 				<p class="font-light text-slate-700">{sponsorDescription}</p>
