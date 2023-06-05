@@ -25,7 +25,7 @@
 {/if}
 
 {#if multipleImageRepost}
-	<div class="container mx-auto py-2 lg:px-12 lg:pt-12">
+	<div class="container mx-auto">
 		<div class="-m-1 flex flex-wrap md:-m-2">
 			{#each multipleImageRepost as image}
 				<div class="flex w-1/3 flex-wrap">

@@ -23,7 +23,7 @@
 			?.playable_url;
 </script>
 
-<main class="card p-4 m-4 bg-white">
+<main class="card m-4 bg-white">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>
@@ -56,3 +56,9 @@
 
 	<!-- <footer class="card-footer">Like Comment Share</footer> -->
 </main>
+
+<style>
+	video {
+		width: 100%;
+	}
+</style>
