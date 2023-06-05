@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Carousel from "./Carousel.svelte";
 	export let post = {};
 
 	let postSrc =
@@ -9,7 +10,7 @@
 		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media
 			?.accessibility_caption;
 
-	let postMultipleImage =
+	let multipleImages =
 		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.all_subattachments?.nodes.map(
 			(img) => img.media.image.uri
 		);
@@ -32,22 +33,8 @@
 	<img src={postSrc} alt={postAlt} />
 {/if}
 
-{#if postMultipleImage}
-	<div class="container mx-auto py-2 lg:px-12 lg:pt-12">
-		<div class="-m-1 flex flex-wrap md:-m-2">
-			{#each postMultipleImage as image}
-				<div class="flex w-1/3 flex-wrap">
-					<div class="w-full p-1 md:p-2">
-						<img
-							class="block h-full w-full rounded-lg object-cover object-center"
-							src={image}
-							alt={image}
-						/>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
+{#if multipleImages}
+	<Carousel { multipleImages } />
 {/if}
 
 {#if imageRepost}
