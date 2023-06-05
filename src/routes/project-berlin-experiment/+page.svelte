@@ -2,6 +2,7 @@
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
+	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 
@@ -15,6 +16,10 @@
 			return post.category;
 		}
 	};
+
+	const getRepost = (post) => {
+		return post.node.comet_sections?.content?.story.attached_story
+	}
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
@@ -33,7 +38,9 @@
 
 	{#if data.posts.posts}
 		{#each data.posts.posts as post}
-			{#if getPostType(post) === 'ENGAGEMENT'}
+			{#if getRepost(post)}
+				<Repost {post}/>
+			{:else if getPostType(post) === 'ENGAGEMENT'}
 				<EngagementPost {post} />
 			{:else if getPostType(post) === 'SPONSORED'}
 				<SponsoredPost {post} />

@@ -12,6 +12,10 @@
 	export let shouldDisplayReactions = true;
 	export let shouldDisplayTimePosted = false;
 	export let shouldDisplayPostImages = true;
+
+	const isRepost = (post:[]) => {
+		 post.node.comet_sections.content.story.attached_story !== null
+	}
 </script>
 
 <main class="card p-4 m-4 bg-white">
