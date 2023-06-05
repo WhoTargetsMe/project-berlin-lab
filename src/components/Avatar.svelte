@@ -10,4 +10,4 @@
 			.actor_photo.story.actors[0].profile_uri;
 </script>
 
-<Avatar src={avatarSrc} alt={avatarAlt} />
+<Avatar src={avatarSrc} alt={avatarAlt} class="border mr-3" />

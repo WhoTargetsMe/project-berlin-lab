@@ -4,4 +4,4 @@
 	let postMessage = post.node.comet_sections.content?.story.message?.text;
 </script>
 
-<p>{postMessage || ''}</p>
+<p class="px-5 py-2">{postMessage || ''}</p>
