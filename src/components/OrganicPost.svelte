@@ -5,6 +5,7 @@
 	import PostMessage from './PostMessage.svelte';
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
+	import PostVideo from './PostVideo.svelte';
 
 	export let post = {};
 
@@ -12,10 +13,6 @@
 	export let shouldDisplayReactions = true;
 	export let shouldDisplayTimePosted = false;
 	export let shouldDisplayPostImages = true;
-
-	const isRepost = (post: []) => {
-		post.node.comet_sections.content.story.attached_story !== null;
-	};
 </script>
 
 <main class="card m-4 bg-white shadow-sm">
@@ -27,12 +24,12 @@
 				<TimePosted {post} />
 			{/if}
 		</section>
-		<p>...</p>
 	</header>
 	<section>
 		<PostMessage {post} />
 		{#if shouldDisplayPostImages}
 			<PostImage {post} />
+			<PostVideo {post} />
 		{/if}
 	</section>
 

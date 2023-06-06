@@ -10,7 +10,7 @@
 						<img
 							class="block h-full w-full rounded-lg object-cover object-center"
 							src={image}
-							alt={image}
+							alt='organic post'
 						/>
 					</div>
 				</div>

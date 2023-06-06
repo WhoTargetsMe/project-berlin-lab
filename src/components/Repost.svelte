@@ -14,10 +14,6 @@
 
 	export let post = {};
 
-	let originalPoster =
-		post.node.comet_sections.content.story.comet_sections.attached_story.story.attached_story
-			.comet_sections.attached_story_layout.story.comet_sections.actor_photo.story.actors[0].name;
-
 	let videoSrc =
 		post.node.comet_sections.content.story.attached_story.attachments[0].styles.attachment.media
 			?.playable_url;
@@ -38,7 +34,7 @@
 			<RepostImage {post} />
 		{/if}
 		{#if videoSrc}
-			<video controls src={videoSrc}>
+			<video class = "w-full aspect-video" controls src={videoSrc}>
 				<track kind="captions" />
 			</video>
 		{/if}
@@ -53,12 +49,5 @@
 	{#if shouldDisplayReactions}
 		<Reactions feedback={post.node.comet_sections.feedback} />
 	{/if}
-
-	<!-- <footer class="card-footer">Like Comment Share</footer> -->
 </main>
 
-<style>
-	video {
-		width: 100%;
-	}
-</style>

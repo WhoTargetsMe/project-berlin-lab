@@ -14,26 +14,14 @@
 			.media.photo_image.uri ||
 		post.node.comet_sections.content.story.attached_story?.attachments[0]?.styles.attachment.media
 			?.photo_image?.uri;
-
-	// let imageRepostAlt =
-	// 	post.node.comet_sections.content.story.attached_story.comet_sections.content.story.attached_story.styles?.attachment.media
-	// 		.accessibility_caption;
-
-	// let postVideo =
 </script>
 
 {#if imageRepost}
 	<img src={imageRepost} alt={imageRepost} />
+	console.log(imageRepost)
 {/if}
 
 {#if multipleImages}
 	<Carousel {multipleImages} />
 {/if}
 
-<style>
-	img {
-		margin-top: 0;
-		padding: 0;
-		width: 100%;
-	}
-</style>
