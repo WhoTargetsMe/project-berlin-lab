@@ -1,5 +1,5 @@
-<script>
-	export let post = {};
+<script lang="ts">
+	export let post:Post= {};
 
 	let postMessage = post.node.comet_sections.content?.story.message?.text;
 	let attachedMessage = post.node.comet_sections.content?.story.attached_story?.message.text;

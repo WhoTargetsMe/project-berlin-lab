@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
-	export let post = {};
+	export let post:Post = {};
 
 	let avatarSrc =
 		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections

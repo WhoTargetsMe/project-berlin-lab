@@ -1,5 +1,5 @@
-<script>
-	export let post = {};
+<script lang="ts">
+	export let post:Post = {};
 
 	//todo format time?
 

@@ -7,7 +7,7 @@
 	import Reactions from './Reactions.svelte';
 	import PostVideo from './PostVideo.svelte';
 
-	export let post = {};
+	export let post:Post = {};
 
 	// example display switch
 	export let shouldDisplayReactions = true;

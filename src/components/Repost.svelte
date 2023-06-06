@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Avatar from './Avatar.svelte';
 	import PosterName from './PosterName.svelte';
 	import TimePosted from './TimePosted.svelte';
@@ -12,7 +12,7 @@
 	export let shouldDisplayTimePosted = false;
 	export let shouldDisplayPostImages = true;
 
-	export let post = {};
+	export let post: Post = {};
 
 	let videoSrc =
 		post.node.comet_sections.content.story.attached_story.attachments[0].styles.attachment.media
@@ -34,7 +34,7 @@
 			<RepostImage {post} />
 		{/if}
 		{#if videoSrc}
-			<video class = "w-full aspect-video" controls src={videoSrc}>
+			<video class="w-full aspect-video" controls src={videoSrc}>
 				<track kind="captions" />
 			</video>
 		{/if}
@@ -50,4 +50,3 @@
 		<Reactions feedback={post.node.comet_sections.feedback} />
 	{/if}
 </main>
-

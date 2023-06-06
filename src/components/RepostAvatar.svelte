@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
-	export let post = {};
+	export let post:Post = {};
 
 	let avatarSrc =
 		post.node.comet_sections.content.story.comet_sections.attached_story.story.attached_story
@@ -12,4 +12,4 @@
 			.actor_photo.story.actors[0].profile_uri;
 </script>
 
-<Avatar src={avatarSrc} alt={avatarAlt} class="border mr-3 w-12"/>
+<Avatar src={avatarSrc} alt={avatarAlt} class="border mr-3 w-12" />
