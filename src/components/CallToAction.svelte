@@ -29,11 +29,11 @@
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.description?.text;
 
-	const cTAText =
+	const callToActionText =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.call_to_action_renderer?.action_link.stateful_title;
 
-	const otherCTAText =
+	const otherCallToActionText =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.call_to_action_renderer?.action_link.title;
 
@@ -42,18 +42,18 @@
 			(attached) => attached
 		);
 
-	const sponsVideo =
+	const sponseredVideo =
 		post.node.comet_sections.content.story.attachments[0].styles.attachment.media.playable_url;
 
-	const sponsVidUrl =
+	const sponseredVidUrl =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.action_links[0].link_display;
 
-	const sponsVidTitle =
+	const sponseredVidTitle =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.action_links[0].link_title;
 
-	const sponsVidDescription =
+	const sponseredVidDescription =
 		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
 			.action_links[0].link_description;
 </script>
@@ -69,24 +69,24 @@
 			</section>
 			<button
 				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				on:click={callToActionBtnClick}>{cTAText || otherCTAText}</button
+				on:click={callToActionBtnClick}>{callToActionText || otherCallToActionText}</button
 			>
 		</div>
 	{/if}
 
-	{#if sponsVideo}
-		<video controls src={sponsVideo} class="min-w-full">
+	{#if sponseredVideo}
+		<video controls src={sponseredVideo} class="min-w-full">
 			<track kind="captions" />
 		</video>
 		<div class="flex justify-between">
 			<section class="px-4 py-2">
-				<p class="font-light text-slate-700">{sponsVidUrl?.toUpperCase()}</p>
-				<p><strong>{sponsVidTitle}</strong></p>
-				<p class="font-light text-slate-700">{sponsVidDescription}</p>
+				<p class="font-light text-slate-700">{sponseredVidUrl?.toUpperCase()}</p>
+				<p><strong>{sponseredVidTitle}</strong></p>
+				<p class="font-light text-slate-700">{sponseredVidDescription}</p>
 			</section>
 			<button
 				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				on:click={callToActionBtnClick}>{cTAText || otherCTAText}</button
+				on:click={callToActionBtnClick}>{callToActionText || otherCallToActionText}</button
 			>
 		</div>
 	{/if}
