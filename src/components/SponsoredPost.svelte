@@ -13,7 +13,7 @@
 		<Avatar {post} />
 		<section>
 			<PosterName {post} />
-			<p class="p-0 m-0">Sponsored</p>
+			<p class="p-0 m-0 text-sm text-slate-400">Sponsored</p>
 		</section>
 	</header>
 	<section class="mx-0 px-0">
@@ -23,10 +23,3 @@
 	<Reactions feedback={post.node.comet_sections.feedback} />
 	<LikeCommentButtons />
 </main>
-
-<style>
-	p {
-		font-size: 0.8em !important;
-		color: grey;
-	}
-</style>

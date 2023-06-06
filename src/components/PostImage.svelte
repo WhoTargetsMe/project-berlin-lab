@@ -29,23 +29,15 @@
 </script>
 
 {#if postSrc}
-	<img src={postSrc} alt={postAlt} />
+	<img src={postSrc} alt={postAlt} class="min-w-full" />
 {/if}
 
 {#if postMultipleImage}
 	{#each postMultipleImage as image}
-		<img src={image} alt={image} />
+		<img src={image} alt={image} class="min-w-full" />
 	{/each}
 {/if}
 
 {#if imageRepost}
-	<img src={imageRepost} alt={imageRepost} />
+	<img src={imageRepost} alt={imageRepost} class="min-w-full" />
 {/if}
-
-<style>
-	img {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-</style>
