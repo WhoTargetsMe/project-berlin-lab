@@ -18,6 +18,7 @@
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+	console.log(data)
 </script>
 
 <main>
