@@ -26,23 +26,24 @@
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
 	if ($flags.should_sort_random.enabled) {
-		console.log('random');
+		data.posts.posts.sort(() => Math.random() - 0.5);
 	}
 
-	if ($flags.should_emphasize_organic_posts) {
+	if ($flags.should_emphasize_organic_posts.enabled) {
 		sortPosts('ORGANIC');
 	}
 
-	if ($flags.should_emphasize_engagement_posts) {
+	if ($flags.should_emphasize_engagement_posts.enabled) {
 		sortPosts('ENGAGEMENT');
 	}
 
-	if ($flags.should_emphasize_sponsored_posts) {
+	if ($flags.should_emphasize_sponsored_posts.enabled) {
 		sortPosts('SPONSORED');
 	}
 
-	if ($flags.should_show_sponsored) {
-		console.log('showing sponsored');
+	if ($flags.should_not_show_sponsored.enabled) {
+		const filtered = data.posts.posts.filter((post) => post.category !== 'SPONSORED');
+		data.posts.posts = filtered;
 	}
 </script>
 
