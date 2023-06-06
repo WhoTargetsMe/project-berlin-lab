@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { flags } from '$lib/flags-store';
 	export let feedback;
-	export let shouldDisplayReactionTypes = false;
 
 	let totalReactions =
 		feedback.story.feedback_context?.feedback_target_with_context.ufi_renderer.feedback
@@ -19,9 +18,10 @@
 				return `${reaction.i18n_reaction_count}:  ${reaction.node.localized_name}`;
 			}
 		);
+	console.log($flags);
 </script>
 
-{#if $flags.should_show_reactions}
+{#if $flags.should_show_reactions.enabled}
 	<section class="mx-6 my-4 flex justify-between">
 		<p>
 			Total reactions: {totalReactions}
@@ -32,10 +32,8 @@
 		<p>
 			Total shares: {totalShares}
 		</p>
-		{#if shouldDisplayReactionTypes}
-			{#each reactionTypes as reaction}
-				<li>{reaction}</li>
-			{/each}
-		{/if}
+		{#each reactionTypes as reaction}
+			<li>{reaction}</li>
+		{/each}
 	</section>
 {/if}
