@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let post:Post = {};
+	export let post: Post = {};
 	let posterName =
 		post.node.comet_sections.content.story.comet_sections.context_layout?.story.comet_sections
 			.actor_photo.story.actors[0].name;
