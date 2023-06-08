@@ -17,7 +17,7 @@
 </script>
 
 {#if imageRepost}
-	<img src={imageRepost} alt="organic re-posts" />
+	<img src={imageRepost} alt="organic re-posts" class="min-w-full" />
 {/if}
 
 {#if multipleImages}
