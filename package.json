@@ -42,6 +42,6 @@
 	"type": "module",
 	"lint-staged": {
 		"*.js": "eslint --cache --fix",
-		"*.{js,css,md}": "prettier --write"
+		"*.{js,svelte,ts,css,md}": "prettier --write"
 	}
 }
