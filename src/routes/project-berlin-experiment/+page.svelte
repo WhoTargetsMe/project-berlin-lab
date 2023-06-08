@@ -18,8 +18,8 @@
 	};
 
 	const getRepost = (post) => {
-		return post.node.comet_sections?.content?.story.attached_story
-	}
+		return post.node.comet_sections?.content?.story.attached_story;
+	};
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
@@ -39,7 +39,7 @@
 	{#if data.posts.posts}
 		{#each data.posts.posts as post}
 			{#if getRepost(post)}
-				<Repost {post}/>
+				<Repost {post} />
 			{:else if getPostType(post) === 'ENGAGEMENT'}
 				<EngagementPost {post} />
 			{:else if getPostType(post) === 'SPONSORED'}
