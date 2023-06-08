@@ -8,13 +8,14 @@
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 </script>
 
-<main class="card p-4 m-4 bg-white">
-	<p>Engagement post</p>
+<main class="card bg-white my-4">
+	<p class="p-3 text-slate-600">Suggested for you</p>
+	<hr class="divide-slate-200 mx-3" />
 	<header class="card-header flex">
 		<Avatar {post} />
 		<PosterName {post} />
 	</header>
-	<section class="p-4">
+	<section class="mx-0">
 		<PostMessage {post} />
 		<PostImage {post} />
 	</section>
