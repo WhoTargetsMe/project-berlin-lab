@@ -5,6 +5,7 @@
 	import PostMessage from './PostMessage.svelte';
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
+	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 </script>
 
 <main class="card p-4 m-4 bg-white">
@@ -18,4 +19,5 @@
 		<PostImage {post} />
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
+	<LikeCommentShareButtons />
 </main>

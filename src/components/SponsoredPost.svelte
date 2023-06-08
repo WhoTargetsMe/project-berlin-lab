@@ -1,25 +1,25 @@
 <script lang="ts">
 	import Avatar from './Avatar.svelte';
 	import CallToAction from './CallToAction.svelte';
+	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import PosterName from './PosterName.svelte';
-	// import PostImage from './PostImage.svelte';
 	import PostMessage from './PostMessage.svelte';
 	import Reactions from './Reactions.svelte';
 	export let post: Post = {};
-
-	let postMessage = post.node.comet_sections.content?.story.message?.text;
 </script>
 
-<main class="card p-4 m-4 bg-white">
-	<p>Sponsored post</p>
+<main class="card m-4 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
-		<PosterName {post} />
+		<section>
+			<PosterName {post} />
+			<p class="p-0 m-0 text-sm text-slate-400">Sponsored</p>
+		</section>
 	</header>
-	<section class="p-4">
+	<section class="mx-0 px-0">
 		<PostMessage {post} />
-		<!-- <PostImage {post} /> -->
-		<CallToAction />
+		<CallToAction {post} />
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
+	<LikeCommentShareButtons shouldShowShare={false} />
 </main>
