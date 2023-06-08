@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Avatar from './Avatar.svelte';
 	import CallToAction from './CallToAction.svelte';
-	import LikeCommentButtons from './LikeCommentButtons.svelte';
+	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import PosterName from './PosterName.svelte';
 	import PostMessage from './PostMessage.svelte';
 	import Reactions from './Reactions.svelte';
@@ -21,5 +21,5 @@
 		<CallToAction {post} />
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
-	<LikeCommentButtons />
+	<LikeCommentShareButtons shouldShowShare={false} />
 </main>
