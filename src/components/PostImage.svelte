@@ -25,8 +25,6 @@
 	let imageRepostAlt =
 		post.node.comet_sections.content.story.attached_story?.comet_sections.content.story
 			.attached_story.styles?.attachment.media.accessibility_caption;
-
-	// let postVideo =
 </script>
 
 {#if postSrc}
