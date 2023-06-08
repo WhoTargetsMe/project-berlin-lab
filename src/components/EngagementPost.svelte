@@ -9,8 +9,8 @@
 </script>
 
 <main class="card bg-white my-4">
-	<p class="p-3 text-slate-600">Suggested for you</p>
-	<hr class="divide-slate-200 mx-3" />
+	<p class="p-4 text-slate-600">Suggested for you</p>
+	<hr class="divide-slate-200 mx-4" />
 	<header class="card-header flex">
 		<Avatar {post} />
 		<PosterName {post} />
