@@ -21,9 +21,6 @@
 	const getRepost = (post) => {
 		return post.node.comet_sections?.content?.story.attached_story;
 	};
-	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
-
-	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
 	const sortPosts = (category) => {
 		return data.posts.posts.sort((a, b) =>
@@ -31,21 +28,33 @@
 		);
 	};
 
-	if ($flags.should_sort_random.enabled) {
-		data.posts.posts.sort(() => Math.random() - 0.5);
-	}
-	if ($flags.should_emphasize_organic_posts.enabled) {
-		sortPosts('ORGANIC');
-	}
-	if ($flags.should_emphasize_engagement_posts.enabled) {
-		sortPosts('ENGAGEMENT');
-	}
-	if ($flags.should_emphasize_sponsored_posts.enabled) {
-		sortPosts('SPONSORED');
-	}
-	if ($flags.should_not_show_sponsored.enabled) {
-		const filtered = data.posts.posts.filter((post) => post.category !== 'SPONSORED');
-		data.posts.posts = filtered;
+	const removePostType = (postType) => {
+		const filtered = data.posts.posts.filter((post) => post.category !== postType);
+		[...data.posts.posts] = filtered;
+	};
+
+	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
+
+	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+
+	console.log($flags);
+
+	switch (true) {
+		case $flags.should_sort_random.enable:
+			data.posts.posts.sort(() => Math.random() - 0.5);
+			break;
+		case $flags.should_emphasize_organic_posts.enabled:
+			sortPosts('ORGANIC');
+			break;
+		case $flags.should_emphasize_engagement_posts.enabled:
+			sortPosts('ENGAGEMENT');
+			break;
+		case $flags.should_emphasize_sponsored_posts.enabled:
+			sortPosts('SPONSORED');
+			break;
+		case $flags.should_not_show_sponsored.enabled:
+			removePostType('SPONSORED');
+			break;
 	}
 </script>
 
@@ -60,25 +69,23 @@
 		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
-	<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
-		<div class="mx-auto max-w-2xl">
-			{#if data.posts.posts}
-				{#each data.posts.posts as post}
-					{#if getPostType(post) === 'ENGAGEMENT'}
-						<EngagementPost {post} />
-					{:else if getPostType(post) === 'SPONSORED'}
-						<SponsoredPost {post} />
-					{:else if getPostType(post) === 'ORGANIC'}
-						<OrganicPost {post} />
-					{:else}
-						<Shorts {post} />
-					{/if}
-				{/each}
+	{#if data.posts.posts}
+		{#each data.posts.posts as post}
+			{#if getRepost(post)}
+				<Repost {post} />
+			{:else if getPostType(post) === 'ENGAGEMENT'}
+				<EngagementPost {post} />
+			{:else if getPostType(post) === 'SPONSORED'}
+				<SponsoredPost {post} />
+			{:else if getPostType(post) === 'ORGANIC'}
+				<OrganicPost {post} />
 			{:else}
-				<div class="card p-4 m-4">
-					<p>Please collect some facebook posts</p>
-				</div>
+				<Shorts {post} />
 			{/if}
+		{/each}
+	{:else}
+		<div class="card p-4 m-4">
+			<p>Please collect some facebook posts</p>
 		</div>
-	</div>
+	{/if}
 </main>
