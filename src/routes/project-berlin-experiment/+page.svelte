@@ -37,8 +37,6 @@
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
-	console.log($flags);
-
 	switch (true) {
 		case $flags.should_sort_random.enable:
 			data.posts.posts.sort(() => Math.random() - 0.5);
