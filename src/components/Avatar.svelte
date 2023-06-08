@@ -1,13 +1,11 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
-	export let post = {};
+	export let post: Post = {};
 
-	let avatarSrc =
-		post.node.comet_sections.content.story.comet_sections.context_layout?.story.comet_sections
-			.actor_photo?.story.actors[0].profile_picture.uri;
-	let avatarAlt =
-		post.node.comet_sections.content.story.comet_sections.context_layout?.story.comet_sections
-			.actor_photo.story.actors[0].profile_uri;
+	let src =
+		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
+			.actor_photo.story.actors[0].profile_picture.uri;
+	let alt = 'Profile picture';
 </script>
 
-<Avatar src={avatarSrc} alt={avatarAlt} class="border mr-3" />
+<Avatar {src} {alt} class="border mr-3" />

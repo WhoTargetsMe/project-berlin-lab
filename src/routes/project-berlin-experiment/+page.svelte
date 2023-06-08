@@ -2,6 +2,7 @@
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
+	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 
@@ -14,6 +15,10 @@
 		} else {
 			return post.category;
 		}
+	};
+
+	const getRepost = (post) => {
+		return post.node.comet_sections?.content?.story.attached_story;
 	};
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 

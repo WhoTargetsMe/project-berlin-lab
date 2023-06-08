@@ -6,8 +6,9 @@
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
+	import PostVideo from './PostVideo.svelte';
 
-	export let post = {};
+	export let post: Post = {};
 
 	// example display switch
 	export let shouldDisplayReactions = true;
@@ -15,7 +16,7 @@
 	export let shouldDisplayPostImages = true;
 </script>
 
-<main class="card my-4 bg-white shadow-sm">
+<main class="card m-4 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>
@@ -29,6 +30,7 @@
 		<PostMessage {post} />
 		{#if shouldDisplayPostImages}
 			<PostImage {post} />
+			<PostVideo {post} />
 		{/if}
 	</section>
 
