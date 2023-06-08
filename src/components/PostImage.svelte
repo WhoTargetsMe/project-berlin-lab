@@ -23,7 +23,7 @@
 			?.photo_image?.uri;
 
 	let imageRepostAlt =
-		post.node.comet_sections.content.story.attached_story?.comet_sections.content.story
+		post.node.comet_sections.content?.story.attached_story?.comet_sections.content?.story
 			.attached_story.styles?.attachment.media.accessibility_caption;
 </script>
 

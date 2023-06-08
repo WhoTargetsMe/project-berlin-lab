@@ -6,8 +6,6 @@
 	import PostMessage from './PostMessage.svelte';
 	import Reactions from './Reactions.svelte';
 	export let post: Post = {};
-
-	let postMessage = post.node.comet_sections.content?.story.message?.text;
 </script>
 
 <main class="card my-4 bg-white shadow-sm">

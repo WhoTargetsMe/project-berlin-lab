@@ -21,7 +21,7 @@
 		);
 </script>
 
-{#if $flags.should_show_reactions}
+{#if $flags.should_show_reactions.enabled}
 	<section class="mx-6 my-4 flex justify-between">
 		<p>
 			Total reactions: {totalReactions}
