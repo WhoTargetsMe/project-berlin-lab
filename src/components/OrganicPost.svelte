@@ -5,8 +5,9 @@
 	import PostMessage from './PostMessage.svelte';
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
+	import PostVideo from './PostVideo.svelte';
 
-	export let post = {};
+	export let post: Post = {};
 
 	// example display switch
 	export let shouldDisplayReactions = true;
@@ -14,7 +15,7 @@
 	export let shouldDisplayPostImages = true;
 </script>
 
-<main class="card p-4 m-4 bg-white">
+<main class="card m-4 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>
@@ -23,18 +24,16 @@
 				<TimePosted {post} />
 			{/if}
 		</section>
-		<p>...</p>
 	</header>
-	<section class="p-4">
+	<section>
 		<PostMessage {post} />
 		{#if shouldDisplayPostImages}
 			<PostImage {post} />
+			<PostVideo {post} />
 		{/if}
 	</section>
 
 	{#if shouldDisplayReactions}
 		<Reactions feedback={post.node.comet_sections.feedback} />
 	{/if}
-
-	<!-- <footer class="card-footer">Like Comment Share</footer> -->
 </main>
