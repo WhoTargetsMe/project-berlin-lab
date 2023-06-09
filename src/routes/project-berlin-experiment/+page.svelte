@@ -6,6 +6,7 @@
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
+	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -22,36 +23,40 @@
 		return post.node?.comet_sections?.content?.story.attached_story;
 	};
 
-	const sortPosts = (category) => {
-		return data.posts.posts.sort((a, b) =>
-			a.category === category && b.category !== category ? -1 : 1
-		);
-	};
-
-	const removePostType = (postType) => {
-		const filtered = data.posts.posts.filter((post) => post.category !== postType);
-		[...data.posts.posts] = filtered;
-	};
+	//removing non-category type posts
+	const noCategoryData = data.posts.posts.filter((data) => data.category);
+	[...(data.posts.posts = noCategoryData)];
 
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
+	//Feed display sorting
 	switch (true) {
-		case $flags.should_sort_random.enable:
-			data.posts.posts.sort(() => Math.random() - 0.5);
+		case $flags.should_sort_random.enabled:
+			_.shuffle(data.posts.posts);
 			break;
 		case $flags.should_emphasize_organic_posts.enabled:
-			sortPosts('ORGANIC');
+			_.sortBy(data.posts.posts, (data) => {
+				return data.category === 'ORGANIC';
+			});
 			break;
 		case $flags.should_emphasize_engagement_posts.enabled:
-			sortPosts('ENGAGEMENT');
+			_.sortBy(data.posts.posts, ['category']);
 			break;
 		case $flags.should_emphasize_sponsored_posts.enabled:
-			sortPosts('SPONSORED');
+			_.sortBy(data.posts.posts, (data) => {
+				return data.category === 'SPONSORED';
+			});
 			break;
+	}
+
+	// Hide posts by type
+	switch (true) {
 		case $flags.should_not_show_sponsored.enabled:
-			removePostType('SPONSORED');
+			_.remove(data.posts.posts, (data) => {
+				return data.category === 'SPONSORED';
+			});
 			break;
 	}
 </script>
