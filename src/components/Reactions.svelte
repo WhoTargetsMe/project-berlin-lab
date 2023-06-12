@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { flags } from '$lib/flags-store';
 	export let feedback;
-	export let shouldDisplayReactionTypes = false;
 
 	let totalReactions =
 		feedback.story.feedback_context?.feedback_target_with_context.ufi_renderer.feedback
