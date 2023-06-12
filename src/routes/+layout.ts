@@ -23,11 +23,11 @@ export const load = (async (event) => {
 		posthog.identify(prolificParams.session_id, {
 			...prolificParams
 		});
+
 		return {
 			prolificParams
 		};
 	}
-
 
 	// return event.data;
 }) satisfies LayoutLoad;

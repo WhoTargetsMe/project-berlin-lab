@@ -20,21 +20,21 @@
 		);
 </script>
 
-{#if $flags.should_show_reactions.enabled}
-	<section class="mx-6 my-4 flex justify-between">
-		<p>
-			Total reactions: {totalReactions}
-		</p>
-		<p>
-			Total Comments: {totalComments}
-		</p>
-		<p>
-			Total shares: {totalShares}
-		</p>
-		{#if shouldDisplayReactionTypes}
+{#if Object.keys($flags).length >= 1}
+	{#if $flags.should_show_reactions.enabled}
+		<section class="mx-6 my-4 flex justify-between">
+			<p>
+				Total reactions: {totalReactions}
+			</p>
+			<p>
+				Total Comments: {totalComments}
+			</p>
+			<p>
+				Total shares: {totalShares}
+			</p>
 			{#each reactionTypes as reaction}
 				<li>{reaction}</li>
 			{/each}
-		{/if}
-	</section>
+		</section>
+	{/if}
 {/if}

@@ -6,6 +6,7 @@
 	import PostMessage from './PostMessage.svelte';
 	import Reactions from './Reactions.svelte';
 	export let post: Post = {};
+	import { flags } from '$lib/flags-store';
 </script>
 
 <main class="card m-4 bg-white shadow-sm">
@@ -13,7 +14,11 @@
 		<Avatar {post} />
 		<section>
 			<PosterName {post} />
-			<p class="p-0 m-0 text-sm text-slate-400">Sponsored</p>
+			{#if Object.keys($flags).length >= 1}
+				{#if $flags.should_show_labels.enabled}
+					<p class="p-0 m-0 text-sm text-slate-400">Sponsored</p>
+				{/if}
+			{/if}
 		</section>
 	</header>
 	<section class="mx-0 px-0">
