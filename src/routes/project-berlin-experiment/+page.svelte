@@ -18,28 +18,30 @@
 	data.posts.posts = noCategoryData;
 
 	//Feed display sorting feature flags
-	switch (true) {
-		case $flags.should_sort_random.enabled:
-			data.posts.posts = _.shuffle(data.posts.posts);
-			break;
-		case $flags.should_emphasize_organic_posts.enabled:
-			data.posts.posts = _.sortBy(data.posts.posts, (data) => {
-				if (data.category === 'ORGANIC') {
-					return 1;
-				}
-			});
-			break;
-		case $flags.should_emphasize_engagement_posts.enabled:
-			data.posts.posts = _.sortBy(data.posts.posts, ['category']);
-			break;
-		case $flags.should_emphasize_sponsored_posts.enabled:
-			console.log('emphasize sponsored');
-			data.posts.posts = _.sortBy(data.posts.posts, (data) => {
-				if (data.category === 'SPONSORED') {
-					return 1;
-				}
-			});
-			break;
+	if (Object.keys($flags).length >= 1) {
+		switch (true) {
+			case $flags.should_sort_random.enabled:
+				data.posts.posts = _.shuffle(data.posts.posts);
+				break;
+			case $flags.should_emphasize_organic_posts.enabled:
+				data.posts.posts = _.sortBy(data.posts.posts, (data) => {
+					if (data.category === 'ORGANIC') {
+						return 1;
+					}
+				});
+				break;
+			case $flags.should_emphasize_engagement_posts.enabled:
+				data.posts.posts = _.sortBy(data.posts.posts, ['category']);
+				break;
+			case $flags.should_emphasize_sponsored_posts.enabled:
+				console.log('emphasize sponsored');
+				data.posts.posts = _.sortBy(data.posts.posts, (data) => {
+					if (data.category === 'SPONSORED') {
+						return 1;
+					}
+				});
+				break;
+		}
 	}
 
 	const getPostType = (post) => {

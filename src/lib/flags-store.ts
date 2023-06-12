@@ -1,5 +1,6 @@
 import { writable } from 'svelte/store';
 import posthog from 'posthog-js';
+export const ssr = false;
 export const flags = writable({});
 
 posthog.onFeatureFlags(() => {
@@ -14,5 +15,6 @@ posthog.onFeatureFlags(() => {
 				}
 			};
 		}, {});
-	flags.set(flagsWithPayload);
+
+	return flags.set(flagsWithPayload);
 });
