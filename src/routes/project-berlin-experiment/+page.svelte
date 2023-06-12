@@ -7,9 +7,6 @@
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
-	import { sortBy } from 'lodash';
-	import { posthog } from 'posthog-js';
-	import Reactions from '../../components/Reactions.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
