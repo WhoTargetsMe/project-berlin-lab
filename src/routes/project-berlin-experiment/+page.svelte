@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
@@ -12,6 +12,7 @@
 
 	export let data;
 	let posts = data.posts.posts;
+	let isStudyComplete: boolean;
 
 	const getPostType = (post) => {
 		if (post.edges) {
@@ -19,10 +20,6 @@
 		} else {
 			return post.category;
 		}
-	};
-
-	const getRepost = (post) => {
-		return post.node?.comet_sections?.content?.story.attached_story;
 	};
 
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
@@ -35,7 +32,6 @@
 	if (hasFlags) {
 		switch (true) {
 			case $flags.should_sort_random.enabled:
-				posts = _.shuffle(posts);
 				break;
 			case $flags.should_emphasize_organic_posts.enabled:
 				posts = _.sortBy(posts, (data) => {
@@ -56,17 +52,21 @@
 				break;
 		}
 	}
+	setTimeout(() => {
+		isStudyComplete = true;
+	}, 5 * 60 * 1000);
 </script>
 
-<main>
 	<div class="p-4 m-4">
 		<h1 class="h1">
 			<span
-				class="bg-gradient-to-br from-pink-500 to-violet-500 bg-clip-text text-transparent box-decoration-clone"
 				>Experiment page</span
 			>
 		</h1>
-		<a href={offBoardLink}> Back to Typeform </a>
+
+		{#if isStudyComplete}
+			<a href={offBoardLink}> Back to Typeform </a>
+		{/if}
 	</div>
 
 	{#if hasFlags}
