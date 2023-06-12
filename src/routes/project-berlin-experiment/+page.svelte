@@ -7,9 +7,41 @@
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
+	import { sortBy } from 'lodash';
+	import { posthog } from 'posthog-js';
+	import Reactions from '../../components/Reactions.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
+
+	//removing non-category type posts
+	const noCategoryData = data.posts.posts.filter((data) => data.category);
+	data.posts.posts = noCategoryData;
+
+	//Feed display sorting feature flags
+	switch (true) {
+		case $flags.should_sort_random.enabled:
+			data.posts.posts = _.shuffle(data.posts.posts);
+			break;
+		case $flags.should_emphasize_organic_posts.enabled:
+			data.posts.posts = _.sortBy(data.posts.posts, (data) => {
+				if (data.category === 'ORGANIC') {
+					return 1;
+				}
+			});
+			break;
+		case $flags.should_emphasize_engagement_posts.enabled:
+			data.posts.posts = _.sortBy(data.posts.posts, ['category']);
+			break;
+		case $flags.should_emphasize_sponsored_posts.enabled:
+			console.log('emphasize sponsored');
+			data.posts.posts = _.sortBy(data.posts.posts, (data) => {
+				if (data.category === 'SPONSORED') {
+					return 1;
+				}
+			});
+			break;
+	}
 
 	const getPostType = (post) => {
 		if (post.edges) {
@@ -23,42 +55,9 @@
 		return post.node?.comet_sections?.content?.story.attached_story;
 	};
 
-	//removing non-category type posts
-	const noCategoryData = data.posts.posts.filter((data) => data.category);
-	[...(data.posts.posts = noCategoryData)];
-
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-
-	//Feed display sorting
-	switch (true) {
-		case $flags.should_sort_random.enabled:
-			_.shuffle(data.posts.posts);
-			break;
-		case $flags.should_emphasize_organic_posts.enabled:
-			_.sortBy(data.posts.posts, (data) => {
-				return data.category === 'ORGANIC';
-			});
-			break;
-		case $flags.should_emphasize_engagement_posts.enabled:
-			_.sortBy(data.posts.posts, ['category']);
-			break;
-		case $flags.should_emphasize_sponsored_posts.enabled:
-			_.sortBy(data.posts.posts, (data) => {
-				return data.category === 'SPONSORED';
-			});
-			break;
-	}
-
-	// Hide posts by type
-	switch (true) {
-		case $flags.should_not_show_sponsored.enabled:
-			_.remove(data.posts.posts, (data) => {
-				return data.category === 'SPONSORED';
-			});
-			break;
-	}
 </script>
 
 <main>
