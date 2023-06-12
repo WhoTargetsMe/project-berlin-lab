@@ -1,14 +1,29 @@
 <script>
-	import { PUBLIC_PROLIFIC_LINK, PUBLIC_FACEBOOK_LINK} from '$env/static/public';
+	import {
+		PUBLIC_PROLIFIC_LINK,
+		PUBLIC_FACEBOOK_LINK,
+		PUBLIC_EXTENSION_ID
+	} from '$env/static/public';
 	import CardWithButton from '../../components/CardWithButton.svelte';
 	import LL from '$lib/i18n/i18n-svelte';
 	import { goto } from '$app/navigation';
+	import { flags } from '$lib/flags-store';
+	import { onDestroy } from 'svelte';
 
 	export let data;
+
+	const unsubscribe = flags.subscribe((data) => {
+		chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, {
+			type: 'send_flags',
+			data
+		});
+	});
+
+	onDestroy(() => unsubscribe());
 </script>
 
 {#if data.hasProlificParams}
-{goto(PUBLIC_FACEBOOK_LINK)}
+	{goto(PUBLIC_FACEBOOK_LINK)}
 	<CardWithButton
 		title={$LL.facebook_redirect_fallback_info()}
 		url="https://www.facebook.com/"
@@ -24,5 +39,5 @@
 				{$LL.prolific_button()}
 			</a>
 		</section>
-	</main>	
+	</main>
 {/if}
