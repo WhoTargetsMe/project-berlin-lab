@@ -11,8 +11,6 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 
-	console.log($flags);
-
 	//removing non-category type posts
 	const noCategoryData = data.posts.posts.filter((data) => data.category);
 	data.posts.posts = noCategoryData;
