@@ -16,5 +16,5 @@ posthog.onFeatureFlags(() => {
 			};
 		}, {});
 
-	return flags.set(flagsWithPayload);
+	flags.set(flagsWithPayload);
 });
