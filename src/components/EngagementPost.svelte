@@ -8,7 +8,7 @@
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 </script>
 
-<main class="card bg-white my-4">
+<main class="card bg-white m-4">
 	<p class="p-4 text-slate-600">Suggested for you</p>
 	<hr class="divide-slate-200 mx-4" />
 	<header class="card-header flex">
