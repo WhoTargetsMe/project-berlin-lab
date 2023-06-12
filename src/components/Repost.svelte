@@ -8,14 +8,10 @@
 	import RepostImage from './RepostImage.svelte';
 	import RepostName from './RepostName.svelte';
 
-	export let shouldDisplayReactions = true;
-	export let shouldDisplayTimePosted = false;
-	export let shouldDisplayPostImages = true;
-
 	export let post: Post = {};
 
 	let videoSrc =
-		post.node.comet_sections.content.story.attached_story.attachments[0].styles.attachment.media
+		post.node.comet_sections.content.story.attached_story.attachments[0]?.styles.attachment.media
 			?.playable_url;
 </script>
 
@@ -24,15 +20,11 @@
 		<Avatar {post} />
 		<section>
 			<PosterName {post} />
-			{#if shouldDisplayTimePosted}
-				<TimePosted {post} />
-			{/if}
+			<TimePosted {post} />
 		</section>
 	</header>
 	<section class="border rounded-md mt-4">
-		{#if shouldDisplayPostImages}
-			<RepostImage {post} />
-		{/if}
+		<RepostImage {post} />
 		{#if videoSrc}
 			<video class="w-full aspect-video" controls src={videoSrc}>
 				<track kind="captions" />
@@ -45,8 +37,5 @@
 
 		<RepostMessage {post} />
 	</section>
-
-	{#if shouldDisplayReactions}
-		<Reactions feedback={post.node.comet_sections.feedback} />
-	{/if}
+	<Reactions feedback={post.node.comet_sections.feedback} />
 </main>
