@@ -14,7 +14,7 @@
 		<Avatar {post} />
 		<section>
 			<PosterName {post} />
-			{#if Object.keys($flags).length >= 1}
+			{#if !!Object.keys($flags).length}
 				{#if $flags.should_show_labels.enabled}
 					<p class="p-0 m-0 text-sm text-slate-400">Sponsored</p>
 				{/if}

@@ -20,7 +20,7 @@
 		);
 </script>
 
-{#if Object.keys($flags).length >= 1}
+{#if !!Object.keys($flags).length}
 	{#if $flags.should_show_reactions.enabled}
 		<section class="mx-6 my-4 flex justify-between">
 			<p>
