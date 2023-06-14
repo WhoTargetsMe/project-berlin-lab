@@ -7,7 +7,7 @@
 		post.node.comet_sections.context_layout.story.comet_sections.metadata[1].story.creation_time;
 </script>
 
-{#if !!Object.keys($flags)}
+{#if !!Object.keys($flags).length}
 	{#if $flags.should_display_time_posted.enabled}
 		<p>{timePosted}</p>
 	{/if}
