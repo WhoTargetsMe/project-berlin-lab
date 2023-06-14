@@ -16,7 +16,7 @@
 	data.posts.posts = noCategoryData;
 
 	//Feed display sorting feature flags
-	if (Object.keys($flags).length >= 1) {
+	if (!!Object.keys($flags).length) {
 		switch (true) {
 			case $flags.should_sort_random.enabled:
 				data.posts.posts = _.shuffle(data.posts.posts);
@@ -32,7 +32,6 @@
 				data.posts.posts = _.sortBy(data.posts.posts, ['category']);
 				break;
 			case $flags.should_emphasize_sponsored_posts.enabled:
-				console.log('emphasize sponsored');
 				data.posts.posts = _.sortBy(data.posts.posts, (data) => {
 					if (data.category === 'SPONSORED') {
 						return 1;
