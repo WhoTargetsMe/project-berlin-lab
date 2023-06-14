@@ -23,7 +23,6 @@
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-	console.log(data.posts.posts.filter((post) => post.category === 'ENGAGEMENT'));
 </script>
 
 <main>
@@ -44,11 +43,11 @@
 					{#if getPostType(post) === 'ENGAGEMENT'}
 						<EngagementPost {post} />
 					{:else if getPostType(post) === 'SPONSORED'}
-						<!-- <SponsoredPost {post} /> -->
+						<SponsoredPost {post} />
 					{:else if getPostType(post) === 'ORGANIC'}
-						<!-- <OrganicPost {post} /> -->
+						<OrganicPost {post} />
 					{:else}
-						<!-- <Shorts {post} /> -->
+						<Shorts {post} />
 					{/if}
 				{/each}
 			{:else}
