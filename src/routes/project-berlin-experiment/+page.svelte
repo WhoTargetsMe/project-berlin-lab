@@ -9,37 +9,9 @@
 	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
+
 	export let data;
-
-	//removing non-category type posts
-	const noCategoryData = data.posts.posts.filter((data) => data.category);
-	data.posts.posts = noCategoryData;
-
-	//Feed display sorting feature flags
-	if (!!Object.keys($flags).length) {
-		switch (true) {
-			case $flags.should_sort_random.enabled:
-				data.posts.posts = _.shuffle(data.posts.posts);
-				break;
-			case $flags.should_emphasize_organic_posts.enabled:
-				data.posts.posts = _.sortBy(data.posts.posts, (data) => {
-					if (data.category === 'ORGANIC') {
-						return 1;
-					}
-				});
-				break;
-			case $flags.should_emphasize_engagement_posts.enabled:
-				data.posts.posts = _.sortBy(data.posts.posts, ['category']);
-				break;
-			case $flags.should_emphasize_sponsored_posts.enabled:
-				data.posts.posts = _.sortBy(data.posts.posts, (data) => {
-					if (data.category === 'SPONSORED') {
-						return 1;
-					}
-				});
-				break;
-		}
-	}
+	let posts = data.posts.posts;
 
 	const getPostType = (post) => {
 		if (post.edges) {
@@ -56,6 +28,32 @@
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+
+	//Feed display sorting feature flags
+	if (!!Object.keys($flags).length) {
+		switch (true) {
+			case $flags.should_sort_random.enabled:
+				posts = _.shuffle(posts);
+				break;
+			case $flags.should_emphasize_organic_posts.enabled:
+				posts = _.sortBy(posts, (data) => {
+					if (data.category === 'ORGANIC') {
+						return 1;
+					}
+				});
+				break;
+			case $flags.should_emphasize_engagement_posts.enabled:
+				posts = _.sortBy(posts, ['category']);
+				break;
+			case $flags.should_emphasize_sponsored_posts.enabled:
+				posts = _.sortBy(posts, (data) => {
+					if (data.category === 'SPONSORED') {
+						return 1;
+					}
+				});
+				break;
+		}
+	}
 </script>
 
 <main>
@@ -69,10 +67,10 @@
 		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
-	<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
-		<div class="mx-auto max-w-2xl">
-			{#if data.posts.posts}
-				{#each data.posts.posts as post}
+	{#if posts}
+		<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl">
+				{#each posts as post}
 					{#if getRepost(post)}
 						<Repost {post} />
 					{:else if getPostType(post) === 'ENGAGEMENT'}
@@ -85,11 +83,11 @@
 						<Shorts {post} />
 					{/if}
 				{/each}
-			{:else}
-				<div class="card p-4 m-4">
-					<p>Please collect some facebook posts</p>
-				</div>
-			{/if}
+			</div>
 		</div>
-	</div>
+	{:else}
+		<div class="card p-4 m-4">
+			<p>Please collect some facebook posts</p>
+		</div>
+	{/if}
 </main>
