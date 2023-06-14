@@ -6,6 +6,9 @@
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
+
+	const video =
+		post.node.comet_sections.content.story.attachments[0].styles.attachment.media.playable_url;
 </script>
 
 <main class="card bg-white m-4">
@@ -17,7 +20,14 @@
 	</header>
 	<section class="mx-0">
 		<PostMessage {post} />
-		<PostImage {post} />
+		{#if PostImage}
+			<PostImage {post} />
+		{/if}
+		{#if video}
+			<video class="w-full" controls src={video}>
+				<track kind="captions" />
+			</video>
+		{/if}
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
 	<LikeCommentShareButtons />
