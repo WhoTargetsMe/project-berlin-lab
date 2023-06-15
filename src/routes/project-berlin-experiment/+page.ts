@@ -1,6 +1,5 @@
 export const ssr = false;
 import { PUBLIC_EXTENSION_ID } from '$env/static/public';
-import { writable } from 'svelte/store';
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
