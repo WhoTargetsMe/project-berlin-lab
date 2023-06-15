@@ -5,7 +5,7 @@
 	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
-	import { flags } from '$lib/flags-store';
+	import { flags, getFlags } from '$lib/flags-store';
 	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
@@ -29,8 +29,12 @@
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
+	$: console.log($flags);
+
+	$: hasFlags = Object.keys($flags).length > 0;
+
 	//Feed display sorting feature flags
-	if (!!Object.keys($flags).length) {
+	if (hasFlags) {
 		switch (true) {
 			case $flags.should_sort_random.enabled:
 				posts = _.shuffle(posts);
@@ -67,27 +71,35 @@
 		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
-	{#if posts}
-		<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl">
-				{#each posts as post}
-					{#if getRepost(post)}
-						<Repost {post} />
-					{:else if getPostType(post) === 'ENGAGEMENT'}
-						<EngagementPost {post} />
-					{:else if getPostType(post) === 'SPONSORED'}
-						<SponsoredPost {post} />
-					{:else if getPostType(post) === 'ORGANIC'}
-						<OrganicPost {post} />
-					{:else}
-						<Shorts {post} />
-					{/if}
-				{/each}
+	{#if hasFlags}
+		{#if posts}
+			<div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl">
+					{#each posts as post}
+						{#if getRepost(post)}
+							<Repost {post} />
+						{:else if getPostType(post) === 'ENGAGEMENT'}
+							<EngagementPost {post} />
+						{:else if getPostType(post) === 'SPONSORED'}
+							<SponsoredPost {post} />
+						{:else if getPostType(post) === 'ORGANIC'}
+							<OrganicPost {post} />
+						{:else}
+							<Shorts {post} />
+						{/if}
+					{/each}
+				</div>
 			</div>
-		</div>
+		{:else}
+			<div class="card p-4 m-4">
+				<p>Please collect some facebook posts</p>
+			</div>
+		{/if}
 	{:else}
-		<div class="card p-4 m-4">
-			<p>Please collect some facebook posts</p>
-		</div>
+		<p>Loading</p>
+		<!-- {#if $flags}
+			{console.log($flags)}
+			do something
+		{/if} -->
 	{/if}
 </main>

@@ -18,9 +18,11 @@
 				return `${reaction.i18n_reaction_count}:  ${reaction.node.localized_name}`;
 			}
 		);
+
+	$: hasFlags = Object.keys($flags).length > 0;
 </script>
 
-{#if !!Object.keys($flags).length}
+{#if hasFlags}
 	{#if $flags.should_show_reactions.enabled}
 		<section class="mx-6 my-4 flex justify-between">
 			<p>
