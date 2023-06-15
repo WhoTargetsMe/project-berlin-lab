@@ -6,17 +6,28 @@
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
+
+	const video =
+		post.node.comet_sections.content.story.attachments[0].styles.attachment.media.playable_url;
 </script>
 
-<main class="card p-4 m-4 bg-white">
-	<p>Engagement post</p>
+<main class="card bg-white m-4">
+	<p class="p-4 text-slate-600">Suggested for you</p>
+	<hr class="divide-slate-200 mx-4" />
 	<header class="card-header flex">
 		<Avatar {post} />
 		<PosterName {post} />
 	</header>
-	<section class="p-4">
+	<section class="mx-0">
 		<PostMessage {post} />
-		<PostImage {post} />
+		{#if PostImage}
+			<PostImage {post} />
+		{/if}
+		{#if video}
+			<video class="w-full" controls src={video}>
+				<track kind="captions" />
+			</video>
+		{/if}
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
 	<LikeCommentShareButtons />

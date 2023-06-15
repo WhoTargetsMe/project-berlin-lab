@@ -7,19 +7,19 @@
 
 <hr class="divide-slate-200 mx-6" />
 <main class="flex justify-around p-2 m-y">
-	<section class="flex">
+	<button class="flex">
 		<Like />
 		<p>Like</p>
-	</section>
-	<section class="flex">
+	</button>
+	<button class="flex">
 		<Comment />
 		<p>Comment</p>
-	</section>
+	</button>
 	{#if shouldShowShare}
-		<section class="flex">
+		<button class="flex">
 			<Share />
 			<p>Share</p>
-		</section>
+		</button>
 	{/if}
 </main>
 

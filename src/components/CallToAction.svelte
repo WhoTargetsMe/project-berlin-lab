@@ -60,7 +60,11 @@
 
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
 	{#if formOnFacebookImage || otherSponsoredImage}
-		<img class="p-0 m-0 min-w-full" src={formOnFacebookImage || otherSponsoredImage} alt="sponsored" />
+		<img
+			class="p-0 m-0 min-w-full"
+			src={formOnFacebookImage || otherSponsoredImage}
+			alt="sponsored"
+		/>
 		<div class="flex justify-between">
 			<section class="px-4 py-2">
 				<p class="font-light text-slate-700">{sponsorURL?.toUpperCase()}</p>
@@ -100,8 +104,8 @@
 						class="carousel-item border rounded-lg mx-4 data-carousel-item"
 					>
 						<img
-							class='min-w-full'
-							src={sub.multi_share_media_card_renderer.attachment.media.image.uri}
+							class="min-w-full"
+							src={sub.multi_share_media_card_renderer.attachment.media.image?.uri}
 							alt="sponsored-multi"
 						/>
 						<div>
