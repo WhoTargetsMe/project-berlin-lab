@@ -5,7 +5,7 @@
 	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
-	import { flags, getFlags } from '$lib/flags-store';
+	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
@@ -28,8 +28,6 @@
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-
-	$: console.log($flags);
 
 	$: hasFlags = Object.keys($flags).length > 0;
 
@@ -96,10 +94,10 @@
 			</div>
 		{/if}
 	{:else}
-		<p>Loading</p>
-		<!-- {#if $flags}
-			{console.log($flags)}
-			do something
-		{/if} -->
+		<div class="absolute right-1/2 bottom-1/2 transform translate-x-1/2 translate-y-1/2">
+			<div
+				class="border-t-transparent border-solid animate-spin rounded-full border-blue-400 border-8 h-64 w-64"
+			/>
+		</div>
 	{/if}
 </main>
