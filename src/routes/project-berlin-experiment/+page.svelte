@@ -2,7 +2,7 @@
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
-	import Repost from '../../components/Repost.svelte';
+	//import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
