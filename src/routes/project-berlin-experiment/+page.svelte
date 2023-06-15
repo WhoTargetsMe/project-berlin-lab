@@ -2,6 +2,7 @@
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
+	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIMEOUT } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
@@ -11,9 +12,13 @@
 
 	export let data;
 	let posts = data.posts.posts;
+
 	let isStudyComplete: boolean;
+
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
+
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+
 	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIMEOUT) * 1000 * 60;
 
 	const getPostType = (post) => {
@@ -23,6 +28,39 @@
 			return post.category;
 		}
 	};
+
+	const getRepost = (post) => {
+		return post.node?.comet_sections?.content?.story.attached_story;
+	};
+
+	$: hasFlags = Object.keys($flags).length > 0;
+
+	//Feed display sorting feature flags
+	if (hasFlags) {
+		switch (true) {
+			case $flags.should_sort_random.enabled:
+				posts = _.shuffle(posts);
+				break;
+			case $flags.should_emphasize_organic_posts.enabled:
+				posts = _.sortBy(posts, (data) => {
+					if (data.category === 'ORGANIC') {
+						return 1;
+					}
+				});
+				break;
+			case $flags.should_emphasize_engagement_posts.enabled:
+				posts = _.sortBy(posts, ['category']);
+				break;
+			case $flags.should_emphasize_sponsored_posts.enabled:
+				posts = _.sortBy(posts, (data) => {
+					if (data.category === 'SPONSORED') {
+						return 1;
+					}
+				});
+				break;
+		}
+	}
+
 	setTimeout(() => {
 		isStudyComplete = true;
 	}, experimentTimeout);
@@ -45,9 +83,7 @@
 
 	<div class="p-4 m-4">
 		<h1 class="h1">
-			<span
-				>Experiment page</span
-			>
+			<span>Experiment page</span>
 		</h1>
 	</div>
 
