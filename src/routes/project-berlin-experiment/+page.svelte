@@ -3,7 +3,7 @@
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
-	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
+	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIMEOUT } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
 
@@ -14,7 +14,7 @@
 	let isStudyComplete: boolean;
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
+	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIMEOUT) * 1000 * 60;
 
 	const getPostType = (post) => {
 		if (post.edges) {
