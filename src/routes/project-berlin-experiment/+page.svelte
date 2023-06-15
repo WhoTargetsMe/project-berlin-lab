@@ -14,7 +14,7 @@
 	let isStudyComplete: boolean;
 	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-	const TIME = +PUBLIC_EXPERIMENT_TIME * 1000 * 60;
+	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
 
 	const getPostType = (post) => {
 		if (post.edges) {
@@ -25,7 +25,7 @@
 	};
 	setTimeout(() => {
 		isStudyComplete = true;
-	}, TIME);
+	}, experimentTimeout);
 </script>
 
 <main class="border-solid border-2 border-gray">
