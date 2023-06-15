@@ -9,11 +9,6 @@
 	import PostVideo from './PostVideo.svelte';
 
 	export let post: Post = {};
-
-	// example display switch
-	export let shouldDisplayReactions = true;
-	export let shouldDisplayTimePosted = false;
-	export let shouldDisplayPostImages = true;
 </script>
 
 <main class="card m-4 bg-white shadow-sm">
@@ -21,21 +16,14 @@
 		<Avatar {post} />
 		<section>
 			<PosterName {post} />
-			{#if shouldDisplayTimePosted}
-				<TimePosted {post} />
-			{/if}
+			<TimePosted {post} />
 		</section>
 	</header>
 	<section>
 		<PostMessage {post} />
-		{#if shouldDisplayPostImages}
-			<PostImage {post} />
-			<PostVideo {post} />
-		{/if}
+		<PostImage {post} />
+		<PostVideo {post} />
 	</section>
-
-	{#if shouldDisplayReactions}
-		<Reactions feedback={post.node.comet_sections.feedback} />
-	{/if}
+	<Reactions feedback={post.node.comet_sections.feedback} />
 	<LikeCommentShareButtons />
 </main>
