@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Avatar } from '@skeletonlabs/skeleton';
 	export let post: Post = {};
 
 	let src =
@@ -8,4 +7,4 @@
 	let alt = 'Profile picture';
 </script>
 
-<Avatar {src} {alt} class="border mr-3" />
+<img class="inline-block h-12 w-12 rounded-full mr-3" {src} {alt} />

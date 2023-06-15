@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Repost from '../../components/Repost.svelte';
 	import Shorts from '../../components/Shorts.svelte';
-	import { PUBLIC_TYPEFORM_LINK } from '$env/static/public';
+	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
 
@@ -12,6 +12,14 @@
 
 	export let data;
 	let posts = data.posts.posts;
+
+	let isStudyComplete: boolean;
+
+	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
+
+	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+
+	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
 
 	const getPostType = (post) => {
 		if (post.edges) {
@@ -24,10 +32,6 @@
 	const getRepost = (post) => {
 		return post.node?.comet_sections?.content?.story.attached_story;
 	};
-
-	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
-
-	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 
 	$: hasFlags = Object.keys($flags).length > 0;
 
@@ -56,17 +60,31 @@
 				break;
 		}
 	}
+
+	setTimeout(() => {
+		isStudyComplete = true;
+	}, experimentTimeout);
 </script>
 
-<main>
+<main class="border-solid border-2 border-gray">
+	{#if isStudyComplete}
+		<div class={'flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90'}>
+			<section class="card p-6 bg-white shadow-lg">
+				<h3 class="m-4">
+					You have now completed the experiment. Click the link to complete the off-boarding survey
+					in TypeForm
+				</h3>
+				<a type="button" class="btn variant-filled mt-4 float-right" href={offBoardLink}>
+					Back to TypeForm
+				</a>
+			</section>
+		</div>
+	{/if}
+
 	<div class="p-4 m-4">
 		<h1 class="h1">
-			<span
-				class="bg-gradient-to-br from-pink-500 to-violet-500 bg-clip-text text-transparent box-decoration-clone"
-				>Experiment page</span
-			>
+			<span>Experiment page</span>
 		</h1>
-		<a href={offBoardLink}> Back to Typeform </a>
 	</div>
 
 	{#if hasFlags}
