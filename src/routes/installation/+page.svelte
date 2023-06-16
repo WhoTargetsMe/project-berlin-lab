@@ -8,8 +8,11 @@
 <main class="container h-full mx-auto flex justify-center items-center">
 	<section class="card p-6 bg-white shadow-lg">
 		<h3 class="m-4">{$LL.installation()}</h3>
-		<a type="button" class="btn variant-filled mt-4 float-right" href={PUBLIC_INSTALLATION_LINK}
-			>{$LL.install_button()}</a
+		<a
+			type="button"
+			class="btn variant-filled mt-4 float-right"
+			href={PUBLIC_INSTALLATION_LINK}
+			target="_blank">{$LL.install_button()}</a
 		>
 		{#if !isChrome}
 			<p>{$LL.only_in_chrome()}</p>

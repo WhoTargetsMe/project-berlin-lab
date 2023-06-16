@@ -9,7 +9,7 @@
 	import { flags } from '$lib/flags-store';
 
 	const video =
-		post.node.comet_sections.content.story.attachments[0].styles.attachment.media.playable_url;
+		post.node.comet_sections.content.story.attachments[0].styles.attachment.media?.playable_url;
 
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
