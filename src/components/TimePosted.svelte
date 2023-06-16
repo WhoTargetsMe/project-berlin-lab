@@ -8,7 +8,7 @@
 		post.node.comet_sections.context_layout?.story.comet_sections.metadata[1]?.story
 			.creation_time ||
 		post.node.comet_sections.content.story.attachments?.[0].styles.attachment.style_infos?.[0]
-			.fb_shorts_story.creation_time ||
+			.fb_shorts_story?.creation_time ||
 		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
 			.metadata[1].story.creation_time ||
 		post.node.comet_sections.content?.story.comet_sections.context_layout?.story.comet_sections
@@ -25,17 +25,15 @@
 
 		let [n, unit] = formattedTimeDistance.split(' ');
 
-		if (unit.includes('year')) {
-			return formattedDate;
-		} else if (unit === 'days' && parseInt(n) > 6) {
-			return formattedDate;
-		} else {
-			return formattedTimeDistance
-				.replaceAll(' ', '')
-				.replaceAll('hours', 'h')
-				.replaceAll('days', 'd')
-				.replaceAll('day', 'd');
-		}
+		return unit.includes('year')
+			? formattedDate
+			: unit === 'days' && parseInt(n) > 6
+			? formattedDate
+			: formattedTimeDistance
+					.replaceAll(' ', '')
+					.replaceAll('hours', 'h')
+					.replaceAll('days', 'd')
+					.replaceAll('day', 'd');
 	};
 
 	$: hasFlags = Object.keys($flags).length > 0;
