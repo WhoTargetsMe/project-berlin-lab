@@ -2,20 +2,32 @@
 	export let post: Post = {};
 	import { flags } from '$lib/flags-store';
 	import { format, fromUnixTime, formatDistanceToNowStrict } from 'date-fns';
+	import _ from 'lodash';
 
-	//to fix: if it says 53years, it's the wrong date/time posted
 	const timePosted =
 		post.node.comet_sections.context_layout?.story.comet_sections.metadata[1]?.story
-			.creation_time || new Date(0);
+			.creation_time ||
+		post.node.comet_sections.content.story.attachments?.[0].styles.attachment.style_infos?.[0]
+			.fb_shorts_story.creation_time ||
+		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
+			.metadata[1].story.creation_time ||
+		post.node.comet_sections.content?.story.comet_sections.context_layout?.story.comet_sections
+			.metadata[1].story.creation_time ||
+		post.node.comet_sections.context_layout.story.comet_sections.metadata[1].story.creation_time ||
+		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
+			.metadata[0].story.creation_time ||
+		_.now();
 
-	const dateOfPost = fromUnixTime(timePosted);
-	const formattedDate = format(dateOfPost, 'dd MMM yyyy');
-	const formattedTimeDistance = formatDistanceToNowStrict(dateOfPost);
+	const convertTime = (timeStamp) => {
+		const dateOfPost = fromUnixTime(timeStamp);
+		const formattedDate = format(dateOfPost, 'dd MMM');
+		const formattedTimeDistance = formatDistanceToNowStrict(dateOfPost);
 
-	const time = () => {
-		let [n, frame] = formattedTimeDistance.split(' ');
+		let [n, unit] = formattedTimeDistance.split(' ');
 
-		if (frame === 'days' && parseInt(n) > 6) {
+		if (unit.includes('year')) {
+			return formattedDate;
+		} else if (unit === 'days' && parseInt(n) > 6) {
 			return formattedDate;
 		} else {
 			return formattedTimeDistance
@@ -30,7 +42,7 @@
 </script>
 
 {#if hasFlags}
-	{#if $flags.should_display_time_posted}
-		<p>{time()}</p>
+	{#if $flags.should_display_time_posted.enabled}
+		<p>{convertTime(timePosted)}</p>
 	{/if}
 {/if}
