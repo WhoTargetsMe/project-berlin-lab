@@ -1,7 +1,7 @@
 <script>
 	export let shouldShowShare = true;
 	import Like from './icons/Like.svelte';
-	import LikeFilled from './LikeFilled.svelte';
+	import LikeFilled from './icons/LikeFilled.svelte';
 	import Comment from './icons/Comment.svelte';
 	import Share from './icons/Share.svelte';
 

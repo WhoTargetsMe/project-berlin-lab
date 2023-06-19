@@ -32,7 +32,7 @@
 </script>
 
 {#if hasFlags}
-	{#if $flags.should_show_reactions.enabled}
+	{#if $flags.should_show_reactions}
 		<section class="mx-6 my-4 flex justify-between">
 			{#if totalReactions > 0}
 				<section class="flex">
@@ -58,7 +58,7 @@
 					<p class="mx-1 text-slate-600">{totalReactions}</p>
 				</section>
 			{/if}
-			<section class="flex">
+			<section class="flex ml-auto">
 				{#if totalComments > 0}
 					<section class="flex mx-2">
 						<p class="mx-1 text-slate-600">{totalComments}</p>
