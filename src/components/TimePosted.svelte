@@ -4,19 +4,15 @@
 	import { format, fromUnixTime, formatDistanceToNowStrict } from 'date-fns';
 	import _ from 'lodash';
 
-	const timePosted =
+	let timePosted =
 		post.node.comet_sections.context_layout?.story.comet_sections.metadata[1]?.story
 			.creation_time ||
 		post.node.comet_sections.content.story.attachments?.[0].styles.attachment.style_infos?.[0]
 			.fb_shorts_story?.creation_time ||
-		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
-			.metadata[1].story.creation_time ||
 		post.node.comet_sections.content?.story.comet_sections.context_layout?.story.comet_sections
 			.metadata[1].story.creation_time ||
-		post.node.comet_sections.context_layout.story.comet_sections.metadata[1].story.creation_time ||
 		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
-			.metadata[0].story.creation_time ||
-		_.now();
+			.metadata[0].story.creation_time;
 
 	const convertTime = (timeStamp) => {
 		const dateOfPost = fromUnixTime(timeStamp);
@@ -25,15 +21,20 @@
 
 		let [n, unit] = formattedTimeDistance.split(' ');
 
-		return unit.includes('year')
-			? formattedDate
-			: unit === 'days' && parseInt(n) > 6
-			? formattedDate
-			: formattedTimeDistance
-					.replaceAll(' ', '')
-					.replaceAll('hours', 'h')
-					.replaceAll('days', 'd')
-					.replaceAll('day', 'd');
+		switch (true) {
+			case !timeStamp:
+				//format time to now minus one hour
+				formatDistanceToNowStrict(fromUnixTime(Math.floor(Date.now() / 1000) - 3600));
+				break;
+			case unit.includes('year'):
+				formattedDate;
+				break;
+			case unit === 'days' && parseInt(n) > 6:
+				formattedDate;
+				break;
+			default:
+				return formattedTimeDistance;
+		}
 	};
 
 	$: hasFlags = Object.keys($flags).length > 0;
