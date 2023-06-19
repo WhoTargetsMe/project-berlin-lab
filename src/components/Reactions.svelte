@@ -55,20 +55,20 @@
 							{/if}
 						{/if}
 					{/each}
-					<p>{totalReactions}</p>
+					<p class="mx-1 text-slate-600">{totalReactions}</p>
 				</section>
 			{/if}
 			<section class="flex">
 				{#if totalComments > 0}
-					<section class="flex">
-						{totalComments}
+					<section class="flex mx-2">
+						<p class="mx-1 text-slate-600">{totalComments}</p>
 						<Comment />
 					</section>
 				{/if}
 				{#if totalShares > 0}
-					<section>
+					<section class="flex">
+						<p class="mx-1 text-slate-600">{totalShares}</p>
 						<Share />
-						{totalShares}
 					</section>
 				{/if}
 			</section>
