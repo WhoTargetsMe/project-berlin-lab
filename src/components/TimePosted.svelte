@@ -2,7 +2,6 @@
 	export let post: Post = {};
 	import { flags } from '$lib/flags-store';
 	import { format, fromUnixTime, formatDistanceToNowStrict } from 'date-fns';
-	import _ from 'lodash';
 
 	let timePosted =
 		post.node.comet_sections.context_layout?.story.comet_sections.metadata[1]?.story
@@ -22,18 +21,16 @@
 		let [n, unit] = formattedTimeDistance.split(' ');
 
 		switch (true) {
-			case !timeStamp:
-				//format time to now minus one hour
-				formatDistanceToNowStrict(fromUnixTime(Math.floor(Date.now() / 1000) - 3600));
-				break;
 			case unit.includes('year'):
-				formattedDate;
-				break;
+				return formattedDate;
 			case unit === 'days' && parseInt(n) > 6:
-				formattedDate;
-				break;
+				return formattedDate;
 			default:
-				return formattedTimeDistance;
+				return formattedTimeDistance
+					.replaceAll(' ', '')
+					.replaceAll('hours', 'h')
+					.replaceAll('days', 'd')
+					.replaceAll('day', 'd');
 		}
 	};
 
