@@ -20,18 +20,19 @@
 
 		let [n, unit] = formattedTimeDistance.split(' ');
 
-		switch (true) {
-			case unit.includes('year'):
-				return formattedDate;
-			case unit === 'days' && parseInt(n) > 6:
-				return formattedDate;
-			default:
-				return formattedTimeDistance
-					.replaceAll(' ', '')
-					.replaceAll('hours', 'h')
-					.replaceAll('days', 'd')
-					.replaceAll('day', 'd');
+		if (unit.includes('year')) {
+			return formattedDate;
 		}
+
+		if (unit === 'days' && parseInt(n) > 6) {
+			return formattedDate;
+		}
+
+		return formattedTimeDistance
+			.replaceAll(' ', '')
+			.replaceAll('hours', 'h')
+			.replaceAll('days', 'd')
+			.replaceAll('day', 'd');
 	};
 
 	$: hasFlags = Object.keys($flags).length > 0;
