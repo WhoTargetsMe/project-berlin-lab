@@ -1,7 +1,8 @@
 <script lang="ts">
 	export let post: Post = {};
+	import { JSONPath } from 'jsonpath-plus';
 
-	let attachedMessage = post.node.comet_sections.content?.story.attached_story?.message?.text;
+	let attachedMessage = JSONPath({ path: '$..attached_story.message.text', json: post });
 </script>
 
-<p class="px-4 py-2 text-sm">{attachedMessage || ''}</p>
+<p class="text-sm">{attachedMessage || ''}</p>

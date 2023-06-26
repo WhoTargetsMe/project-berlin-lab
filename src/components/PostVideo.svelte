@@ -1,9 +1,8 @@
 <script lang="ts">
+	import { JSONPath } from 'jsonpath-plus';
 	export let post: { [key: string]: any };
 
-	let videoSrc =
-		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.style_infos?.[0]
-			.fb_shorts_story?.short_form_video_context.playback_video.playable_url;
+	let videoSrc = JSONPath({ path: '$..playable_url', json: post })[0];
 </script>
 
 {#if videoSrc}

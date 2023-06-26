@@ -2,23 +2,15 @@
 	export let post: Post = {};
 	import { flags } from '$lib/flags-store';
 	import { format, fromUnixTime, formatDistanceToNowStrict } from 'date-fns';
+	import { JSONPath } from 'jsonpath-plus';
 
-	let timePosted =
-		post.node.comet_sections.context_layout?.story.comet_sections.metadata[1]?.story
-			.creation_time ||
-		post.node.comet_sections.content.story.attachments?.[0].styles.attachment.style_infos?.[0]
-			.fb_shorts_story?.creation_time ||
-		post.node.comet_sections.content?.story.comet_sections.context_layout?.story.comet_sections
-			.metadata[1].story.creation_time ||
-		post.node.comet_sections.content.story.comet_sections.context_layout.story.comet_sections
-			.metadata[0].story.creation_time;
+	let timePosted: number = JSONPath({ path: '$..creation_time', json: post })[0];
 
-	const convertTime = (timeStamp) => {
-		const dateOfPost = fromUnixTime(timeStamp);
-		const formattedDate = format(dateOfPost, 'dd MMM');
-		const formattedTimeDistance = formatDistanceToNowStrict(dateOfPost);
-
-		let [n, unit] = formattedTimeDistance.split(' ');
+	const convertTime = (timeStamp: number) => {
+		let dateOfPost: Date = fromUnixTime(timeStamp);
+		let formattedDate: string = format(dateOfPost, 'dd MMM');
+		let formattedTimeDistance: string = formatDistanceToNowStrict(dateOfPost);
+		let [n, unit]: string[] = formattedTimeDistance.split(' ');
 
 		if (unit.includes('year')) {
 			return formattedDate;

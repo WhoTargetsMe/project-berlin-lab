@@ -1,7 +1,7 @@
-<script>
-	export let title;
-	export let url;
-	export let buttonText = 'Press me';
+<script lang="ts">
+	export let title: string;
+	export let url: string;
+	export let buttonText: string;
 </script>
 
 <main class="container h-full mx-auto flex justify-center items-center">

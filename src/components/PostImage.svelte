@@ -1,30 +1,20 @@
 <script lang="ts">
 	import Carousel from './Carousel.svelte';
+	import { JSONPath } from 'jsonpath-plus';
 	export let post: Post = {};
 
-	let postMedia = post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media;
+	let postSrc: string = JSONPath({ path: '$..large_share_image.uri', json: post })[0];
 
-	let postSrc = postMedia?.photo_image?.uri || postMedia?.large_share_image?.uri;
+	let postAlt: string = JSONPath({ path: '$..accessibility_caption', json: post })[0];
 
-	let postAlt =
-		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.media
-			?.accessibility_caption;
-
-	let multipleImages =
+	let multipleImages: {} =
 		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.all_subattachments?.nodes.map(
 			(img: { [key: string]: any }) => img.media.image.uri
 		);
 
-	let imageRepost =
-		post.node?.comet_sections.content.story.attached_story?.comet_sections.attached_story?.story
-			.attached_story.comet_sections.attached_story_layout.story.attachments[0].styles.attachment
-			.media.photo_image.uri ||
-		post.node.comet_sections.content.story.attached_story?.attachments[0]?.styles.attachment.media
-			?.photo_image?.uri;
+	let imageRepost: string = JSONPath({ path: '$..photo_image.uri', json: post })[0];
 
-	let imageRepostAlt =
-		post.node.comet_sections.content?.story.attached_story?.comet_sections.content?.story
-			.attached_story.styles?.attachment.media.accessibility_caption;
+	let imageRepostAlt: string = JSONPath({ path: '$..accessibility_caption', json: post });
 </script>
 
 {#if postSrc}
@@ -36,5 +26,5 @@
 {/if}
 
 {#if imageRepost}
-	<img src={imageRepost} alt={imageRepostAlt} />
+	<img src={imageRepost} alt={imageRepostAlt} class="min-w-full" />
 {/if}

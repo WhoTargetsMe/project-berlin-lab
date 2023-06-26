@@ -1,61 +1,33 @@
-<script>
-	import { posthog } from 'posthog-js';
-	export let post;
+<script lang="ts">
+	import { JSONPath } from 'jsonpath-plus';
+	export let post: {};
 
-	const callToActionBtnClick = () => {
-		posthog.capture('Call to Action button clicked', {
-			buttonClass: 'call-to-action',
-			buttonText: 'Click me :D'
-		});
-	};
+	let formOnFacebookImage: string = JSONPath({
+		path: '$..lead_gen_brand_image.uri',
+		json: post
+	})[0];
 
-	const formOnFacebookImage =
-		post.node?.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.call_to_action_renderer?.action_link.media?.lead_gen_brand_image.uri;
+	let otherSponsoredImage: string = JSONPath({ path: '$..large_share_image.uri', json: post })[0];
 
-	const otherSponsoredImage =
-		post.node.comet_sections?.content.story.attachments[0].styles.attachment.media.large_share_image
-			?.uri;
+	let sponsorURL: string = JSONPath({ path: '$..source.text', json: post })[0];
 
-	const sponsorURL =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment.source
-			?.text;
+	let sponsorTitle: string = JSONPath({ path: '$..title_with_entities.text', json: post })[0];
 
-	const sponsorTitle =
-		post.node.comet_sections.content.story.attachments[0].styles?.attachment.title_with_entities
-			?.text;
+	let sponsorDescription: string = JSONPath({ path: '$..description.text', json: post })[0];
 
-	const sponsorDescription =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.description?.text;
+	let callToActionText: string = JSONPath({ path: '$..action_link.stateful_title', json: post })[0];
 
-	const callToActionText =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.call_to_action_renderer?.action_link.stateful_title;
+	let otherCallToActionText: string = JSONPath({ path: '$..action_link.title', json: post })[0];
 
-	const otherCallToActionText =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.call_to_action_renderer?.action_link.title;
+	let subAttach: {} = JSONPath({ path: '$..attachment.subattachments', json: post })[0];
 
-	const subAttach =
-		post.node.comet_sections.content.story?.attachments[0].styles.attachment.subattachments?.map(
-			(attached) => attached
-		);
+	let sponseredVideo: string = JSONPath({ path: '$..media.playable_url', json: post })[0];
 
-	const sponseredVideo =
-		post.node.comet_sections.content.story.attachments[0].styles.attachment.media.playable_url;
+	let sponseredVidUrl: string = JSONPath({ path: '$..link_display', json: post })[0];
 
-	const sponseredVidUrl =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.action_links[0].link_display;
+	let sponseredVidTitle: string = JSONPath({ path: '$..link_title', json: post })[0];
 
-	const sponseredVidTitle =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.action_links[0].link_title;
-
-	const sponseredVidDescription =
-		post.node.comet_sections.content.story.attachments[0].comet_footer_renderer?.attachment
-			.action_links[0].link_description;
+	let sponseredVidDescription: string = JSONPath({ path: '$..link_description', json: post })[0];
 </script>
 
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
@@ -73,7 +45,7 @@
 			</section>
 			<button
 				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				on:click={callToActionBtnClick}>{callToActionText || otherCallToActionText}</button
+				>{callToActionText || otherCallToActionText}</button
 			>
 		</div>
 	{/if}
@@ -90,7 +62,7 @@
 			</section>
 			<button
 				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				on:click={callToActionBtnClick}>{callToActionText || otherCallToActionText}</button
+				>{callToActionText || otherCallToActionText}</button
 			>
 		</div>
 	{/if}
@@ -113,7 +85,6 @@
 
 							<button
 								class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-								on:click={callToActionBtnClick}
 								>{sub.call_to_action_renderer.action_link.title}</button
 							>
 						</div>

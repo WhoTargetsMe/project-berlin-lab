@@ -7,9 +7,9 @@
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import { flags } from '$lib/flags-store';
+	import { JSONPath } from 'jsonpath-plus';
 
-	const video =
-		post.node.comet_sections.content.story.attachments[0].styles.attachment.media?.playable_url;
+	let video: string = JSONPath({ path: '$..playable_url', json: post })[0];
 
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
