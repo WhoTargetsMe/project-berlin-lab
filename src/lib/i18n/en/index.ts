@@ -8,6 +8,8 @@ const en = {
 	facebook_redirect_fallback_info:
 		'If you are not redirected automatically, please click here to go to Facebook',
 	facebook_redirect_button: 'Go to Facebook',
+	installation_redirect_fallback_info:
+		'If you are not redirected automatically, please click here to install extension',
 	only_in_chrome: 'This only works in Chrome'
 } satisfies BaseTranslation;
 
