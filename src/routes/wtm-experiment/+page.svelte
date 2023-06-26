@@ -10,11 +10,21 @@
 	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
+	import posthog from 'posthog-js';
+	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/organic-post-meta-data';
 
 	/** @type {import('./$types').PageData} */
 
 	export let data;
 	let posts = data.posts.posts;
+
+	//collecting post meta data in posthog
+	let postMetaData: [] = [];
+	posts.map((post) => {
+		postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
+	});
+	posthog.capture('post-meta-data', postMetaData);
+
 	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	let offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;

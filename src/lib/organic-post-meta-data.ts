@@ -21,9 +21,12 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 		shares: string | number;
 	};
 
-	creation_time = jsonPath('$..creation_time')[0]
-		? fromUnixTime(jsonPath('$..creation_time')[0])
-		: 'no post creation time';
+	if (jsonPath('$..creation_time')[0]) {
+		creation_time = fromUnixTime(jsonPath('$..creation_time')[0]);
+	} else {
+		creation_time = 'no post creation time';
+	}
+
 	type = jsonPath('$..category')[0];
 	scope = jsonPath('$..privacy_scope.description')[0];
 	summary = jsonPath('$..accessibility_caption')[0];
@@ -38,6 +41,7 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 	let postText = jsonPath('$..message.text')[0] || null;
 	let sponsoredGallery = jsonPath('$..attachment.subattachments')[0];
 	let galleryOfTheRest = jsonPath('$..all_subattachments.nodes')[0];
+
 	let gallery;
 	if (galleryOfTheRest) {
 		gallery = galleryOfTheRest;
@@ -46,10 +50,16 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 	} else {
 		gallery = null;
 	}
-	let video = jsonPath('$..playable_url') || null;
+
+	let video;
+	if (!jsonPath('$..playable_url').length) {
+		video = null;
+	} else {
+		video = jsonPath('$..playable_url');
+	}
+
 	let attachment = { image: postImage, text: postText, gallery: gallery, video: video };
 	content = { actor, attachment };
-	// console.log(content);
 
 	//ENGAGEMENT
 	let comments = jsonPath('$..total_comment_count')[0];
@@ -68,6 +78,6 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 		content,
 		engagement
 	};
-	
+
 	return postMetaData;
 };
