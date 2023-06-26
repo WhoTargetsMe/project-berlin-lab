@@ -13,7 +13,7 @@ export type Translations = RootTranslation;
 
 type RootTranslation = {
 	/**
-	 * P​l​e​a​s​e​ ​c​l​i​c​k​ ​b​e​l​o​w​ ​t​o​ ​i​n​s​t​a​l​l​ ​t​h​e​ ​e​x​t​e​n​s​i​o​n​.​.​.
+	 * Y​o​u​ ​w​i​l​l​ ​b​e​ ​r​e​d​i​r​e​c​t​e​d​ ​t​o​ ​c​h​r​o​m​e​ ​s​t​o​r​e​ ​t​o​ ​i​n​s​t​a​l​l​ ​t​h​e​ ​e​x​t​e​n​s​i​o​n
 	 */
 	installation: string;
 	/**
@@ -48,7 +48,7 @@ type RootTranslation = {
 
 export type TranslationFunctions = {
 	/**
-	 * Please click below to install the extension...
+	 * You will be redirected to chrome store to install the extension
 	 */
 	installation: () => LocalizedString;
 	/**
