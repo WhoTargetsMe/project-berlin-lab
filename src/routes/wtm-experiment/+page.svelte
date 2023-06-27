@@ -8,6 +8,7 @@
 	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
+	import { goto } from '$app/navigation';
 
 	/** @type {import('./$types').PageData} */
 
@@ -49,7 +50,7 @@
 
 	setTimeout(() => {
 		isStudyComplete = true;
-	}, experimentTimeout);
+	}, 2000 * 10);
 </script>
 
 <main class="border-solid border-2 border-gray">
