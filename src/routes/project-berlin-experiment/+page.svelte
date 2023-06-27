@@ -85,8 +85,6 @@
 							<SponsoredPost {post} />
 						{:else if getPostType(post) === 'ORGANIC'}
 							<OrganicPost {post} />
-						{:else}
-							<Shorts {post} />
 						{/if}
 					{/each}
 				</div>
