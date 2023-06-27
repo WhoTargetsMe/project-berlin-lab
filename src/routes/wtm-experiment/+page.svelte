@@ -6,6 +6,8 @@
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Repost from '../../components/Repost.svelte';
 	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
+	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/post-meta-data.ts';
+	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
 
@@ -17,6 +19,14 @@
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	let offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 	let experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
+
+	let postMetaData: [] = [];
+	if (posts) {
+		posts.map((post) => {
+			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
+		});
+		posthog.capture('post-meta-data', postMetaData);
+	}
 
 	$: hasFlags = Object.keys($flags).length > 0;
 
