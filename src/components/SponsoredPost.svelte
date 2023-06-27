@@ -7,6 +7,7 @@
 	import Reactions from './Reactions.svelte';
 	export let post: Post = {};
 	import { flags } from '$lib/flags-store';
+	import TrackedEvent from './TrackedEvent.svelte';
 
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
@@ -28,5 +29,7 @@
 		<CallToAction {post} />
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
-	<LikeCommentShareButtons shouldShowShare={false} />
+	<TrackedEvent eventName="Sponsored Posts Reaction Clicked" postMetaData={post}>
+		<LikeCommentShareButtons shouldShowShare={false} />
+	</TrackedEvent>
 </main>

@@ -8,6 +8,7 @@
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import { flags } from '$lib/flags-store';
 	import { JSONPath } from 'jsonpath-plus';
+	import TrackedEvent from './TrackedEvent.svelte';
 
 	let video: string = JSONPath({ path: '$..playable_url', json: post })[0];
 
@@ -30,12 +31,16 @@
 		{#if PostImage}
 			<PostImage {post} />
 		{/if}
-		{#if video}
-			<video class="w-full" controls src={video}>
-				<track kind="captions" />
-			</video>
-		{/if}
+		<TrackedEvent eventName="Engagement Post engagement" postMetaData={post}>
+			{#if video}
+				<video class="w-full" controls src={video}>
+					<track kind="captions" />
+				</video>
+			{/if}
+		</TrackedEvent>
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
-	<LikeCommentShareButtons />
+	<TrackedEvent eventName="Engagment Reaction Clicked" postMetaData={post}>
+		<LikeCommentShareButtons />
+	</TrackedEvent>
 </main>

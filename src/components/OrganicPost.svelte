@@ -22,9 +22,11 @@
 	<section>
 		<PostMessage {post} />
 		<PostImage {post} />
-		<PostVideo {post} />
+		<TrackedEvent eventName="Organic Post Engagement" postMetaData={post}>
+			<PostVideo {post} />
+		</TrackedEvent>
 	</section>
-	<TrackedEvent postMetaData={post} eventName="Organic Post Reaction Clicked">
+	<TrackedEvent postMetaData={post} eventName="Organic Post Reaction clicked">
 		<Reactions feedback={post.node.comet_sections.feedback} />
 		<LikeCommentShareButtons />
 	</TrackedEvent>
