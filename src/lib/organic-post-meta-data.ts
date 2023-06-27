@@ -6,6 +6,7 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 		return JSONPath({ path: path, json: data });
 	};
 
+	let post_id: number;
 	let creation_time: Date | string;
 	let type: string;
 	let scope: string;
@@ -20,6 +21,8 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 		reactions: { total: string; types: {} };
 		shares: string | number;
 	};
+
+	post_id = jsonPath('$..post_id')[0];
 
 	if (jsonPath('$..creation_time')[0]) {
 		creation_time = fromUnixTime(jsonPath('$..creation_time')[0]);
@@ -70,6 +73,7 @@ export const facebookNewsFeedInterceptedJSONExtractor = (data) => {
 	engagement = { comments, shares, reactions };
 
 	let postMetaData = {
+		post_id,
 		creation_time,
 		type,
 		scope,

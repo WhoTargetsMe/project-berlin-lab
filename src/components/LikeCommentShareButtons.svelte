@@ -4,6 +4,7 @@
 	import LikeFilled from './icons/LikeFilled.svelte';
 	import Comment from './icons/Comment.svelte';
 	import Share from './icons/Share.svelte';
+	// import TrackedEvent from './TrackedEvent.svelte';
 
 	let liked: boolean = false;
 	
@@ -12,6 +13,7 @@
 	};
 </script>
 
+<!-- <TrackedEvent postMetaData={post} > -->
 <hr class="divide-slate-200 mx-6" />
 <main class="flex justify-around p-2">
 	<button class="flex flex-1 justify-center py-1" on:click={clickLike}>

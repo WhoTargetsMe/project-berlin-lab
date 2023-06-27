@@ -17,13 +17,15 @@
 
 	export let data;
 	let posts = data.posts.posts;
-
+	// console.log(posts);
 	//collecting post meta data in posthog
-	let postMetaData: [] = [];
-	posts.map((post) => {
-		postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
-	});
-	posthog.capture('post-meta-data', postMetaData);
+	export let postMetaData: [] = [];
+	if (posts !== undefined) {
+		posts.map((post) => {
+			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
+		});
+		posthog.capture('post-meta-data', postMetaData);
+	}
 
 	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;

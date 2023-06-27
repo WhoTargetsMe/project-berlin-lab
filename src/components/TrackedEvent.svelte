@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/post-meta-data';
+	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/organic-post-meta-data';
 	export let postMetaData: {};
 	export let clicked;
 	export let eventName;
