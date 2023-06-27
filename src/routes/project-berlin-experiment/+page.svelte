@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { getPostType } from '../../shared/get';
+	import { getRepost } from '../../shared/get';
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
 	import OrganicPost from '../../components/OrganicPost.svelte';
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Repost from '../../components/Repost.svelte';
-	import Shorts from '../../components/Shorts.svelte';
 	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
@@ -12,26 +13,10 @@
 
 	export let data;
 	let posts = data.posts.posts;
-
 	let isStudyComplete: boolean;
-
-	const { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
-
-	const offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-
-	const experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
-
-	const getPostType = (post) => {
-		if (post.edges) {
-			return post.edges[0].category;
-		} else {
-			return post.category;
-		}
-	};
-
-	const getRepost = (post) => {
-		return post.node?.comet_sections?.content?.story.attached_story;
-	};
+	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
+	let offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+	let experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
 
 	$: hasFlags = Object.keys($flags).length > 0;
 
@@ -100,8 +85,6 @@
 							<SponsoredPost {post} />
 						{:else if getPostType(post) === 'ORGANIC'}
 							<OrganicPost {post} />
-						{:else}
-							<Shorts {post} />
 						{/if}
 					{/each}
 				</div>

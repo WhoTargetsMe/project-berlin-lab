@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
 	export let shouldShowShare = true;
 	import Like from './icons/Like.svelte';
 	import LikeFilled from './icons/LikeFilled.svelte';
 	import Comment from './icons/Comment.svelte';
 	import Share from './icons/Share.svelte';
 
-	let liked = false;
-	const clickLike = () => {
+	let liked: boolean = false;
+	
+	const clickLike = (): void => {
 		liked ? (liked = false) : (liked = true);
 	};
 </script>
