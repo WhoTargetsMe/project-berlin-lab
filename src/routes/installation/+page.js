@@ -1,4 +1,5 @@
 import { goto } from '$app/navigation';
+
 export const ssr = false;
 export function load() {
 	const prolific_params = JSON.parse(window.localStorage.getItem('prolific_params')) || {};

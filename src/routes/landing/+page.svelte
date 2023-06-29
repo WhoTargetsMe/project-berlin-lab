@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		PUBLIC_PROLIFIC_LINK,
 		PUBLIC_FACEBOOK_LINK,
@@ -30,7 +30,7 @@
 		buttonText={$LL.facebook_redirect_button()}
 	/>
 {:else}
-	<main class="container h-full mx-auto flex justify-center items-center">
+	<main class="container h-4/5 mx-auto flex justify-center items-center">
 		<section class="card p-6 bg-white shadow-lg">
 			<h3 class="m-4">
 				{$LL.prolific()}

@@ -1,3 +1,7 @@
 type Post = {
-  [key:string]:any
+	[key: string]: any;
+};
+
+export interface Window {
+	[key: string]: any;
 }
