@@ -50,7 +50,11 @@
 
 	setTimeout(() => {
 		isStudyComplete = true;
-	}, 2000 * 10);
+	}, experimentTimeout);
+
+	setTimeout(() => {
+		goto(offBoardLink);
+	}, redirectTimeout);
 </script>
 
 <main class="border-solid border-2 border-gray">
