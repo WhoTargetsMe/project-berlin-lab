@@ -61,7 +61,7 @@
 					You have now completed the experiment. Click the link to complete the off-boarding survey
 					in TypeForm
 				</h3>
-				<p>You will be redirected in 10 seconds</p>
+				<p class="m-4">You will be redirected in 10 seconds</p>
 				<a type="button" class="btn variant-filled mt-4 float-right" href={offBoardLink}>
 					Back to TypeForm
 				</a>

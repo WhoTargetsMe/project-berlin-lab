@@ -31,42 +31,6 @@
 </script>
 
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
-	{#if formOnFacebookImage || otherSponsoredImage}
-		<img
-			class="p-0 m-0 min-w-full"
-			src={formOnFacebookImage || otherSponsoredImage}
-			alt="sponsored"
-		/>
-		<div class="flex justify-between">
-			<section class="px-4 py-2">
-				<p class="font-light text-slate-700">{sponsorURL?.toUpperCase()}</p>
-				<p><strong>{sponsorTitle}</strong></p>
-				<p class="font-light text-slate-700">{sponsorDescription}</p>
-			</section>
-			<button
-				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				>{callToActionText || otherCallToActionText}</button
-			>
-		</div>
-	{/if}
-
-	{#if sponseredVideo}
-		<video controls src={sponseredVideo} class="min-w-full">
-			<track kind="captions" />
-		</video>
-		<div class="flex justify-between">
-			<section class="px-4 py-2">
-				<p class="font-light text-slate-700">{sponseredVidUrl?.toUpperCase()}</p>
-				<p><strong>{sponseredVidTitle}</strong></p>
-				<p class="font-light text-slate-700">{sponseredVidDescription}</p>
-			</section>
-			<button
-				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-				>{callToActionText || otherCallToActionText}</button
-			>
-		</div>
-	{/if}
-
 	{#if subAttach}
 		<div class="carousel carousel-center p-4 bg-white" data-carousel="static">
 			<div class="relative rounded-lg flex overflow-x-scroll">
@@ -91,6 +55,38 @@
 					</div>
 				{/each}
 			</div>
+		</div>
+	{:else if sponseredVideo}
+		<video controls src={sponseredVideo} class="min-w-full">
+			<track kind="captions" />
+		</video>
+		<div class="flex justify-between">
+			<section class="px-4 py-2">
+				<p class="font-light text-slate-700">{sponseredVidUrl?.toUpperCase()}</p>
+				<p><strong>{sponseredVidTitle}</strong></p>
+				<p class="font-light text-slate-700">{sponseredVidDescription || ''}</p>
+			</section>
+			<button
+				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
+				>{callToActionText || otherCallToActionText}</button
+			>
+		</div>
+	{:else if formOnFacebookImage || otherSponsoredImage}
+		<img
+			class="p-0 m-0 min-w-full"
+			src={formOnFacebookImage || otherSponsoredImage}
+			alt="sponsored"
+		/>
+		<div class="flex justify-between">
+			<section class="px-4 py-2">
+				<p class="font-light text-slate-700">{sponsorURL?.toUpperCase()}</p>
+				<p><strong>{sponsorTitle}</strong></p>
+				<p class="font-light text-slate-700">{sponsorDescription}</p>
+			</section>
+			<button
+				class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
+				>{callToActionText || otherCallToActionText}</button
+			>
 		</div>
 	{/if}
 </div>

@@ -8,7 +8,7 @@
 	let postAlt: string = JSONPath({ path: '$..accessibility_caption', json: post })[0];
 
 	let multipleImages: {} =
-		post.node.comet_sections.content.story.attachments[0]?.styles.attachment.all_subattachments?.nodes.map(
+		post.node.comet_sections.content.story.attachments[0]?.styles.attachment?.all_subattachments?.nodes.map(
 			(img: { [key: string]: any }) => img.media.image.uri
 		);
 
