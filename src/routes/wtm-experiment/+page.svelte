@@ -13,11 +13,11 @@
 	/** @type {import('./$types').PageData} */
 
 	export let data;
-	let posts = data.posts.posts;
+	let posts: [] = data.posts.posts;
 	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
-	let offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
-	let experimentTimeout = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
+	let offBoardLink: string = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
+	let experimentTimeout: number = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
 	let redirectTimeout: number = 1000 * 10;
 
 	$: hasFlags = Object.keys($flags).length > 0;
@@ -51,20 +51,17 @@
 	setTimeout(() => {
 		isStudyComplete = true;
 	}, experimentTimeout);
-
-	setTimeout(() => {
-		goto(offBoardLink);
-	}, redirectTimeout);
 </script>
 
 <main class="border-solid border-2 border-gray">
 	{#if isStudyComplete}
-		<div class={'flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90'}>
+		<div class="flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90">
 			<section class="card p-6 bg-white shadow-lg">
 				<h3 class="m-4">
 					You have now completed the experiment. Click the link to complete the off-boarding survey
 					in TypeForm
 				</h3>
+				<p>You will be redirected in 10 seconds</p>
 				<a type="button" class="btn variant-filled mt-4 float-right" href={offBoardLink}>
 					Back to TypeForm
 				</a>
