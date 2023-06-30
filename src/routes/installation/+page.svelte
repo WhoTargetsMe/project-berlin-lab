@@ -4,8 +4,9 @@
 	import { browser } from '$app/environment';
 
 	let isChrome: boolean;
+
 	if (browser) {
-		isChrome = !!window.chrome;
+		isChrome = !!(window as any).chrome;
 
 		setTimeout(() => {
 			window.location.href = PUBLIC_INSTALLATION_LINK;

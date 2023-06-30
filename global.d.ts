@@ -1,3 +1,3 @@
 type Post = {
-  [key:string]:any
-}
+	[key: string]: any;
+};

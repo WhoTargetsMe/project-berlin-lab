@@ -14,4 +14,9 @@
 	$: $page.url.pathname, browser && posthog.capture('$pageview');
 </script>
 
+<div class="card bg-white p-4 m-0">
+	<div class="w-12 h-12">
+		<img src="/wtm_logo_2020.png" alt="Who Targets Me Logo" />
+	</div>
+</div>
 <slot />
