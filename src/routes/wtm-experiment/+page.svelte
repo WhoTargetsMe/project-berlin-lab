@@ -18,7 +18,6 @@
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	let offBoardLink: string = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 	let experimentTimeout: number = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
-	let redirectTimeout: number = 1000 * 10;
 
 	$: hasFlags = Object.keys($flags).length > 0;
 
@@ -67,9 +66,6 @@
 				</a>
 			</section>
 		</div>
-		{setTimeout(() => {
-			goto(offBoardLink);
-		}, redirectTimeout)}
 	{/if}
 
 	<div class="p-4 m-4">
