@@ -7,7 +7,7 @@
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import PostVideo from './PostVideo.svelte';
-
+	import TrackedEvent from './TrackedEvent.svelte';
 	export let post: Post = {};
 </script>
 
@@ -22,8 +22,12 @@
 	<section>
 		<PostMessage {post} />
 		<PostImage {post} />
-		<PostVideo {post} />
+		<TrackedEvent eventName="Organic Post Engagement" postMetaData={post}>
+			<PostVideo {post} />
+		</TrackedEvent>
 	</section>
-	<Reactions feedback={post.node.comet_sections.feedback} />
-	<LikeCommentShareButtons />
+	<TrackedEvent postMetaData={post} eventName="Organic Post Reaction clicked">
+		<Reactions feedback={post.node.comet_sections.feedback} />
+		<LikeCommentShareButtons />
+	</TrackedEvent>
 </main>

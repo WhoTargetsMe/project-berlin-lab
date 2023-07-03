@@ -6,6 +6,8 @@
 	import EngagementPost from '../../components/EngagementPost.svelte';
 	import Repost from '../../components/Repost.svelte';
 	import { PUBLIC_TYPEFORM_LINK, PUBLIC_EXPERIMENT_TIME } from '$env/static/public';
+	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/post-meta-data';
+	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
 
@@ -13,6 +15,16 @@
 
 	export let data;
 	let posts = data.posts.posts;
+	// console.log(posts);
+	//collecting post meta data in posthog
+	export let postMetaData: [] = [];
+	if (posts !== undefined) {
+		posts.map((post) => {
+			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
+		});
+		posthog.capture('post-meta-data', postMetaData);
+	}
+
 	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	let offBoardLink = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
