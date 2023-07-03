@@ -9,8 +9,6 @@
 	import { flags } from '$lib/flags-store';
 	import { JSONPath } from 'jsonpath-plus';
 
-	let video: string = JSONPath({ path: '$..playable_url', json: post })[0];
-
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
 
@@ -29,11 +27,6 @@
 		<PostMessage {post} />
 		{#if PostImage}
 			<PostImage {post} />
-		{/if}
-		{#if video}
-			<video class="w-full" controls src={video}>
-				<track kind="captions" />
-			</video>
 		{/if}
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />

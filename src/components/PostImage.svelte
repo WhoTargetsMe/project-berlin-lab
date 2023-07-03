@@ -20,19 +20,13 @@
 	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0];
 </script>
 
-{#if postSrc && videoSrc}
+{#if postSrc}
 	<img src={postSrc} alt={postAlt} class="min-w-full" />
-{/if}
-
-{#if multipleImages}
+{:else if multipleImages}
 	<Carousel {multipleImages} />
-{/if}
-
-{#if imageRepost}
+{:else if imageRepost}
 	<img src={imageRepost} alt={imageRepostAlt} class="min-w-full" />
-{/if}
-
-{#if videoSrc}
+{:else if videoSrc}
 	<video class="w-full" controls src={videoSrc}>
 		<track kind="captions" />
 	</video>
