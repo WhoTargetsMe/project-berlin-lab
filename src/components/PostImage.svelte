@@ -16,9 +16,11 @@
 	let imageRepost: string = JSONPath({ path: '$..photo_image.uri', json: post })[0];
 
 	let imageRepostAlt: string = JSONPath({ path: '$..accessibility_caption', json: post });
+
+	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0];
 </script>
 
-{#if postSrc}
+{#if postSrc && videoSrc}
 	<img src={postSrc} alt={postAlt} class="min-w-full" />
 {/if}
 
@@ -28,4 +30,10 @@
 
 {#if imageRepost}
 	<img src={imageRepost} alt={imageRepostAlt} class="min-w-full" />
+{/if}
+
+{#if videoSrc}
+	<video class="w-full" controls src={videoSrc}>
+		<track kind="captions" />
+	</video>
 {/if}

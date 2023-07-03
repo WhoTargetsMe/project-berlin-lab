@@ -6,7 +6,6 @@
 	import PostImage from './PostImage.svelte';
 	import Reactions from './Reactions.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
-	import PostVideo from './PostVideo.svelte';
 
 	export let post: Post = {};
 </script>
@@ -22,7 +21,6 @@
 	<section>
 		<PostMessage {post} />
 		<PostImage {post} />
-		<PostVideo {post} />
 	</section>
 	<Reactions feedback={post.node.comet_sections.feedback} />
 	<LikeCommentShareButtons />

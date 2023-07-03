@@ -25,7 +25,7 @@
 		<RepostMessage {post} />
 		<RepostImage {post} />
 		{#if videoSrc}
-			<video class="w-full aspect-video" controls src={videoSrc}>
+			<video class="w-full" controls src={videoSrc}>
 				<track kind="captions" />
 			</video>
 		{/if}
