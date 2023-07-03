@@ -4,17 +4,21 @@
 	export let postMetaData: {};
 	export let eventName: string;
 
-	const click = (event) => {
-		let buttonClicked: {} = event.target.closest('button');
-		let videos: {} = event.target.closest('video');
+	const capturePostEngagement = (event) => {
+		let element = event.target as HTMLElement;
 		let message: string;
 
-		if (buttonClicked) {
-			message = `${buttonClicked.textContent} button clicked`;
-		}
-
-		if (videos) {
-			message = 'video clicked';
+		if (
+			element.nodeName.toLowerCase() === 'button' ||
+			element.nodeName.toLowerCase() === 'p' ||
+			element.nodeName.toLowerCase() === 'i' ||
+			element.nodeName.toLowerCase() === 'svg'
+		) {
+			let elementButton = element.closest('button');
+			message = 'Button with the text content ' + elementButton?.textContent + ' clicked';
+		} else {
+			message =
+				element.nodeName.charAt(0) + element.nodeName.substring(1).toLowerCase() + ' clicked';
 		}
 
 		posthog.capture(eventName, {
@@ -24,6 +28,10 @@
 	};
 </script>
 
-<div on:click={click} {eventName}>
+<div
+	on:click={() => capturePostEngagement(event)}
+	on:keypress={() => capturePostEngagement(event)}
+	{eventName}
+>
 	<slot />
 </div>
