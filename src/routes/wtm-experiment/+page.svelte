@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { getPostType } from '../../shared/get';
 	import { getRepost } from '../../shared/get';
 	import SponsoredPost from '../../components/SponsoredPost.svelte';
