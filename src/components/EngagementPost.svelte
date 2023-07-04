@@ -10,8 +10,6 @@
 	import { JSONPath } from 'jsonpath-plus';
 	import TrackedEvent from './TrackedEvent.svelte';
 
-	let video: string = JSONPath({ path: '$..playable_url', json: post })[0];
-
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
 
@@ -28,14 +26,9 @@
 	</header>
 	<section class="mx-0">
 		<PostMessage {post} />
-		{#if PostImage}
-			<PostImage {post} />
-		{/if}
 		<TrackedEvent eventName="Engagement Post engagement" postMetaData={post}>
-			{#if video}
-				<video class="w-full" controls src={video}>
-					<track kind="captions" />
-				</video>
+			{#if PostImage}
+				<PostImage {post} />
 			{/if}
 		</TrackedEvent>
 	</section>
