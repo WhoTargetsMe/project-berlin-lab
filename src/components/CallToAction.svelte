@@ -51,7 +51,7 @@
 
 								<button
 									class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
-									>{sub.call_to_action_renderer.action_link.title}</button
+									>{sub.call_to_action_renderer?.action_link.title}</button
 								>
 							</div>
 						</div>
