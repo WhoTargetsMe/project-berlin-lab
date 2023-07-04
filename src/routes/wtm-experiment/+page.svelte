@@ -18,7 +18,7 @@
 
 	//collecting post meta data in posthog
 	export let postMetaData: [] = [];
-	if (posts !== undefined) {
+	if (posts) {
 		posts.map((post) => {
 			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
 		});
