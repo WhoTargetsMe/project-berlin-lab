@@ -10,7 +10,7 @@
 	import { JSONPath } from 'jsonpath-plus';
 	export let post: Post = {};
 
-	let videoSrc = JSONPath({ path: '$..playable_url', json: post })[0];
+	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0];
 </script>
 
 <main class="card m-4 p-3 bg-white">
