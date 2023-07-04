@@ -21,7 +21,7 @@
 				element.nodeName.charAt(0) + element.nodeName.substring(1).toLowerCase() + ' clicked';
 		}
 
-		console.log(eventName, {
+		posthog.capture(eventName, {
 			engagement: message,
 			'post-data': facebookNewsFeedInterceptedJSONExtractor(postMetaData)
 		});
