@@ -10,6 +10,7 @@
 	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
 	import _ from 'lodash';
+	import { goto } from '$app/navigation';
 
 	/** @type {import('./$types').PageData} */
 
