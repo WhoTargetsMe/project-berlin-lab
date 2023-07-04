@@ -16,7 +16,6 @@
 
 	export let data;
 	let posts = data.posts;
-	console.log(posts);
 
 	// collecting post meta data in posthog
 	export let postMetaData: [] = [];
