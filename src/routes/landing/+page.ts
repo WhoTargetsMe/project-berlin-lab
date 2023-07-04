@@ -15,6 +15,13 @@ export function load(loadEvent) {
 	let hasProlificParams = prolific_pid && study_id && session_id;
 
 	if (hasProlificParams) {
+		const prevProlificPid = JSON.parse(
+			window.localStorage.getItem('prolific_params')!
+		).prolific_pid;
+
+		if (prevProlificPid !== prolific_pid) {
+			window.chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, { type: 'clear_storage' });
+		}
 		window.localStorage.clear();
 		window.localStorage.setItem(
 			'prolific_params',
