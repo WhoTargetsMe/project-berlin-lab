@@ -15,17 +15,18 @@
 	/** @type {import('./$types').PageData} */
 
 	export let data;
+	//when extension updated data.posts
 	let posts = data.posts.posts;
 	console.log(posts);
 
-	//collecting post meta data in posthog
-	// export let postMetaData: [] = [];
-	// if (posts) {
-	// 	posts.map((post) => {
-	// 		postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
-	// 	});
-	// 	posthog.capture('post-meta-data', postMetaData);
-	// }
+	// collecting post meta data in posthog
+	export let postMetaData: [] = [];
+	if (posts) {
+		posts.map((post) => {
+			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
+		});
+		posthog.capture('post-meta-data', postMetaData);
+	}
 
 	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
