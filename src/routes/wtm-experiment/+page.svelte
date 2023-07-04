@@ -15,7 +15,7 @@
 	/** @type {import('./$types').PageData} */
 
 	export let data;
-	let posts = data.posts;
+	let posts = data.posts.posts;
 	console.log(posts);
 
 	//collecting post meta data in posthog
