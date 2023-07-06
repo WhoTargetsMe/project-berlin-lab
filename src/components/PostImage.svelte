@@ -20,7 +20,7 @@
 </script>
 
 {#if postSrc}
-	<img src={postSrc} alt={postAlt} class="min-w-full" />
+	<img src={postSrc} alt={postAlt} class="w-full" />
 {:else if multipleImages}
 	<Carousel {multipleImages} />
 {:else if imageRepost}

@@ -18,11 +18,13 @@
 
 	let totalShares: string = JSONPath({ path: '$..i18n_share_count', json: feedback })[0];
 
-	let reactionTypes: {} = JSONPath({ path: '$..top_reactions.edges', json: feedback })[0].map(
-		(reaction: { [key: string]: any }) => {
+	let reactionTypes: [] = JSONPath({ path: '$..top_reactions.edges', json: feedback })[0];
+
+	if (reactionTypes) {
+		reactionTypes = reactionTypes.map((reaction: { [key: string]: any }) => {
 			return `${reaction.i18n_reaction_count}:  ${reaction.node.localized_name}`;
-		}
-	);
+		});
+	}
 
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>

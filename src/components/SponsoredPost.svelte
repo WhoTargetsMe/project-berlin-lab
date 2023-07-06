@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Avatar from './Avatar.svelte';
-	import CallToAction from './CallToAction.svelte';
+	import CallToAction from './SponsoredAds.svelte';
 	import LikeCommentShareButtons from './LikeCommentShareButtons.svelte';
 	import PosterName from './PosterName.svelte';
 	import PostMessage from './PostMessage.svelte';
