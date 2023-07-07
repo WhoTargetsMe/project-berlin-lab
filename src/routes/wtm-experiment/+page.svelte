@@ -10,7 +10,6 @@
 	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/post-meta-data';
 	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
-	import { goto } from '$app/navigation';
 	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
