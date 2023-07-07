@@ -9,6 +9,7 @@
 	import { facebookNewsFeedInterceptedJSONExtractor } from '$lib/post-meta-data';
 	import { posthog } from 'posthog-js';
 	import { flags } from '$lib/flags-store';
+	import { goto } from '$app/navigation';
 	import _ from 'lodash';
 
 	/** @type {import('./$types').PageData} */
@@ -25,7 +26,7 @@
 		posthog.capture('post-meta-data', postMetaData);
 	}
 
-	// let isStudyComplete: boolean;
+	let isStudyComplete: boolean;
 	let { prolific_pid, study_id, session_id, form_id } = data.prolificParams;
 	let offBoardLink: string = `${PUBLIC_TYPEFORM_LINK}/${form_id}#prolific_pid=${prolific_pid}&study_id=${study_id}&session_id=${session_id}&offboarding=${true}`;
 	let experimentTimeout: number = parseInt(PUBLIC_EXPERIMENT_TIME) * 1000 * 60;
@@ -60,13 +61,13 @@
 	}
 
 	setTimeout(() => {
-		// isStudyComplete = true;
+		isStudyComplete = true;
 	}, experimentTimeout);
 </script>
 
 <main class="border-solid border-2 border-gray">
-	<!-- {#if isStudyComplete} -->
-	<!-- <div class="flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90">
+	{#if isStudyComplete}
+		<div class="flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90">
 			<section class="card p-6 bg-white shadow-lg">
 				<h3 class="m-4">
 					You have now completed the experiment. Click the link to complete the off-boarding survey
@@ -81,7 +82,7 @@
 		{setTimeout(() => {
 			goto(offBoardLink);
 		}, redirectTimeout)}
-	{/if} -->
+	{/if}
 
 	<div class="p-4 m-4">
 		<h1 class="h1">
