@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { JSONPath } from 'jsonpath-plus';
+	import NextIcon from './icons/NextIcon.svelte';
+	import PreviousIcon from './icons/PreviousIcon.svelte';
 	import TrackedEvent from './TrackedEvent.svelte';
+	import Carousel from './Carousel.svelte';
 	export let post: {};
 
 	let formOnFacebookImage: string = JSONPath({
@@ -30,25 +33,49 @@
 
 	let sponseredVidDescription: string = JSONPath({ path: '$..link_description', json: post })[0];
 
-	const next = () => {
-		let nextButton = document.getElementById('next');
-		let adContainer = document.getElementById('ad-container');
-		
+	const next = (e) => {
+		let carouselContainer = e.target.closest('.ad-container');
+		let cardWidth = carouselContainer.clientWidth;
+		let previous = carouselContainer.querySelector('.previous-btn');
+		carouselContainer.scrollLeft += cardWidth;
+		previous?.classList.remove('hidden');
+	};
+
+	const previous = (e) => {
+		let carouselContainer = e.target.closest('.ad-container');
+		let cardWidth = carouselContainer.clientWidth;
+		let previous = carouselContainer.querySelector('.previous-btn');
+		carouselContainer.scrollLeft -= cardWidth;
+		if (carouselContainer.scrollLeft < 607) {
+			previous?.classList.add('hidden');
+		}
 	};
 </script>
 
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
 	<TrackedEvent eventName="Sponsored Post engagement" postMetaData={post}>
 		{#if subAttach}
-			<div class="p-4 bg-white">
-				<div class="rounded-box flex overflow-x-scroll no-scrollbar snap-x" id="ad-container">
-					<div class="previous-btn self-center absolute" id="previous">prev</div>
+			<div class="p-4 bg-white relative">
+				<div
+					class="rounded-box flex overflow-x-scroll no-scrollbar snap-x scroll-smooth ad-container"
+				>
+					<button
+						class="previous-btn top-[35%] absolute left-0 cursor-pointer bg-white text-[2em] rounded-full p-3 m-0 opacity-75 hover:opacity-100 focus:opacity-100 border-2 border-slate-400 hidden"
+						id="previous"
+						on:click={previous}
+						on:keydown={previous}
+					>
+						<PreviousIcon />
+					</button>
 					{#each subAttach as sub, i}
-						<div id={JSON.stringify(i)} class="min-w-fit bg-white m-2 rounded snap-center border">
+						<div
+							id={`container-${i}`}
+							class="basis-5/6 grow-0 shrink-0 bg-white m-2 rounded snap-center border"
+						>
 							<img
-								src={sub.multi_share_media_card_renderer?.attachment.media.image?.uri}
-								alt="sponsored-multi"
-								class=""
+								src={JSONPath({ path: '$..image.uri', json: sub })}
+								alt="sponsored multi"
+								class="sponsored-carousel-image rounded-t"
 							/>
 							<div class="px-6 pt-4 border-t">
 								<p>{sub.card_title.text}</p>
@@ -59,7 +86,14 @@
 							</div>
 						</div>
 					{/each}
-					<div class="flex next-btn self-center z-30 absolute right-[29em]" id="next">next</div>
+					<button
+						class="flex next-btn top-[35%] z-30 absolute right-0 cursor-pointer bg-white text-[2em] rounded-full p-3 opacity-75 hover:opacity-100 focus:opacity-100 border-2 border-slate-400"
+						id="next"
+						on:click={next}
+						on:keypress={next}
+					>
+						<NextIcon />
+					</button>
 				</div>
 			</div>
 		{:else if sponseredVideo}
