@@ -67,7 +67,9 @@
 
 <main class="border-solid border-2 border-gray">
 	{#if isStudyComplete}
-		<div class="flex justify-center items-center fixed w-full h-full fixed bg-white opacity-90">
+		<div
+			class="flex justify-center items-center fixed w-full h-full fixed bg-white top-0 opacity-90"
+		>
 			<section class="card p-6 bg-white shadow-lg">
 				<h3 class="m-4">
 					You have now completed the experiment. Click the link to complete the off-boarding survey

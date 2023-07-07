@@ -12,7 +12,7 @@
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
 
-<main class="card m-4 bg-white shadow-sm">
+<main class="card m-5 bg-white shadow-sm">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>

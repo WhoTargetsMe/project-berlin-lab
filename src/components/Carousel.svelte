@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let multipleImages: [] = [];
-	console.log(multipleImages);
 </script>
 
 {#if multipleImages.length === 2}

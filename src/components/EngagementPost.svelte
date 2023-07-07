@@ -13,7 +13,7 @@
 	$: hasFlags = Object.keys($flags).length > 0;
 </script>
 
-<main class="card bg-white m-4">
+<main class="card bg-white m-5">
 	{#if hasFlags}
 		{#if $flags.should_show_labels.enabled}
 			<p class="p-4 text-slate-600">Suggested for you</p>

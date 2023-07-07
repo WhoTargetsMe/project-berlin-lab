@@ -9,11 +9,9 @@
 	import RepostName from './RepostName.svelte';
 	import { JSONPath } from 'jsonpath-plus';
 	export let post: Post = {};
-
-	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0];
 </script>
 
-<main class="card m-4 p-3 bg-white">
+<main class="card m-5 p-3 bg-white">
 	<header class="card-header flex">
 		<Avatar {post} />
 		<section>
@@ -21,19 +19,13 @@
 			<TimePosted {post} />
 		</section>
 	</header>
-	<section class="rounded-md mt-4">
-		<RepostMessage {post} />
+	<RepostMessage {post} />
+	<section class="border rounded mt-4">
 		<RepostImage {post} />
-		{#if videoSrc}
-			<video class="w-full aspect-video" controls src={videoSrc}>
-				<track kind="captions" />
-			</video>
-		{/if}
-		<header class="card-header flex items-center">
+		<header class="card-header flex items-center mb-2">
 			<RepostAvatar {post} />
 			<RepostName {post} />
 		</header>
 	</section>
-	<hr class="divide-slate-200 mx-6 mt-4" />
 	<Reactions feedback={post.node.comet_sections.feedback} />
 </main>
