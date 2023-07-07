@@ -15,12 +15,18 @@
 	<div class="grid grid-cols-2 grid-rows-2 gap-1">
 		{#each multipleImages as image, i}
 			{#if i < 2}
-				<!-- <div class="col-span-1"> -->
 				<img class="col-span-1 aspect-[11/12] object-cover" src={image} alt="carousel post" />
-				<!-- </div> -->
 			{:else}
 				<img class="row-span-full min-h-full object-cover" src={image} alt="carousel post" />
 			{/if}
+		{/each}
+	</div>
+{/if}
+
+{#if multipleImages.length === 4}
+	<div class="grid grid-cols-2 gap-1">
+		{#each multipleImages as image}
+			<img src={image} alt="carousel post" />
 		{/each}
 	</div>
 {/if}
@@ -30,7 +36,7 @@
 		{#each multipleImages as image, i}
 			{#if i < 3}
 				<div class="col-span-2">
-					<img class="" src={image} alt="organic post" />
+					<img class="h-full object-cover" src={image} alt="organic post" />
 				</div>
 			{:else}
 				<div class="col-span-3">
