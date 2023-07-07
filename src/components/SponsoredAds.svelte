@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { JSONPath } from 'jsonpath-plus';
+	import NextIcon from './icons/NextIcon.svelte';
+	import PreviousIcon from './icons/PreviousIcon.svelte';
 	import TrackedEvent from './TrackedEvent.svelte';
 	export let post: {};
 
@@ -29,33 +31,68 @@
 	let sponseredVidTitle: string = JSONPath({ path: '$..link_title', json: post })[0];
 
 	let sponseredVidDescription: string = JSONPath({ path: '$..link_description', json: post })[0];
+
+	const next = (e) => {
+		let carouselContainer = e.target.closest('.ad-container');
+		let cardWidth = carouselContainer.clientWidth;
+		let previous = carouselContainer.querySelector('.previous-btn');
+		carouselContainer.scrollLeft += cardWidth;
+		previous?.classList.remove('hidden');
+	};
+
+	const previous = (e) => {
+		let carouselContainer = e.target.closest('.ad-container');
+		let cardWidth = carouselContainer.clientWidth;
+		let previous = carouselContainer.querySelector('.previous-btn');
+		carouselContainer.scrollLeft -= cardWidth;
+		if (carouselContainer.scrollLeft < 607) {
+			previous?.classList.add('hidden');
+		}
+	};
 </script>
 
 <div class="bg-slate-100 border mx-0 px-0 flow-root">
 	<TrackedEvent eventName="Sponsored Post engagement" postMetaData={post}>
 		{#if subAttach}
-			<div class="carousel carousel-center p-4 bg-white" data-carousel="static">
-				<div class="relative rounded-lg flex overflow-x-scroll">
+			<div class="p-4 bg-white relative">
+				<div
+					class="rounded-box flex overflow-x-scroll no-scrollbar snap-x scroll-smooth ad-container"
+				>
+					<button
+						class="previous-btn top-[35%] absolute left-0 cursor-pointer bg-white text-[2em] rounded-full p-3 m-0 opacity-75 hover:opacity-100 focus:opacity-100 border-2 border-slate-400 hidden"
+						id="previous"
+						on:click={previous}
+						on:keydown={previous}
+					>
+						<PreviousIcon />
+					</button>
 					{#each subAttach as sub, i}
 						<div
-							id={JSON.stringify(i)}
-							class="carousel-item border rounded-lg mx-4 data-carousel-item"
+							id={`container-${i}`}
+							class="basis-5/6 grow-0 shrink-0 bg-white m-2 rounded snap-center border"
 						>
 							<img
-								class="min-w-full"
-								src={sub.multi_share_media_card_renderer.attachment.media.image?.uri}
-								alt="sponsored-multi"
+								src={JSONPath({ path: '$..image.uri', json: sub })}
+								alt="sponsored multi"
+								class="sponsored-carousel-image rounded-t"
 							/>
-							<div>
+							<div class="px-6 pt-4 border-t">
 								<p>{sub.card_title.text}</p>
-
 								<button
-									class="bg-gray-200 hover:bg-gray-300 font-medium my-5 mx-4 py-2 px-4 rounded float-right"
+									class="bg-gray-200 hover:bg-gray-300 font-medium my-5 py-2 px-4 rounded float-right"
 									>{sub.call_to_action_renderer.action_link.title}</button
 								>
 							</div>
 						</div>
 					{/each}
+					<button
+						class="flex next-btn top-[35%] z-30 absolute right-0 cursor-pointer bg-white text-[2em] rounded-full p-3 opacity-75 hover:opacity-100 focus:opacity-100 border-2 border-slate-400"
+						id="next"
+						on:click={next}
+						on:keypress={next}
+					>
+						<NextIcon />
+					</button>
 				</div>
 			</div>
 		{:else if sponseredVideo}
@@ -75,7 +112,7 @@
 			</div>
 		{:else if formOnFacebookImage || otherSponsoredImage}
 			<img
-				class="p-0 m-0 min-w-full"
+				class="p-0 m-0 w-full h-full"
 				src={formOnFacebookImage || otherSponsoredImage}
 				alt="sponsored"
 			/>
@@ -93,3 +130,9 @@
 		{/if}
 	</TrackedEvent>
 </div>
+
+<style>
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+</style>
