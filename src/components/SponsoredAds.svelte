@@ -3,7 +3,6 @@
 	import NextIcon from './icons/NextIcon.svelte';
 	import PreviousIcon from './icons/PreviousIcon.svelte';
 	import TrackedEvent from './TrackedEvent.svelte';
-	import Carousel from './Carousel.svelte';
 	export let post: {};
 
 	let formOnFacebookImage: string = JSONPath({
