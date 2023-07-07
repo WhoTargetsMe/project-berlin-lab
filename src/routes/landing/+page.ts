@@ -36,8 +36,9 @@ export async function load(loadEvent) {
 				{
 					type: 'is_installed'
 				},
-				function (resp) {
-					if (resp) return resolve(resp);
+				function (resp: boolean) {
+					if (chrome.runtime.lastError) return resolve('extension not installed');
+					return resolve(resp);
 				}
 			);
 		} else return resolve('extension not installed');
