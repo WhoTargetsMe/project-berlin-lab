@@ -2,7 +2,7 @@ import { PUBLIC_EXTENSION_ID } from '$env/static/public';
 import { goto } from '$app/navigation';
 export const ssr = false;
 
-export function load(loadEvent) {
+export async function load(loadEvent) {
 	const { url } = loadEvent;
 
 	const params: URLSearchParams = url.searchParams;
@@ -17,9 +17,9 @@ export function load(loadEvent) {
 	if (hasProlificParams) {
 		const prevProlificPid = JSON.parse(
 			window.localStorage.getItem('prolific_params')!
-		).prolific_pid;
+		)?.prolific_pid;
 
-		if (prevProlificPid !== prolific_pid) {
+		if (prevProlificPid !== prolific_pid && window.chrome.runtime) {
 			window.chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, { type: 'clear_storage' });
 		}
 		window.localStorage.clear();
@@ -29,13 +29,24 @@ export function load(loadEvent) {
 		);
 	}
 
-	// This only works in Chrome
-	if (!window.chrome || !window.chrome.runtime) {
+	const checkExtension = new Promise((resolve) => {
+		if (window.chrome.runtime) {
+			window.chrome.runtime.sendMessage(
+				PUBLIC_EXTENSION_ID,
+				{
+					type: 'is_installed'
+				},
+				function (resp) {
+					if (resp) return resolve(resp);
+				}
+			);
+		} else return resolve('extension not installed');
+	});
+
+	const hasExtension = await checkExtension;
+
+	if (hasExtension != true) {
 		goto('../installation');
-	} else {
-		window.chrome.runtime.sendMessage(PUBLIC_EXTENSION_ID, {
-			type: 'is_installed'
-		});
 	}
 
 	return {
