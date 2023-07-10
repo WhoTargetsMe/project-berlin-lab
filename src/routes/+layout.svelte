@@ -12,6 +12,7 @@
 
 	// Because SvelteKit is an SPA, we need to manually record navigation events
 	$: $page.url.pathname, browser && posthog.capture('$pageview');
+	let isChrome = !!(window as any).chrome;
 </script>
 
 <div class="card bg-white p-4 m-0">
@@ -19,4 +20,8 @@
 		<img src="/wtm_logo_2020.png" alt="Who Targets Me Logo" />
 	</div>
 </div>
-<slot />
+{#if isChrome}
+	<slot />
+{:else}
+	<p>You need chrome</p>
+{/if}

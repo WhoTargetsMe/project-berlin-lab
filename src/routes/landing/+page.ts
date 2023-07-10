@@ -1,4 +1,5 @@
 import { PUBLIC_EXTENSION_ID } from '$env/static/public';
+import { isExtensionInstalled } from '$shared/checkExtension.js';
 import { goto } from '$app/navigation';
 export const ssr = false;
 
@@ -28,23 +29,7 @@ export async function load(loadEvent) {
 			JSON.stringify({ prolific_pid, study_id, session_id, form_id })
 		);
 	}
-
-	const checkExtension = new Promise((resolve) => {
-		if (window.chrome.runtime) {
-			window.chrome.runtime.sendMessage(
-				PUBLIC_EXTENSION_ID,
-				{
-					type: 'is_installed'
-				},
-				function (resp: boolean) {
-					if (chrome.runtime.lastError) return resolve('extension not installed');
-					return resolve(resp);
-				}
-			);
-		} else return resolve('extension not installed');
-	});
-
-	const hasExtension = await checkExtension;
+	const hasExtension = await isExtensionInstalled;
 
 	if (hasExtension != true) {
 		goto('../installation');
