@@ -20,7 +20,7 @@
 		<img src="/wtm_logo_2020.png" alt="Who Targets Me Logo" />
 	</div>
 </div>
-{#if isChrome}
+{#if isChrome || $page.url.pathname == '/'}
 	<slot />
 {:else}
 	<main class="container h-4/5 mx-auto flex justify-center items-center">
