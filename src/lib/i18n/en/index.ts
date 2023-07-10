@@ -10,7 +10,8 @@ const en = {
 	facebook_redirect_button: 'Go to Facebook',
 	installation_redirect_fallback_info:
 		'If you are not redirected automatically, please click here to install extension',
-	only_in_chrome: 'This only works in Chrome'
+	only_in_chrome: 'Please reopen in chrome browser.',
+	install_chrome_button: 'Install Chrome'
 } satisfies BaseTranslation;
 
 export default en;

@@ -5,11 +5,11 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
-
 	import { page } from '$app/stores';
 	import { browser } from '$app/environment';
 	import posthog from 'posthog-js';
-
+	import { PUBLIC_CHROME_INSTALLATION_LINK } from '$env/static/public';
+	import LL from '$lib/i18n/i18n-svelte';
 	// Because SvelteKit is an SPA, we need to manually record navigation events
 	$: $page.url.pathname, browser && posthog.capture('$pageview');
 	let isChrome = !!(window as any).chrome;
@@ -23,5 +23,15 @@
 {#if isChrome}
 	<slot />
 {:else}
-	<p>You need chrome</p>
+	<main class="container h-4/5 mx-auto flex justify-center items-center">
+		<section class="card p-6 bg-white shadow-lg">
+			<h3 class="m-4">{$LL.only_in_chrome()}</h3>
+			<a
+				type="button"
+				class="btn variant-filled mt-4 float-right cursor-pointer"
+				href={PUBLIC_CHROME_INSTALLATION_LINK}
+				target="_blank">{$LL.install_chrome_button()}</a
+			>
+		</section>
+	</main>
 {/if}

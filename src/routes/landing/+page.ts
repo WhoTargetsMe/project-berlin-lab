@@ -1,5 +1,5 @@
 import { PUBLIC_EXTENSION_ID } from '$env/static/public';
-import { isExtensionInstalled } from '$shared/checkExtension.js';
+import { isExtensionInstalled } from '$shared/checkExtension';
 import { goto } from '$app/navigation';
 export const ssr = false;
 
@@ -31,7 +31,7 @@ export async function load(loadEvent) {
 	}
 	const hasExtension = await isExtensionInstalled;
 
-	if (hasExtension != true) {
+	if (hasExtension !== true) {
 		goto('../installation');
 	}
 
