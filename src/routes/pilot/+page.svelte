@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Desktop from '../../components/icons/Desktop.svelte';
 	import Download from '../../components/icons/Download.svelte';
+	import { v4 as uuidv4 } from 'uuid';
 
 	let pilotOptions: [] = [
 		{ pilot: 'pilot_100', name: 'Understanding post reactions' },
@@ -9,6 +10,11 @@
 	];
 
 	let selected = pilotOptions[0];
+	let session_id: string = uuidv4();
+
+	const setId = () => {
+		session_id = uuidv4();
+	};
 </script>
 
 <div
@@ -16,7 +22,7 @@
 >
 	<div class="flex mt-2">
 		<p class="px-2">Please select a study:</p>
-		<select bind:value={selected}>
+		<select bind:value={selected} on:change={setId}>
 			{#each pilotOptions as pilot}
 				<option value={pilot} label={pilot.name} />
 			{/each}
@@ -73,8 +79,8 @@
 			<!-- Link to -->
 			<a
 				class="btn bg-[#3380E1] text-white hover:white visited:white"
-				href={`https://ir96l7a6vsf.typeform.com/to/bdrKIGyD?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=646f39466965b1cbf09c4a5b&session_id=${selected.pilot}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
-				>Installation</a
+				href={`https://ir96l7a6vsf.typeform.com/to/bdrKIGyD?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=${selected.pilot}&session_id=${session_id}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
+				target="_blank">Installation</a
 			>
 		</footer>
 	</article>
