@@ -23,7 +23,7 @@
 		posts.map((post) => {
 			postMetaData.push(facebookNewsFeedInterceptedJSONExtractor(post));
 		});
-		posthog.capture('post-meta-data', postMetaData);
+		posthog.capture('wtm_all-post-meta-data', postMetaData);
 	}
 
 	let isStudyComplete: boolean;
