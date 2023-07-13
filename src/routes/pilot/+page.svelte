@@ -98,7 +98,7 @@
 			<!-- Link to -->
 			<a
 				class="btn bg-[#3380E1] text-white hover:white visited:white"
-				href={`https://ir96l7a6vsf.typeform.com/to/${selected.typeform_id}?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=${selected.pilot}&session_id=${session_id}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
+				href={`https://ir96l7a6vsf.typeform.com/to/${selected.typeform_id}?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=${selected.study_id}&session_id=${session_id}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
 				target="_blank">Start the experiment</a
 			>
 		</footer>
