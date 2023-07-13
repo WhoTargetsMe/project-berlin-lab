@@ -4,6 +4,7 @@ import { loadLocaleAsync } from '$lib/i18n/i18n-util.async';
 import { PUBLIC_POSTHOG_KEY, PUBLIC_POSTHOG_API_HOST } from '$env/static/public';
 import { setLocale } from '$lib/i18n/i18n-svelte';
 import posthog from 'posthog-js';
+export const ssr = false;
 
 export const load = (async (event) => {
 	const locale = 'en';
@@ -27,7 +28,6 @@ export const load = (async (event) => {
 			prolificParams
 		};
 	}
-
 
 	// return event.data;
 }) satisfies LayoutLoad;
