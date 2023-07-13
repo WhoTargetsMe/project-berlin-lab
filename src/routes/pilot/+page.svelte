@@ -4,9 +4,21 @@
 	import { v4 as uuidv4 } from 'uuid';
 
 	let pilotOptions: [] = [
-		{ pilot: 'pilot_100', name: 'Understanding post reactions' },
-		{ pilot: 'pilot_200', name: 'Understanding targeted posts' },
-		{ pilot: 'pilot_300', name: 'Understanding feed orders' }
+		{
+			study_id: '646f39466965b1cbf09c4a5b',
+			name: 'Understanding post reactions',
+			typeform_id: 'bdrKIGyD'
+		},
+		{
+			study_id: '647612cbb6884c2f8281a54b',
+			name: 'Understanding post labels',
+			typeform_id: 'gTnLom5T'
+		},
+		{
+			study_id: '6466341a54c68cabdbe40101',
+			name: 'Understanding feed orders',
+			typeform_id: 'ZuU0DBOi'
+		}
 	];
 
 	let selected = pilotOptions[0];
@@ -79,8 +91,8 @@
 			<!-- Link to -->
 			<a
 				class="btn bg-[#3380E1] text-white hover:white visited:white"
-				href={`https://ir96l7a6vsf.typeform.com/to/bdrKIGyD?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=${selected.pilot}&session_id=${session_id}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
-				target="_blank">Installation</a
+				href={`https://ir96l7a6vsf.typeform.com/to/${selected.typeform_id}?prolific_pid=64415d0f965c9e5ba855f7e7&study_id=${selected.pilot}&session_id=${session_id}&typeform-source=app.prolific.co#?prolific_pid={{%PROLIFIC_PID%}}&study_id={{%STUDY_ID%}}&session_id={{%SESSION_ID%}}`}
+				target="_blank">Start the experiment</a
 			>
 		</footer>
 	</article>
