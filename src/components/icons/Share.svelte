@@ -1,5 +1,15 @@
-<i
-	data-visualcompletion="css-img"
-	class="x1b0d499 x1d69dk1"
-	style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/cV-cRhaZvTP.png&quot;); background-position: 0px -408px; background-size: 25px 954px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"
-/>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	shape-rendering="geometricPrecision"
+	text-rendering="geometricPrecision"
+	image-rendering="optimizeQuality"
+	fill-rule="evenodd"
+	clip-rule="evenodd"
+	viewBox="0 0 500 511.79"
+	stroke="currentColor"
+	class="w-6 h-6"
+	><path
+		fill-rule="nonzero"
+		d="m269.99 365.32 16.43-107.39c-47.97 4.32-101.98 15.61-147.47 47.71C89.7 340.4 49.89 400.13 37.64 502.98c-.64 5.46-5.62 9.38-11.09 8.74-4.2-.5-7.48-3.55-8.49-7.42-10.98-32.88-16.63-63.92-17.81-93-3.28-79.5 26.44-144.41 70.29-193.89 43.54-49.13 101.12-83 154.02-100.77 21.76-7.31 42.82-11.95 61.87-13.82l-16.4-91.11c-.97-5.4 2.64-10.59 8.05-11.55 2.99-.54 5.91.33 8.08 2.13l210.22 173.9c4.24 3.51 4.84 9.81 1.34 14.05l-1.15 1.17-210.18 183.11c-4.16 3.62-10.48 3.18-14.1-.97a9.937 9.937 0 0 1-2.3-8.23zm38.07-116.86-14.25 93.1L474.6 184.07 294.45 35.01l13.7 76.58c.21 5.5-4.08 10.14-9.57 10.35-20.04.82-43.33 5.38-67.71 13.59-49.98 16.79-104.35 48.75-145.41 95.07-40.73 45.96-68.33 106.22-65.3 179.92.59 14.3 2.33 29.15 5.35 44.5 18.32-82.22 56.38-133.53 101.96-165.7 53.19-37.54 116.13-48.57 169.79-52.27l2.41.06c5.44.81 9.2 5.91 8.39 11.35z"
+	/></svg
+>
