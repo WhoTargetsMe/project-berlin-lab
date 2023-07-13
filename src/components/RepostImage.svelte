@@ -3,15 +3,15 @@
 	import { JSONPath } from 'jsonpath-plus';
 	export let post: Post = {};
 
-	let multipleImages: [] = JSONPath({ path: '$..all_subattachments.nodes', json: post })[0];
+	let multipleImages: [] = JSONPath({ path: '$..all_subattachments.nodes', json: post })[0] ;
 
 	if (multipleImages) {
 		multipleImages = multipleImages.map((img: { [key: string]: any }) => img.media.image.uri);
 	}
 
-	let imageRepost: string = JSONPath({ path: '$..media.photo_image.uri', json: post })[0];
+	let imageRepost: string = JSONPath({ path: '$..media.photo_image.uri', json: post })[0] || '';
 
-	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0];
+	let videoSrc: string = JSONPath({ path: '$..playable_url', json: post })[0] || '';
 </script>
 
 {#if imageRepost}

@@ -12,13 +12,14 @@
 	import Share from './icons/Share.svelte';
 	import { JSONPath } from 'jsonpath-plus';
 
-	let totalReactions: string = JSONPath({ path: '$..i18n_reaction_count', json: feedback })[0];
+	let totalReactions: string =
+		JSONPath({ path: '$..i18n_reaction_count', json: feedback })[0] || '0';
 
-	let totalComments: number = JSONPath({ path: '$..total_comment_count', json: feedback })[0];
+	let totalComments: number = JSONPath({ path: '$..total_comment_count', json: feedback })[0] || 0;
 
-	let totalShares: string = JSONPath({ path: '$..i18n_share_count', json: feedback })[0];
+	let totalShares: string = JSONPath({ path: '$..i18n_share_count', json: feedback })[0] || '0';
 
-	let reactionTypes: [] = JSONPath({ path: '$..top_reactions.edges', json: feedback })[0];
+	let reactionTypes: [] = JSONPath({ path: '$..top_reactions.edges', json: feedback })[0] || [];
 
 	if (reactionTypes) {
 		reactionTypes = reactionTypes.map((reaction: { [key: string]: any }) => {
