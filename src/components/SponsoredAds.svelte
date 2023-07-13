@@ -8,29 +8,29 @@
 	let formOnFacebookImage: string = JSONPath({
 		path: '$..lead_gen_brand_image.uri',
 		json: post
-	})[0];
+	})[0] || '';
 
-	let otherSponsoredImage: string = JSONPath({ path: '$..large_share_image.uri', json: post })[0];
+	let otherSponsoredImage: string = JSONPath({ path: '$..large_share_image.uri', json: post })[0] || '';
 
-	let sponsorURL: string = JSONPath({ path: '$..source.text', json: post })[0];
+	let sponsorURL: string = JSONPath({ path: '$..source.text', json: post })[0] || '';
 
-	let sponsorTitle: string = JSONPath({ path: '$..title_with_entities.text', json: post })[0];
+	let sponsorTitle: string = JSONPath({ path: '$..title_with_entities.text', json: post })[0] || '';
 
-	let sponsorDescription: string = JSONPath({ path: '$..description.text', json: post })[0];
+	let sponsorDescription: string = JSONPath({ path: '$..description.text', json: post })[0] || '';
 
-	let callToActionText: string = JSONPath({ path: '$..action_link.stateful_title', json: post })[0];
+	let callToActionText: string = JSONPath({ path: '$..action_link.stateful_title', json: post })[0] || '';
 
-	let otherCallToActionText: string = JSONPath({ path: '$..action_link.title', json: post })[0];
+	let otherCallToActionText: string = JSONPath({ path: '$..action_link.title', json: post })[0] || '';
 
-	let subAttach: {} = JSONPath({ path: '$..attachment.subattachments', json: post })[0];
+	let subAttach: {} = JSONPath({ path: '$..attachment.subattachments', json: post })[0] || '';
 
-	let sponseredVideo: string = JSONPath({ path: '$..media.playable_url', json: post })[0];
+	let sponseredVideo: string = JSONPath({ path: '$..media.playable_url', json: post })[0] || '';
 
-	let sponseredVidUrl: string = JSONPath({ path: '$..link_display', json: post })[0];
+	let sponseredVidUrl: string = JSONPath({ path: '$..link_display', json: post })[0] || '';
 
-	let sponseredVidTitle: string = JSONPath({ path: '$..link_title', json: post })[0];
+	let sponseredVidTitle: string = JSONPath({ path: '$..link_title', json: post })[0] || '';
 
-	let sponseredVidDescription: string = JSONPath({ path: '$..link_description', json: post })[0];
+	let sponseredVidDescription: string = JSONPath({ path: '$..link_description', json: post })[0] || '';
 
 	const next = (e) => {
 		let carouselContainer = e.target.closest('.ad-container');

@@ -4,7 +4,7 @@
 	import { format, fromUnixTime, formatDistanceToNowStrict } from 'date-fns';
 	import { JSONPath } from 'jsonpath-plus';
 
-	let timePosted: number = JSONPath({ path: '$..creation_time', json: post })[0];
+	let timePosted: number = JSONPath({ path: '$..creation_time', json: post })[0] || '';
 
 	const convertTime = (timeStamp: number) => {
 		let dateOfPost: Date = fromUnixTime(timeStamp);
