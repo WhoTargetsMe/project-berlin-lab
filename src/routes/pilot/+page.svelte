@@ -62,9 +62,12 @@
 			<p>To complete the study, you will need to:</p>
 			<ul class="list-disc list-inside px-5 pt-2 leading-loose">
 				<li class="mx-10">
-					Install a browser extension that collects 50 posts from your facebook feed.
+					Install a browser extension that collects posts from your facebook feed.
 				</li>
-				<li class="mx-10">Spend 5 minutes reading and interacting with the feed we present you.</li>
+				<li class="mx-10">
+					Spend a determined time (typically 5 minutes) reading and interacting with the feed we
+					present you.
+				</li>
 				<li class="mx-10">Take a short post-experiment survery.</li>
 			</ul>
 		</section>
